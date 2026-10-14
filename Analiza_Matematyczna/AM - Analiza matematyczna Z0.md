@@ -166,6 +166,23 @@ Dlaczego: $\log_a x$ to „potęga, do której podnosisz $a$, żeby dostać $x$�
 | 4 | $\log_a x = \dfrac{\log_b x}{\log_b a}$ | zmiana podstawy |
 | 4' | $\log_a b = \dfrac{1}{\log_b a}$ | szczególny przypadek wzoru 4 |
 
+> [!question]- Wzór 4 (zmiana podstawy) łopatologicznie
+> **Po co:** masz logarytm o „niewygodnej” podstawie $a$ i chcesz go zamienić na logarytmy o podstawie, którą lubisz ($b$). $b$ wybierasz **sam**, dowolnie (byle $b > 0$, $b \ne 1$).
+>
+> **Jak:** $\log_a x = \dfrac{\log_b x}{\log_b a}$. Na górze stoi to, co było **w środku** ($x$), na dole to, co było **w podstawie** ($a$). Oba logarytmy mają tę samą, nową podstawę $b$.
+>
+> **Przykład 1, „ładne” liczby:** $\log_4 8 = ?$ Nie widać od razu, ale $4$ i $8$ to potęgi dwójki, więc bierzesz $b = 2$:
+> $$\log_4 8 = \frac{\log_2 8}{\log_2 4} = \frac{3}{2}$$
+> Sprawdzenie: $4^{3/2} = (\sqrt4)^3 = 2^3 = 8$ ✓
+>
+> **Przykład 2, kalkulator:** kalkulator ma tylko $\log$ (podstawa 10) i $\ln$ (podstawa $e$). Jak policzyć $\log_3 7$?
+> $$\log_3 7 = \frac{\ln 7}{\ln 3} \approx \frac{1{,}946}{1{,}099} \approx 1{,}77$$
+> (Z $\log$ zamiast $\ln$ wyjdzie to samo.)
+>
+> **Skąd wzór 4':** wstaw $x = b$. Wtedy $\log_a b = \dfrac{\log_b b}{\log_b a} = \dfrac{1}{\log_b a}$, bo $\log_b b = 1$. Przykład: $\log_5 4 = \dfrac{1}{\log_4 5}$ (zadanie 1 l).
+>
+> **Pułapka:** $\dfrac{\log_b x}{\log_b a}$ to **dzielenie dwóch logarytmów**, a nie $\log_b \frac{x}{a}$. To dwie różne rzeczy.
+
 > [!tip] Typowe „sztuczki” w zadaniach
 > - **Liczba sprzed logu do wykładnika** (wzór 3): $2^{3\log_2 7} = 2^{\log_2 7^3} = 7^3$
 > - **Rozbijanie wykładnika sumy** (wzór 6 z rozdz. 1): $5^{x + \log_5 2} = 5^x \cdot 5^{\log_5 2} = 2\cdot 5^x$
@@ -1157,9 +1174,9 @@ Teoria: [[#10. Funkcja odwrotna]]. Trzeba sprawdzić **oba** złożenia.
 ## Ściąga – najważniejsze wzory i zasady
 
 > [!abstract] Na jednej stronie
-> **Potęgi:** $a^0=1$ · $a^{-p}=\frac{1}{a^p}$ · $a^{1/p}=\sqrt[p]{a}$ · $a^pa^q=a^{p+q}$ · $\frac{a^p}{a^q}=a^{p-q}$ · $(a^p)^q=a^{pq}$ · $a^x>0$ zawsze
+> **Potęgi:** $a^0=1$ · $a^{-p}=\frac{1}{a^p}$ · $a^{1/p}=\sqrt[p]{a}$ · $a^pa^q=a^{p+q}$ · $\frac{a^p}{a^q}=a^{p-q}$ · $(a^p)^q=a^{pq}$ · $a^x>0$ zawsze (dla $a>0$): potęga liczby dodatniej nigdy nie jest $0$ ani ujemna, np. $2^{-3}=\frac18$, więc $3^x$ w mianowniku nie da zera, a $2^x=-4$ nie ma rozwiązań
 >
-> **Logarytmy:** $\log_a b = c \Leftrightarrow a^c = b$ · $a^{\log_a x}=x$ · $\log_a a^x = x$ · $\log(xy)=\log x+\log y$ · $\log\frac{x}{y}=\log x-\log y$ · $\log x^r = r\log x$ · $\log_a x = \frac{\log_b x}{\log_b a}$
+> **Logarytmy:** $\log_a b = c \Leftrightarrow a^c = b$ · $a^{\log_a x}=x$ · $\log_a a^x = x$ · $\log(xy)=\log x+\log y$ · $\log\frac{x}{y}=\log x-\log y$ · $\log x^r = r\log x$ · $\log_a x = \frac{\log_b x}{\log_b a}$ (zmiana podstawy: na górze środek, na dole stara podstawa, $b$ wybierasz sam, np. $\log_4 8 = \frac{\log_2 8}{\log_2 4} = \frac32$)
 >
 > **Kwadratowe:** $\Delta = b^2-4ac$ · $x_{1,2}=\frac{-b\pm\sqrt\Delta}{2a}$ · wierzchołek $x_w=-\frac{b}{2a}$
 >
@@ -1195,3 +1212,88 @@ Teoria: [[#10. Funkcja odwrotna]]. Trzeba sprawdzić **oba** złożenia.
 > - [ ] wyjaśnić, dlaczego $\arcsin(\sin\pi) = 0$
 >
 > Odpowiedzi do testu: $\log_8 2 = \frac13$ · $5^{2+\log_5 3} = 75$ · $\arcsin(-\frac{\sqrt2}{2}) = -\frac{\pi}{4}$ · $\sqrt{t}$, $t = \ln s$, $s = \cos p$, $p = x^2$
+
+### Przykłady do przećwiczenia (do listy powyżej)
+
+Najpierw rozwiąż sam, dopiero potem rozwiń wyniki.
+
+> [!example] 1. Dziedzina: ułamek, pierwiastek i logarytm naraz
+> Teoria: [[#8. Dziedzina naturalna – lista kontrolna]]. Wyznacz dziedzinę:
+> a) $f(x) = \dfrac{\sqrt{x+3}}{x-1} + \log(5-x)$
+> b) $g(x) = \dfrac{\ln(x^2-4)}{x-3}$
+> c) $h(x) = \dfrac{\sqrt{4-x}}{\ln x}$
+>
+> > [!success]- Wyniki
+> > a) $x + 3 \ge 0$, $x \ne 1$, $5 - x > 0$, więc $D = [-3, 1) \cup (1, 5)$
+> > b) $x^2 - 4 > 0 \Leftrightarrow x < -2 \lor x > 2$, do tego $x \ne 3$, więc $D = (-\infty, -2) \cup (2, 3) \cup (3, \infty)$
+> > c) $x > 0$ (log), $\ln x \ne 0 \Leftrightarrow x \ne 1$ (mianownik), $4 - x \ge 0 \Leftrightarrow x \le 4$, więc $D = (0, 1) \cup (1, 4]$
+
+> [!example] 2. Nierówności metodą wężyka
+> Teoria: [[#4.2 Nierówności wielomianowe – metoda wężyka]], [[#4.3 Nierówności z ułamkiem]]. Rozwiąż:
+> a) $(x-1)(x+2)(x-4) > 0$
+> b) $x^2(x-3) \le 0$
+> c) $\dfrac{x+1}{x-2} \ge 0$
+> d) $\dfrac{x-3}{x+1} < 1$
+>
+> > [!success]- Wyniki
+> > a) Pierwiastki: $-2, 1, 4$. Wężyk startuje z prawej od góry. $x \in (-2, 1) \cup (4, \infty)$
+> > b) $x = 0$ jest podwójny (odbicie), $x = 3$ pojedynczy. $x \in (-\infty, 3]$. Sprawdź: $x = 0$ daje $0 \le 0$ ✓
+> > c) Tak jak $(x+1)(x-2) \ge 0$, ale $x \ne 2$. $x \in (-\infty, -1] \cup (2, \infty)$
+> > d) **Nie mnóż przez mianownik!** Przenieś $1$ na lewo: $\dfrac{x-3}{x+1} - 1 = \dfrac{-4}{x+1} < 0$. Licznik jest ujemny, więc mianownik musi być dodatni: $x + 1 > 0$. $x \in (-1, \infty)$
+
+> [!example] 3. Policz (logarytmy, potęgi, arcusy)
+> Teoria: [[#2. Logarytmy]], [[#6. Funkcje cyklometryczne (arcusy)]]
+> a) $\log_9 3$ b) $\log_2 \frac18$ c) $\log_{27} 9$
+> d) $3^{1+\log_3 4}$ e) $2^{3-\log_2 5}$ f) $e^{2\ln 3}$
+> g) $\arcsin\frac12$ h) $\arccos(-\frac12)$ i) $\operatorname{arctg}(-\sqrt3)$
+>
+> > [!success]- Wyniki
+> > a) $\frac12$, bo $9^{1/2} = 3$
+> > b) $-3$, bo $2^{-3} = \frac18$
+> > c) $\frac23$, bo $27^{2/3} = (\sqrt[3]{27})^2 = 9$ (albo zmianą podstawy: $\frac{\log_3 9}{\log_3 27} = \frac23$)
+> > d) $3^1 \cdot 3^{\log_3 4} = 3 \cdot 4 = 12$
+> > e) $\dfrac{2^3}{2^{\log_2 5}} = \dfrac85$
+> > f) $e^{\ln 3^2} = 3^2 = 9$
+> > g) $\frac{\pi}{6}$
+> > h) $\frac{2\pi}{3}$ (arccos daje wynik z $[0, \pi]$)
+> > i) $-\frac{\pi}{3}$ (arctg daje wynik z $(-\frac{\pi}{2}, \frac{\pi}{2})$)
+
+> [!example] 4. Rozpisz złożenie od zewnątrz do środka
+> Teoria: [[#9. Złożenie funkcji]]. Pytanie pomocnicze: *co kalkulator liczy na końcu?*
+> a) $e^{\sin 3x}$ b) $\ln^2(x+1)$ c) $\sqrt{\operatorname{arctg}\frac1x}$ d) $\sin\sqrt{\ln x}$ e) $\cos^3(2^x)$
+>
+> > [!success]- Wyniki
+> > a) $e^t$, $t = \sin s$, $s = 3x$
+> > b) $t^2$, $t = \ln s$, $s = x + 1$ (bo $\ln^2(\dots) = \big(\ln(\dots)\big)^2$)
+> > c) $\sqrt t$, $t = \operatorname{arctg} s$, $s = \frac1x$
+> > d) $\sin t$, $t = \sqrt s$, $s = \ln x$
+> > e) $t^3$, $t = \cos s$, $s = 2^x$
+
+> [!example] 5. Szkice z pamięci
+> Teoria: rozdziały 1, 2, 5, 6. Naszkicuj i zaznacz charakterystyczne punkty oraz asymptoty:
+> a) $e^x$ b) $\ln x$ c) $\sin x$ d) $\operatorname{tg} x$ e) $\arcsin x$ f) $\operatorname{arctg} x$
+> Bonus (przesunięcia): g) $y = e^x - 1$ h) $y = \ln(x-2)$ i) $y = \sin x + 1$
+>
+> > [!success]- Co musi być na rysunku
+> > a) $e^x$: przez $(0, 1)$ i $(1;\ 2{,}72)$, zawsze nad osią $x$, z lewej przytula się do $y = 0$ (asymptota), rośnie.
+> > b) $\ln x$: tylko $x > 0$, przez $(1, 0)$ i $(2{,}72;\ 1)$, oś $y$ to asymptota, rośnie. To odbicie $e^x$ względem $y = x$.
+> > c) $\sin x$: fala między $-1$ a $1$, zera w $0, \pi, 2\pi$, szczyt $1$ w $\frac{\pi}{2}$, dołek $-1$ w $\frac{3\pi}{2}$, okres $2\pi$ (rysunek w [[#5.2 Czym są sin, cos, tg, ctg|5.2]]).
+> > d) $\operatorname{tg} x$: zera w $0, \pi, \dots$, pionowe asymptoty w $\pm\frac{\pi}{2}, \frac{3\pi}{2}, \dots$, przez $(\frac{\pi}{4}, 1)$, na każdym kawałku rośnie od $-\infty$ do $\infty$, okres $\pi$.
+> > e) $\arcsin x$: tylko $x \in [-1, 1]$, od $(-1, -\frac{\pi}{2})$ przez $(0, 0)$ do $(1, \frac{\pi}{2})$, rośnie.
+> > f) $\operatorname{arctg} x$: całe $\mathbb{R}$, przez $(0, 0)$ i $(1, \frac{\pi}{4})$, poziome asymptoty $y = \pm\frac{\pi}{2}$, rośnie.
+> > g) $e^x$ przesunięte o 1 w **dół**: przez $(0, 0)$, asymptota $y = -1$, wartości $(-1, \infty)$.
+> > h) $\ln x$ przesunięty o 2 w **prawo**: tylko $x > 2$, przez $(3, 0)$, asymptota $x = 2$.
+> > i) $\sin x$ podniesiony o 1: fala między $0$ a $2$, szczyt $2$ w $\frac{\pi}{2}$, dotyka osi w $\frac{3\pi}{2}$.
+
+> [!example] 6. Arcus z funkcji (jak $\arcsin(\sin\pi) = 0$)
+> Teoria: [[#6. Funkcje cyklometryczne (arcusy)]]. Pamiętaj: arcus zawsze oddaje kąt **ze swojego przedziału**.
+> a) $\arcsin(\sin\frac{\pi}{4})$ b) $\arcsin(\sin\frac{5\pi}{6})$ c) $\arccos(\cos(-\frac{\pi}{3}))$
+> d) $\operatorname{arctg}(\operatorname{tg}\frac{3\pi}{4})$ e) $\sin(\arcsin 0{,}3)$ f)* $\arcsin(\sin 2)$
+>
+> > [!success]- Wyniki
+> > a) $\frac{\pi}{4}$, bo $\frac{\pi}{4} \in [-\frac{\pi}{2}, \frac{\pi}{2}]$, więc „wraca” to samo.
+> > b) $\sin\frac{5\pi}{6} = \frac12$, a $\arcsin\frac12 = \frac{\pi}{6}$. **Nie** $\frac{5\pi}{6}$, bo to jest poza $[-\frac{\pi}{2}, \frac{\pi}{2}]$.
+> > c) $\cos(-\frac{\pi}{3}) = \frac12$, a $\arccos\frac12 = \frac{\pi}{3}$. Arccos daje wynik z $[0, \pi]$, więc nie może być ujemny.
+> > d) $\operatorname{tg}\frac{3\pi}{4} = -1$, a $\operatorname{arctg}(-1) = -\frac{\pi}{4}$.
+> > e) $0{,}3$. W tę stronę ($\sin$ z $\arcsin$) zawsze wraca to samo.
+> > f) $\sin 2 = \sin(\pi - 2)$, a $\pi - 2 \approx 1{,}14$ leży w $[-\frac{\pi}{2}, \frac{\pi}{2}]$, więc wynik to $\pi - 2$.
