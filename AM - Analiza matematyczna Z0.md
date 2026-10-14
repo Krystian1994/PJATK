@@ -999,6 +999,37 @@ Teoria: [[#9. Złożenie funkcji]], [[#8. Dziedzina naturalna – lista kontroln
 >
 > $D = \bigcup_{k\in\mathbb{Z}} [1 + 2k\pi,\ 1 + \pi + 2k\pi]$
 >
+> > [!question]- Co to za zapis? Czytanie po kawałku
+> > | kawałek | czytaj | znaczy |
+> > |---|---|---|
+> > | $[1 + 2k\pi,\ 1 + \pi + 2k\pi]$ | „przedział od … do …” | **jeden pasek** na osi liczbowej |
+> > | $k$ | „numer paska” | zwykła liczba całkowita, którą sam wstawiasz |
+> > | $k \in \mathbb{Z}$ | „$k$ należy do liczb całkowitych” | $k$ może być $\dots, -2, -1, 0, 1, 2, \dots$ |
+> > | $\bigcup$ | „suma” (jak $\cup$, tylko duże) | **połącz wszystkie te paski w jeden zbiór** |
+> >
+> > **Wstaw za $k$ kolejne liczby** ($\pi \approx 3{,}14$, $2\pi \approx 6{,}28$):
+> >
+> > | $k$ | przedział | na liczbach |
+> > |---|---|---|
+> > | $-1$ | $[1 - 2\pi,\ 1 - \pi]$ | $[-5{,}28;\ -2{,}14]$ |
+> > | $0$ | $[1,\ 1 + \pi]$ | $[1;\ 4{,}14]$ |
+> > | $1$ | $[1 + 2\pi,\ 1 + 3\pi]$ | $[7{,}28;\ 10{,}42]$ |
+> > | $2$ | $[1 + 4\pi,\ 1 + 5\pi]$ | $[13{,}57;\ 16{,}71]$ |
+> >
+> > Czyli cały zapis to po prostu skrót od:
+> > $$D = \dots \cup [-5{,}28;\ -2{,}14] \cup [1;\ 4{,}14] \cup [7{,}28;\ 10{,}42] \cup [13{,}57;\ 16{,}71] \cup \dots$$
+> > Takich pasków jest nieskończenie wiele, więc nie da się wypisać wszystkich. Dlatego piszemy jeden „wzór na pasek” z $k$ i duże $\bigcup$ („weź je wszystkie”).
+> >
+> > ```
+> >   ███████       ███████       ███████       ███████
+> > ──┼─────┼───────┼─────┼───────┼─────┼───────┼─────┼──→ x
+> > −5,28 −2,14     1   4,14    7,28 10,42   13,57 16,71
+> >   k=−1          k=0           k=1           k=2
+> > ```
+> > Każdy pasek ma długość $\pi \approx 3{,}14$ (tyle trwa „plusowy” kawałek sinusa). Przerwa między paskami też ma $\pi$. Kolejny pasek zaczyna się $2\pi \approx 6{,}28$ dalej.
+>
+> Typowe pytanie: czy $x = 8$ należy do dziedziny? Tak, bo $8 \in [7{,}28;\ 10{,}42]$ (pasek $k=1$). A $x = 5$? Nie, bo leży w przerwie między $4{,}14$ a $7{,}28$.
+>
 > **$h(g(f(x))) = \sin\left(\sqrt{\log_5(x+1)} - 1\right)$**
 > - logarytm: $x + 1 > 0 \Leftrightarrow x > -1$
 > - pierwiastek: $\log_5(x+1) \ge 0 = \log_5 1 \Leftrightarrow x + 1 \ge 1 \Leftrightarrow x \ge 0$
