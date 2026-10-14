@@ -7,8 +7,8 @@ tags:
 # Zjazd 17–18 października – do zrobienia
 
 ## [[AM - Analiza matematyczna|AM]]
-- [ ] Powtórzyć podstawy analizy matematycznej
-- [ ] Przerobić zadania
+- [x] Powtórzyć podstawy analizy matematycznej
+- [x] Przerobić zadania
 
 ## [[PPJ - Podstawy programowania w Javie|PPJ]]
 - [ ] Systemy liczbowe: dziesiętny, dwójkowy, ósemkowy, szesnastkowy
@@ -16,7 +16,7 @@ tags:
 - [ ] Ćwiczenia z podstaw algorytmów
 
 ## [[ANG1 - Język angielski 1|Angielski]]
-- [ ] Kupić podręcznik *Business Partner B1*
+- [x] Kupić podręcznik *Business Partner B1*
 
 ## Inne
 - [ ] 
