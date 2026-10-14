@@ -323,6 +323,28 @@ $$\pi\ \text{rad} = 180^\circ \qquad\Rightarrow\qquad 1^\circ = \frac{\pi}{180}\
 
 ##### 5.2 Czym są sin, cos, tg, ctg
 
+> [!abstract] Najpierw na chłopski rozum: diabelski młyn
+> Wyobraź sobie diabelski młyn o promieniu **1 metr**, z osią (środkiem) w punkcie $(0,0)$. Siedzisz w wagoniku $P$. Startujesz **z prawej strony, na wysokości osi** i jedziesz w górę, czyli przeciwnie do wskazówek zegara.
+> - **$x$** to droga przejechana po obwodzie, czyli **kąt w radianach**. Pełny obrót to $2\pi \approx 6{,}28$, bo tyle wynosi obwód koła o promieniu 1.
+> - **$\sin x$** to Twoja **wysokość** względem osi: nad osią plus, pod osią minus.
+> - **$\cos x$** to Twoja odległość **w prawo** od osi: po prawej plus, po lewej minus.
+>
+> | przejechane $x$ | gdzie jesteś | $\sin x$ (wysokość) | $\cos x$ (w prawo) |
+> |---|---|---|---|
+> | $0$ | z prawej, na wysokości osi | $0$ | $1$ |
+> | $\frac{\pi}{2} \approx 1{,}57$ | **na samej górze** | $1$ | $0$ |
+> | $\pi \approx 3{,}14$ | z lewej, na wysokości osi | $0$ | $-1$ |
+> | $\frac{3\pi}{2} \approx 4{,}71$ | **na samym dole** | $-1$ | $0$ |
+> | $2\pi \approx 6{,}28$ | z powrotem na starcie | $0$ | $1$ |
+>
+> **Co z tego wynika:**
+> - Przez pierwsze pół obrotu (od $0$ do $\pi$) jesteś **nad osią**, więc $\sin$ jest **dodatni**. Przez drugie pół (od $\pi$ do $2\pi$) jesteś **pod osią**, więc $\sin$ jest **ujemny**. Potem kręcisz się od nowa i wszystko się powtarza.
+> - $\cos$ jest dodatni, gdy jesteś w **prawej połowie** koła: od $0$ do $\frac{\pi}{2}$ i od $\frac{3\pi}{2}$ do $2\pi$.
+> - Wyżej niż $1$ ani niżej niż $-1$ się nie da, bo koło ma promień 1. Dlatego $\sin$ i $\cos$ są zawsze w $[-1, 1]$.
+> - $\operatorname{tg} x = \frac{\sin x}{\cos x}$, więc tangensa nie trzeba sobie osobno wyobrażać, wystarczy podzielić.
+>
+> Poniżej to samo, tylko porządnie, w języku matematyki.
+
 Narysuj okrąg o promieniu 1 ze środkiem w $(0,0)$. Od dodatniej półosi $x$ odmierz kąt $x$ przeciwnie do ruchu wskazówek zegara. Ramię kąta przetnie okrąg w punkcie $(\cos x,\ \sin x)$:
 - $\cos x$ to **współrzędna pozioma** tego punktu,
 - $\sin x$ to **współrzędna pionowa**,
@@ -363,6 +385,23 @@ Co widać od razu z rysunku:
 | II | $\left(\frac{\pi}{2}, \pi\right)$ | $+$ | $-$ | $-$ |
 | III | $\left(\pi, \frac{3\pi}{2}\right)$ | $-$ | $-$ | $+$ |
 | IV | $\left(\frac{3\pi}{2}, 2\pi\right)$ | $-$ | $+$ | $-$ |
+
+**Od koła do fali.** Narysuj wysokość wagonika ($\sin x$) w zależności od przejechanej drogi $x$. Wyjdzie **fala**. To samo z odległością w prawo ($\cos x$):
+
+![[AM_Z0_wykres_sin_cos.svg|700]]
+
+Jak czytać:
+- **Zielone** obszary to miejsca, gdzie funkcja jest **dodatnia**, a **czerwone** to miejsca, gdzie jest **ujemna**.
+- $\sin$: od $0$ do $\pi$ (do $3{,}14$) jest **plus**, od $\pi$ do $2\pi$ (do $6{,}28$) jest **minus**, potem to samo od nowa.
+- $\cos$ to **ta sama fala**, tylko przesunięta: startuje z góry ($\cos 0 = 1$, bo wagonik jest z prawej). Plus jest od $0$ do $\frac{\pi}{2}$, minus od $\frac{\pi}{2}$ do $\frac{3\pi}{2}$, potem znowu plus.
+- Fala nigdy nie wychodzi ponad przerywane linie $1$ i $-1$.
+
+> [!tip] Na kolokwium: „kiedy $\sin \ge 0$?” albo „kiedy $\cos \ge 0$?”
+> Narysuj sobie tę falę, nawet byle jak, i patrz na **zielone garby**:
+> - $\sin u \ge 0$ dla $u \in [0, \pi]$ i co $2\pi$ dalej. Zapis: $u \in [2k\pi,\ \pi + 2k\pi]$, $k \in \mathbb{Z}$.
+> - $\cos u \ge 0$ dla $u \in [-\frac{\pi}{2}, \frac{\pi}{2}]$ i co $2\pi$ dalej. Zapis: $u \in [-\frac{\pi}{2} + 2k\pi,\ \frac{\pi}{2} + 2k\pi]$, $k \in \mathbb{Z}$.
+>
+> „$+2k\pi$” znaczy tylko: **ten sam kawałek powtórzony co pełny obrót** ($\approx 6{,}28$) w prawo i w lewo.
 
 ##### 5.3 Tabela wartości
 
@@ -1018,6 +1057,24 @@ Teoria: [[#9. Złożenie funkcji]], [[#8. Dziedzina naturalna – lista kontroln
 > > - $x = 5$: $\sin 4 \approx -0{,}76 < 0$, czyli pierwiastek z liczby ujemnej ✗. Zgadza się, bo $5$ leży w przerwie między $4{,}14$ a $7{,}28$.
 > >
 > > ---
+> >
+> > > [!help]- Dalej nie rozumiem sinusa: wersja tylko na liczbach
+> > > **Cosinusa tu nie ma.** Interesuje nas tylko to, **kiedy sinus jest dodatni**. Policz na kalkulatorze (tryb **RAD**):
+> > >
+> > > | $u$ | 0 | 1 | 2 | 3 | **3,14** | 4 | 5 | 6 | **6,28** | 7 | 8 |
+> > > |---|---|---|---|---|---|---|---|---|---|---|---|
+> > > | $\sin u$ | 0 | 0,84 | 0,91 | 0,14 | **0** | −0,76 | −0,96 | −0,28 | **0** | 0,66 | 0,99 |
+> > > | znak | 0 | + | + | + | 0 | − | − | − | 0 | + | + |
+> > >
+> > > - od **0 do 3,14** ($\pi$) sinus jest **dodatni**,
+> > > - od **3,14 do 6,28** ($2\pi$) jest **ujemny**,
+> > > - potem **wszystko się powtarza**: kawałki plus i minus, każdy długości 3,14.
+> > >
+> > > W zadaniu pod sinusem jest $x - 1$, a nie $x$, więc:
+> > > $$0 \le x - 1 \le 3{,}14 \quad\Rightarrow\quad 1 \le x \le 4{,}14$$
+> > > Następne „plusowe” kawałki są przesunięte o 6,28: $[7{,}28;\ 10{,}42]$, $[13{,}57;\ 16{,}71]$, …, a w lewo $[-5{,}28;\ -2{,}14]$, …
+> > >
+> > > Zapis $[1 + 2k\pi,\ 1 + \pi + 2k\pi]$ znaczy dokładnie to samo. $2k\pi$ to „przesuń o 6,28 tyle razy, ile chcesz”, a $k$ to numer kawałka.
 > >
 > > ### Część 2: $h(g(f(x)))$, kolejka $f \to g \to h$
 > >

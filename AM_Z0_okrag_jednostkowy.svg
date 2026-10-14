@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 460" width="520" height="460" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="520" height="460" rx="14" fill="#ffffff"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker></defs>
+<line x1="40" y1="250" x2="485" y2="250" stroke="#1f2937" stroke-width="1.5" marker-end="url(#ar)"/>
+<line x1="220" y1="440" x2="220" y2="30" stroke="#1f2937" stroke-width="1.5" marker-end="url(#ar)"/>
+<circle cx="220" cy="250" r="150" fill="none" stroke="#9ca3af" stroke-width="2"/>
+<line x1="370" y1="45" x2="370" y2="440" stroke="#16a34a" stroke-width="1.2" stroke-dasharray="5 5"/>
+<line x1="40" y1="100" x2="480" y2="100" stroke="#ea580c" stroke-width="1.2" stroke-dasharray="5 5"/>
+<text x="376" y="62" font-size="14" fill="#16a34a">prosta x = 1</text>
+<text x="478" y="92" font-size="14" fill="#ea580c" text-anchor="end">prosta y = 1</text>
+<line x1="220" y1="250" x2="406.1" y2="93.8" stroke="#1f2937" stroke-width="1.2" stroke-dasharray="3 4"/>
+<line x1="220" y1="250" x2="334.9" y2="153.6" stroke="#1f2937" stroke-width="2.5"/>
+<line x1="220" y1="250" x2="334.9" y2="250" stroke="#2563eb" stroke-width="5"/>
+<line x1="334.9" y1="250" x2="334.9" y2="153.6" stroke="#dc2626" stroke-width="5"/>
+<line x1="370.0" y1="250" x2="370.0" y2="124.1" stroke="#16a34a" stroke-width="5"/>
+<line x1="220" y1="100.0" x2="398.8" y2="100.0" stroke="#ea580c" stroke-width="5"/>
+<path d="M255,250 A35,35 0 0,0 246.8,227.5" fill="none" stroke="#1f2937" stroke-width="1.5"/>
+<text x="262" y="242" font-size="15" fill="#1f2937" font-style="italic">x</text>
+<circle cx="334.9" cy="153.6" r="5" fill="#1f2937"/>
+<circle cx="370.0" cy="124.1" r="5" fill="#16a34a"/>
+<circle cx="398.8" cy="100.0" r="5" fill="#ea580c"/>
+<text x="320.9" y="147.6" font-size="15" fill="#1f2937" text-anchor="end" font-weight="bold">P = (cos x, sin x)</text>
+<text x="263.5" y="195.8" font-size="15" fill="#1f2937">1</text>
+<text x="277.5" y="272" font-size="15" fill="#2563eb" text-anchor="middle" font-weight="bold">cos x</text>
+<text x="328.9" y="206.8" font-size="15" fill="#dc2626" text-anchor="end" font-weight="bold">sin x</text>
+<text x="378.0" y="192.1" font-size="15" fill="#16a34a" font-weight="bold">tg x</text>
+<text x="309.4" y="92.0" font-size="15" fill="#ea580c" text-anchor="middle" font-weight="bold">ctg x</text>
+<text x="212" y="268" font-size="14" fill="#1f2937" text-anchor="end">O</text>
+<text x="376" y="268" font-size="13" fill="#1f2937">1</text>
+<text x="64" y="268" font-size="13" fill="#1f2937" text-anchor="end">−1</text>
+<text x="214" y="416" font-size="13" fill="#1f2937" text-anchor="end">−1</text>
+<text x="490" y="268" font-size="14" fill="#1f2937" text-anchor="end">x</text><text x="230" y="40" font-size="14" fill="#1f2937">y</text>
+</svg>

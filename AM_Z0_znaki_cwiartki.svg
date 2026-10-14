@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 420" width="480" height="420" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="480" height="420" rx="14" fill="#ffffff"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker></defs>
+<path d="M240,210 L380,210 A140,140 0 0,0 240,70 z" fill="#dcfce7"/>
+<path d="M240,210 L240,70 A140,140 0 0,0 100,210 z" fill="#fef9c3"/>
+<path d="M240,210 L100,210 A140,140 0 0,0 240,350 z" fill="#fee2e2"/>
+<path d="M240,210 L240,350 A140,140 0 0,0 380,210 z" fill="#dbeafe"/>
+<circle cx="240" cy="210" r="140" fill="none" stroke="#9ca3af" stroke-width="2"/>
+<line x1="60" y1="210" x2="420" y2="210" stroke="#1f2937" stroke-width="1.5" marker-end="url(#ar)"/>
+<line x1="240" y1="380" x2="240" y2="40" stroke="#1f2937" stroke-width="1.5" marker-end="url(#ar)"/>
+<text x="312" y="110" font-size="20" font-weight="bold" fill="#1f2937" text-anchor="middle">I</text>
+<text x="312" y="132" font-size="15" text-anchor="middle" fill="#1f2937">sin <tspan fill="#16a34a" font-weight="bold">+</tspan></text>
+<text x="312" y="151" font-size="15" text-anchor="middle" fill="#1f2937">cos <tspan fill="#16a34a" font-weight="bold">+</tspan></text>
+<text x="312" y="170" font-size="15" text-anchor="middle" fill="#1f2937">tg, ctg <tspan fill="#16a34a" font-weight="bold">+</tspan></text>
+<text x="168" y="110" font-size="20" font-weight="bold" fill="#1f2937" text-anchor="middle">II</text>
+<text x="168" y="132" font-size="15" text-anchor="middle" fill="#1f2937">sin <tspan fill="#16a34a" font-weight="bold">+</tspan></text>
+<text x="168" y="151" font-size="15" text-anchor="middle" fill="#1f2937">cos <tspan fill="#dc2626" font-weight="bold">−</tspan></text>
+<text x="168" y="170" font-size="15" text-anchor="middle" fill="#1f2937">tg, ctg <tspan fill="#dc2626" font-weight="bold">−</tspan></text>
+<text x="168" y="254" font-size="20" font-weight="bold" fill="#1f2937" text-anchor="middle">III</text>
+<text x="168" y="276" font-size="15" text-anchor="middle" fill="#1f2937">sin <tspan fill="#dc2626" font-weight="bold">−</tspan></text>
+<text x="168" y="295" font-size="15" text-anchor="middle" fill="#1f2937">cos <tspan fill="#dc2626" font-weight="bold">−</tspan></text>
+<text x="168" y="314" font-size="15" text-anchor="middle" fill="#1f2937">tg, ctg <tspan fill="#16a34a" font-weight="bold">+</tspan></text>
+<text x="312" y="254" font-size="20" font-weight="bold" fill="#1f2937" text-anchor="middle">IV</text>
+<text x="312" y="276" font-size="15" text-anchor="middle" fill="#1f2937">sin <tspan fill="#dc2626" font-weight="bold">−</tspan></text>
+<text x="312" y="295" font-size="15" text-anchor="middle" fill="#1f2937">cos <tspan fill="#16a34a" font-weight="bold">+</tspan></text>
+<text x="312" y="314" font-size="15" text-anchor="middle" fill="#1f2937">tg, ctg <tspan fill="#dc2626" font-weight="bold">−</tspan></text>
+<text x="388" y="202" font-size="15" fill="#1f2937">0</text>
+<text x="250" y="60" font-size="15" fill="#1f2937">π/2</text>
+<text x="92" y="202" font-size="15" fill="#1f2937" text-anchor="end">π</text>
+<text x="250" y="372" font-size="15" fill="#1f2937">3π/2</text>
+</svg>
