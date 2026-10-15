@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 440" width="740" height="440" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="740" height="440" rx="14" fill="#ffffff"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker></defs>
+<text x="370.0" y="30.0" font-size="17" fill="#1f2937" text-anchor="middle" font-weight="bold">Wyścig do nieskończoności: wartości dla n = 20</text>
+<text x="370.0" y="52.0" font-size="13" fill="#6b7280" text-anchor="middle" font-style="italic">długość paska = liczba cyfr wyniku (skala logarytmiczna)</text>
+<text x="78.0" y="95.0" font-size="16" fill="#1f2937" text-anchor="end" font-weight="bold">ln n</text>
+<rect x="90" y="79" width="8.6" height="24" rx="5" fill="#16a34a"/>
+<text x="106.6" y="96.0" font-size="13.5" fill="#1f2937" text-anchor="start">3,0</text>
+<text x="78.0" y="137.0" font-size="16" fill="#1f2937" text-anchor="end" font-weight="bold">n</text>
+<rect x="90" y="121" width="23.4" height="24" rx="5" fill="#22c55e"/>
+<text x="121.4" y="138.0" font-size="13.5" fill="#1f2937" text-anchor="start">20</text>
+<text x="78.0" y="179.0" font-size="16" fill="#1f2937" text-anchor="end" font-weight="bold">n²</text>
+<rect x="90" y="163" width="46.9" height="24" rx="5" fill="#84cc16"/>
+<text x="144.9" y="180.0" font-size="13.5" fill="#1f2937" text-anchor="start">400</text>
+<text x="78.0" y="221.0" font-size="16" fill="#1f2937" text-anchor="end" font-weight="bold">n³</text>
+<rect x="90" y="205" width="70.3" height="24" rx="5" fill="#eab308"/>
+<text x="168.3" y="222.0" font-size="13.5" fill="#1f2937" text-anchor="start">8 000</text>
+<text x="78.0" y="263.0" font-size="16" fill="#1f2937" text-anchor="end" font-weight="bold">2ⁿ</text>
+<rect x="90" y="247" width="108.4" height="24" rx="5" fill="#f59e0b"/>
+<text x="206.4" y="264.0" font-size="13.5" fill="#1f2937" text-anchor="start">≈ 1 milion</text>
+<text x="78.0" y="305.0" font-size="16" fill="#1f2937" text-anchor="end" font-weight="bold">3ⁿ</text>
+<rect x="90" y="289" width="171.8" height="24" rx="5" fill="#f97316"/>
+<text x="269.8" y="306.0" font-size="13.5" fill="#1f2937" text-anchor="start">≈ 3,5 miliarda</text>
+<text x="78.0" y="347.0" font-size="16" fill="#1f2937" text-anchor="end" font-weight="bold">n!</text>
+<rect x="90" y="331" width="331.1" height="24" rx="5" fill="#ef4444"/>
+<text x="429.1" y="348.0" font-size="13.5" fill="#1f2937" text-anchor="start">≈ 2,4 · 10¹⁸</text>
+<text x="78.0" y="389.0" font-size="16" fill="#1f2937" text-anchor="end" font-weight="bold">nⁿ</text>
+<rect x="90" y="373" width="468.6" height="24" rx="5" fill="#b91c1c"/>
+<text x="566.6" y="390.0" font-size="13.5" fill="#1f2937" text-anchor="start">≈ 10²⁶</text>
+<text x="370.0" y="425.0" font-size="13" fill="#6b7280" text-anchor="middle" font-style="italic">każdy kolejny wiersz „zjada” wszystkie poprzednie, gdy n → ∞</text>
+</svg>

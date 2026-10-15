@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 525" width="740" height="525" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="740" height="525" rx="14" fill="#ffffff"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker></defs>
+<text x="370.0" y="30.0" font-size="17" fill="#1f2937" text-anchor="middle" font-weight="bold">Cztery typowe zachowania ciągu (n = 1, 2, 3, …)</text>
+<rect x="15" y="45" width="350" height="225" rx="10" fill="#f9fafb" stroke="#e5e7eb"/>
+<text x="31.0" y="69.0" font-size="15" fill="#1f2937" text-anchor="start" font-weight="bold">aₙ = 1/n</text>
+<line x1="65.0" y1="208.2" x2="325.0" y2="208.2" stroke="#16a34a" stroke-width="1.4" stroke-dasharray="5 4"/>
+<line x1="57.0" y1="208.2" x2="339.0" y2="208.2" stroke="#1f2937" stroke-width="1.3" marker-end="url(#ar)"/>
+<line x1="65.0" y1="231.0" x2="65.0" y2="73.0" stroke="#1f2937" stroke-width="1.3" marker-end="url(#ar)"/>
+<text x="341.0" y="213.2" font-size="13" fill="#1f2937" text-anchor="start" font-style="italic">n</text>
+<line x1="61.0" y1="96.2" x2="69.0" y2="96.2" stroke="#1f2937" stroke-width="1.3"/>
+<text x="57.0" y="100.2" font-size="12" fill="#1f2937" text-anchor="end">1</text>
+<line x1="61.0" y1="152.2" x2="69.0" y2="152.2" stroke="#1f2937" stroke-width="1.3"/>
+<text x="57.0" y="156.2" font-size="12" fill="#1f2937" text-anchor="end">½</text>
+<circle cx="75.0" cy="96.2" r="3.2" fill="#dc2626"/>
+<circle cx="85.0" cy="152.2" r="3.2" fill="#dc2626"/>
+<circle cx="95.0" cy="170.9" r="3.2" fill="#dc2626"/>
+<circle cx="105.0" cy="180.2" r="3.2" fill="#dc2626"/>
+<circle cx="115.0" cy="185.8" r="3.2" fill="#dc2626"/>
+<circle cx="125.0" cy="189.5" r="3.2" fill="#dc2626"/>
+<circle cx="135.0" cy="192.2" r="3.2" fill="#dc2626"/>
+<circle cx="145.0" cy="194.2" r="3.2" fill="#dc2626"/>
+<circle cx="155.0" cy="195.8" r="3.2" fill="#dc2626"/>
+<circle cx="165.0" cy="197.0" r="3.2" fill="#dc2626"/>
+<circle cx="175.0" cy="198.0" r="3.2" fill="#dc2626"/>
+<circle cx="185.0" cy="198.9" r="3.2" fill="#dc2626"/>
+<circle cx="195.0" cy="199.6" r="3.2" fill="#dc2626"/>
+<circle cx="205.0" cy="200.2" r="3.2" fill="#dc2626"/>
+<circle cx="215.0" cy="200.7" r="3.2" fill="#dc2626"/>
+<circle cx="225.0" cy="201.2" r="3.2" fill="#dc2626"/>
+<circle cx="235.0" cy="201.6" r="3.2" fill="#dc2626"/>
+<circle cx="245.0" cy="202.0" r="3.2" fill="#dc2626"/>
+<circle cx="255.0" cy="202.3" r="3.2" fill="#dc2626"/>
+<circle cx="265.0" cy="202.6" r="3.2" fill="#dc2626"/>
+<circle cx="275.0" cy="202.9" r="3.2" fill="#dc2626"/>
+<circle cx="285.0" cy="203.1" r="3.2" fill="#dc2626"/>
+<circle cx="295.0" cy="203.3" r="3.2" fill="#dc2626"/>
+<circle cx="305.0" cy="203.5" r="3.2" fill="#dc2626"/>
+<circle cx="315.0" cy="203.7" r="3.2" fill="#dc2626"/>
+<text x="190.0" y="257.0" font-size="13.5" fill="#16a34a" text-anchor="middle" font-weight="bold">granica 0 → zbieżny</text>
+<rect x="375" y="45" width="350" height="225" rx="10" fill="#f9fafb" stroke="#e5e7eb"/>
+<text x="391.0" y="69.0" font-size="15" fill="#1f2937" text-anchor="start" font-weight="bold">aₙ = n</text>
+<line x1="417.0" y1="215.3" x2="699.0" y2="215.3" stroke="#1f2937" stroke-width="1.3" marker-end="url(#ar)"/>
+<line x1="425.0" y1="231.0" x2="425.0" y2="73.0" stroke="#1f2937" stroke-width="1.3" marker-end="url(#ar)"/>
+<text x="701.0" y="220.3" font-size="13" fill="#1f2937" text-anchor="start" font-style="italic">n</text>
+<line x1="421.0" y1="167.1" x2="429.0" y2="167.1" stroke="#1f2937" stroke-width="1.3"/>
+<text x="417.0" y="171.1" font-size="12" fill="#1f2937" text-anchor="end">10</text>
+<line x1="421.0" y1="118.8" x2="429.0" y2="118.8" stroke="#1f2937" stroke-width="1.3"/>
+<text x="417.0" y="122.8" font-size="12" fill="#1f2937" text-anchor="end">20</text>
+<circle cx="435.0" cy="210.5" r="3.2" fill="#dc2626"/>
+<circle cx="445.0" cy="205.7" r="3.2" fill="#dc2626"/>
+<circle cx="455.0" cy="200.9" r="3.2" fill="#dc2626"/>
+<circle cx="465.0" cy="196.0" r="3.2" fill="#dc2626"/>
+<circle cx="475.0" cy="191.2" r="3.2" fill="#dc2626"/>
+<circle cx="485.0" cy="186.4" r="3.2" fill="#dc2626"/>
+<circle cx="495.0" cy="181.6" r="3.2" fill="#dc2626"/>
+<circle cx="505.0" cy="176.7" r="3.2" fill="#dc2626"/>
+<circle cx="515.0" cy="171.9" r="3.2" fill="#dc2626"/>
+<circle cx="525.0" cy="167.1" r="3.2" fill="#dc2626"/>
+<circle cx="535.0" cy="162.2" r="3.2" fill="#dc2626"/>
+<circle cx="545.0" cy="157.4" r="3.2" fill="#dc2626"/>
+<circle cx="555.0" cy="152.6" r="3.2" fill="#dc2626"/>
+<circle cx="565.0" cy="147.8" r="3.2" fill="#dc2626"/>
+<circle cx="575.0" cy="142.9" r="3.2" fill="#dc2626"/>
+<circle cx="585.0" cy="138.1" r="3.2" fill="#dc2626"/>
+<circle cx="595.0" cy="133.3" r="3.2" fill="#dc2626"/>
+<circle cx="605.0" cy="128.4" r="3.2" fill="#dc2626"/>
+<circle cx="615.0" cy="123.6" r="3.2" fill="#dc2626"/>
+<circle cx="625.0" cy="118.8" r="3.2" fill="#dc2626"/>
+<circle cx="635.0" cy="114.0" r="3.2" fill="#dc2626"/>
+<circle cx="645.0" cy="109.1" r="3.2" fill="#dc2626"/>
+<circle cx="655.0" cy="104.3" r="3.2" fill="#dc2626"/>
+<circle cx="665.0" cy="99.5" r="3.2" fill="#dc2626"/>
+<circle cx="675.0" cy="94.7" r="3.2" fill="#dc2626"/>
+<text x="550.0" y="257.0" font-size="13.5" fill="#ea580c" text-anchor="middle" font-weight="bold">ucieka do +∞ (granica niewłaściwa)</text>
+<rect x="15" y="285" width="350" height="225" rx="10" fill="#f9fafb" stroke="#e5e7eb"/>
+<text x="31.0" y="309.0" font-size="15" fill="#1f2937" text-anchor="start" font-weight="bold">aₙ = (−1)ⁿ</text>
+<line x1="57.0" y1="395.0" x2="339.0" y2="395.0" stroke="#1f2937" stroke-width="1.3" marker-end="url(#ar)"/>
+<line x1="65.0" y1="471.0" x2="65.0" y2="313.0" stroke="#1f2937" stroke-width="1.3" marker-end="url(#ar)"/>
+<text x="341.0" y="400.0" font-size="13" fill="#1f2937" text-anchor="start" font-style="italic">n</text>
+<line x1="61.0" y1="341.2" x2="69.0" y2="341.2" stroke="#1f2937" stroke-width="1.3"/>
+<text x="57.0" y="345.2" font-size="12" fill="#1f2937" text-anchor="end">1</text>
+<line x1="61.0" y1="448.8" x2="69.0" y2="448.8" stroke="#1f2937" stroke-width="1.3"/>
+<text x="57.0" y="452.8" font-size="12" fill="#1f2937" text-anchor="end">−1</text>
+<circle cx="75.0" cy="448.8" r="3.2" fill="#dc2626"/>
+<circle cx="85.0" cy="341.2" r="3.2" fill="#dc2626"/>
+<circle cx="95.0" cy="448.8" r="3.2" fill="#dc2626"/>
+<circle cx="105.0" cy="341.2" r="3.2" fill="#dc2626"/>
+<circle cx="115.0" cy="448.8" r="3.2" fill="#dc2626"/>
+<circle cx="125.0" cy="341.2" r="3.2" fill="#dc2626"/>
+<circle cx="135.0" cy="448.8" r="3.2" fill="#dc2626"/>
+<circle cx="145.0" cy="341.2" r="3.2" fill="#dc2626"/>
+<circle cx="155.0" cy="448.8" r="3.2" fill="#dc2626"/>
+<circle cx="165.0" cy="341.2" r="3.2" fill="#dc2626"/>
+<circle cx="175.0" cy="448.8" r="3.2" fill="#dc2626"/>
+<circle cx="185.0" cy="341.2" r="3.2" fill="#dc2626"/>
+<circle cx="195.0" cy="448.8" r="3.2" fill="#dc2626"/>
+<circle cx="205.0" cy="341.2" r="3.2" fill="#dc2626"/>
+<circle cx="215.0" cy="448.8" r="3.2" fill="#dc2626"/>
+<circle cx="225.0" cy="341.2" r="3.2" fill="#dc2626"/>
+<circle cx="235.0" cy="448.8" r="3.2" fill="#dc2626"/>
+<circle cx="245.0" cy="341.2" r="3.2" fill="#dc2626"/>
+<circle cx="255.0" cy="448.8" r="3.2" fill="#dc2626"/>
+<circle cx="265.0" cy="341.2" r="3.2" fill="#dc2626"/>
+<circle cx="275.0" cy="448.8" r="3.2" fill="#dc2626"/>
+<circle cx="285.0" cy="341.2" r="3.2" fill="#dc2626"/>
+<circle cx="295.0" cy="448.8" r="3.2" fill="#dc2626"/>
+<circle cx="305.0" cy="341.2" r="3.2" fill="#dc2626"/>
+<circle cx="315.0" cy="448.8" r="3.2" fill="#dc2626"/>
+<text x="190.0" y="497.0" font-size="13.5" fill="#dc2626" text-anchor="middle" font-weight="bold">skacze 1, −1, 1, … → brak granicy</text>
+<rect x="375" y="285" width="350" height="225" rx="10" fill="#f9fafb" stroke="#e5e7eb"/>
+<text x="391.0" y="309.0" font-size="15" fill="#1f2937" text-anchor="start" font-weight="bold">aₙ = (−1)ⁿ · 1/n</text>
+<line x1="425.0" y1="377.0" x2="685.0" y2="377.0" stroke="#16a34a" stroke-width="1.4" stroke-dasharray="5 4"/>
+<line x1="417.0" y1="377.0" x2="699.0" y2="377.0" stroke="#1f2937" stroke-width="1.3" marker-end="url(#ar)"/>
+<line x1="425.0" y1="471.0" x2="425.0" y2="313.0" stroke="#1f2937" stroke-width="1.3" marker-end="url(#ar)"/>
+<text x="701.0" y="382.0" font-size="13" fill="#1f2937" text-anchor="start" font-style="italic">n</text>
+<line x1="421.0" y1="337.0" x2="429.0" y2="337.0" stroke="#1f2937" stroke-width="1.3"/>
+<text x="417.0" y="341.0" font-size="12" fill="#1f2937" text-anchor="end">½</text>
+<line x1="421.0" y1="457.0" x2="429.0" y2="457.0" stroke="#1f2937" stroke-width="1.3"/>
+<text x="417.0" y="461.0" font-size="12" fill="#1f2937" text-anchor="end">−1</text>
+<circle cx="435.0" cy="457.0" r="3.2" fill="#dc2626"/>
+<circle cx="445.0" cy="337.0" r="3.2" fill="#dc2626"/>
+<circle cx="455.0" cy="403.7" r="3.2" fill="#dc2626"/>
+<circle cx="465.0" cy="357.0" r="3.2" fill="#dc2626"/>
+<circle cx="475.0" cy="393.0" r="3.2" fill="#dc2626"/>
+<circle cx="485.0" cy="363.7" r="3.2" fill="#dc2626"/>
+<circle cx="495.0" cy="388.4" r="3.2" fill="#dc2626"/>
+<circle cx="505.0" cy="367.0" r="3.2" fill="#dc2626"/>
+<circle cx="515.0" cy="385.9" r="3.2" fill="#dc2626"/>
+<circle cx="525.0" cy="369.0" r="3.2" fill="#dc2626"/>
+<circle cx="535.0" cy="384.3" r="3.2" fill="#dc2626"/>
+<circle cx="545.0" cy="370.3" r="3.2" fill="#dc2626"/>
+<circle cx="555.0" cy="383.2" r="3.2" fill="#dc2626"/>
+<circle cx="565.0" cy="371.3" r="3.2" fill="#dc2626"/>
+<circle cx="575.0" cy="382.3" r="3.2" fill="#dc2626"/>
+<circle cx="585.0" cy="372.0" r="3.2" fill="#dc2626"/>
+<circle cx="595.0" cy="381.7" r="3.2" fill="#dc2626"/>
+<circle cx="605.0" cy="372.6" r="3.2" fill="#dc2626"/>
+<circle cx="615.0" cy="381.2" r="3.2" fill="#dc2626"/>
+<circle cx="625.0" cy="373.0" r="3.2" fill="#dc2626"/>
+<circle cx="635.0" cy="380.8" r="3.2" fill="#dc2626"/>
+<circle cx="645.0" cy="373.4" r="3.2" fill="#dc2626"/>
+<circle cx="655.0" cy="380.5" r="3.2" fill="#dc2626"/>
+<circle cx="665.0" cy="373.7" r="3.2" fill="#dc2626"/>
+<circle cx="675.0" cy="380.2" r="3.2" fill="#dc2626"/>
+<text x="550.0" y="497.0" font-size="13.5" fill="#16a34a" text-anchor="middle" font-weight="bold">skacze, ale coraz mniej → granica 0</text>
+</svg>

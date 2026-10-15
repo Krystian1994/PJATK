@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 400" width="740" height="400" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="740" height="400" rx="14" fill="#ffffff"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker></defs>
+<rect x="70.0" y="128.2" width="600.0" height="41.2" fill="#dbeafe"/>
+<line x1="70.0" y1="128.2" x2="670.0" y2="128.2" stroke="#2563eb" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="70.0" y1="169.4" x2="670.0" y2="169.4" stroke="#2563eb" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="70.0" y1="148.8" x2="670.0" y2="148.8" stroke="#2563eb" stroke-width="1.6" stroke-dasharray="6 4"/>
+<line x1="62.0" y1="231.2" x2="684.0" y2="231.2" stroke="#1f2937" stroke-width="1.3" marker-end="url(#ar)"/>
+<line x1="70.0" y1="336.0" x2="70.0" y2="38.0" stroke="#1f2937" stroke-width="1.3" marker-end="url(#ar)"/>
+<text x="686.0" y="236.2" font-size="13" fill="#1f2937" text-anchor="start" font-style="italic">n</text>
+<line x1="66.0" y1="66.5" x2="74.0" y2="66.5" stroke="#1f2937" stroke-width="1.3"/>
+<text x="62.0" y="70.5" font-size="12" fill="#1f2937" text-anchor="end">2</text>
+<line x1="66.0" y1="313.5" x2="74.0" y2="313.5" stroke="#1f2937" stroke-width="1.3"/>
+<text x="62.0" y="317.5" font-size="12" fill="#1f2937" text-anchor="end">−1</text>
+<text x="674.0" y="132.2" font-size="13" fill="#2563eb" text-anchor="start" font-weight="bold">g + ε</text>
+<text x="674.0" y="152.8" font-size="13" fill="#2563eb" text-anchor="start" font-weight="bold">g = 1</text>
+<text x="674.0" y="173.4" font-size="13" fill="#2563eb" text-anchor="start" font-weight="bold">g − ε</text>
+<line x1="234.5" y1="54.1" x2="234.5" y2="325.9" stroke="#7c3aed" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="242.5" y="66.5" font-size="13" fill="#7c3aed" text-anchor="start" font-weight="bold">od n = 9 wszystkie wyrazy są w paśmie</text>
+<text x="242.5" y="82.9" font-size="13" fill="#7c3aed" text-anchor="start">i już z niego nie wychodzą</text>
+<circle cx="89.4" cy="313.5" r="4" fill="#dc2626"/>
+<circle cx="108.7" cy="66.5" r="4" fill="#dc2626"/>
+<circle cx="128.1" cy="203.7" r="4" fill="#dc2626"/>
+<circle cx="147.4" cy="107.6" r="4" fill="#dc2626"/>
+<circle cx="166.8" cy="181.8" r="4" fill="#dc2626"/>
+<circle cx="186.1" cy="121.4" r="4" fill="#dc2626"/>
+<circle cx="205.5" cy="172.4" r="4" fill="#dc2626"/>
+<circle cx="224.8" cy="128.2" r="4" fill="#dc2626"/>
+<circle cx="244.2" cy="167.1" r="4" fill="#16a34a"/>
+<circle cx="263.5" cy="132.4" r="4" fill="#16a34a"/>
+<circle cx="282.9" cy="163.8" r="4" fill="#16a34a"/>
+<circle cx="302.3" cy="135.1" r="4" fill="#16a34a"/>
+<circle cx="321.6" cy="161.5" r="4" fill="#16a34a"/>
+<circle cx="341.0" cy="137.1" r="4" fill="#16a34a"/>
+<circle cx="360.3" cy="159.8" r="4" fill="#16a34a"/>
+<circle cx="379.7" cy="138.5" r="4" fill="#16a34a"/>
+<circle cx="399.0" cy="158.5" r="4" fill="#16a34a"/>
+<circle cx="418.4" cy="139.7" r="4" fill="#16a34a"/>
+<circle cx="437.7" cy="157.5" r="4" fill="#16a34a"/>
+<circle cx="457.1" cy="140.6" r="4" fill="#16a34a"/>
+<circle cx="476.5" cy="156.7" r="4" fill="#16a34a"/>
+<circle cx="495.8" cy="141.3" r="4" fill="#16a34a"/>
+<circle cx="515.2" cy="156.0" r="4" fill="#16a34a"/>
+<circle cx="534.5" cy="142.0" r="4" fill="#16a34a"/>
+<circle cx="553.9" cy="155.4" r="4" fill="#16a34a"/>
+<circle cx="573.2" cy="142.5" r="4" fill="#16a34a"/>
+<circle cx="592.6" cy="154.9" r="4" fill="#16a34a"/>
+<circle cx="611.9" cy="142.9" r="4" fill="#16a34a"/>
+<circle cx="631.3" cy="154.5" r="4" fill="#16a34a"/>
+<circle cx="650.6" cy="143.3" r="4" fill="#16a34a"/>
+<text x="370.0" y="30.0" font-size="16" fill="#1f2937" text-anchor="middle" font-weight="bold">Granica = pasmo: aₙ = 1 + (−1)ⁿ · 2/n,  g = 1,  ε = 0,25</text>
+<circle cx="90.0" cy="375.0" r="4" fill="#dc2626"/>
+<text x="100.0" y="380.0" font-size="13" fill="#1f2937" text-anchor="start">poza pasmem (tylko skończenie wiele!)</text>
+<circle cx="400.0" cy="375.0" r="4" fill="#16a34a"/>
+<text x="410.0" y="380.0" font-size="13" fill="#1f2937" text-anchor="start">w paśmie (wszystkie od pewnego N)</text>
+</svg>
