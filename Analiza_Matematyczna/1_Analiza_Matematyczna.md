@@ -109,6 +109,15 @@ Tylko przejrzyj. Wracaj tu, gdy trafisz na nieznany znak.
 > $$(n+1)! = (n+1)\cdot n! \qquad\text{np. } 5! = 5\cdot 4! = 5 \cdot 24 = 120$$
 > Z tego: $(n+2)! = (n+2)(n+1)\cdot n!$ oraz $(n-1)! = \dfrac{n!}{n}$. Przyda się w zadaniu 2c.
 
+> [!question] ✏️ Sprawdź się – 0
+> a) Oblicz $\dfrac{6!}{4!}$. b) Uprość $\dfrac{(n+1)!}{(n-1)!}$. c) Zapisz $\sqrt[5]{32}$ jako potęgę i oblicz. d) W zapisie $\lim\dfrac{n^2+1}{3n^2}\left[\dfrac{\infty}{\infty}\right] = \dfrac13$ co jest diagnozą, a co wynikiem?
+>
+> > [!success]- Rozwiązanie
+> > a) $\dfrac{6!}{4!} = \dfrac{6\cdot5\cdot4!}{4!} = 6\cdot 5 = 30$
+> > b) $(n+1)! = (n+1)\cdot n\cdot(n-1)!$, więc $\dfrac{(n+1)\,n\,(n-1)!}{(n-1)!} = n(n+1)$
+> > c) $\sqrt[5]{32} = 32^{1/5} = 2$, bo $2^5 = 32$
+> > d) $\left[\frac{\infty}{\infty}\right]$ to diagnoza (dopisek „góra duża, dół duży”, trzeba przekształcić), a $\frac13$ to wynik.
+
 ---
 
 #### 1. Czym jest ciąg?
@@ -154,6 +163,16 @@ W zadaniach Z01 występują tylko wzory jawne.
 > - $a_{2n+1} = \dfrac{(2n+1)}{2(2n+1) + 3} = \dfrac{2n+1}{4n+2+3} = \dfrac{2n+1}{4n+5}$
 >
 > Bez nawiasu wyszłoby $2\cdot 2n + 1 + 3$, a to jest **błąd**.
+
+> [!question] ✏️ Sprawdź się – 1.1
+> Dany jest ciąg $a_n = \dfrac{3n-1}{n+2}$.
+> a) Oblicz $a_3$. b) Wypisz $a_{2n-1}$. c) Wypisz $a_{n+1}$. d) (rekurencja) $b_1 = 2$, $b_{n+1} = 3b_n - 1$. Wypisz $b_2, b_3, b_4$.
+>
+> > [!success]- Rozwiązanie
+> > a) $a_3 = \dfrac{3\cdot3-1}{3+2} = \dfrac85$
+> > b) Wstawiam $(2n-1)$ w nawiasie: $a_{2n-1} = \dfrac{3(2n-1)-1}{(2n-1)+2} = \dfrac{6n-4}{2n+1}$
+> > c) $a_{n+1} = \dfrac{3(n+1)-1}{(n+1)+2} = \dfrac{3n+2}{n+3}$
+> > d) $b_2 = 3\cdot2-1 = 5$, $\ b_3 = 3\cdot5-1 = 14$, $\ b_4 = 3\cdot14-1 = 41$
 
 ##### 1.2 Przesunięty indeks – co wstawić, żeby wyszło to, czego chcę
 
@@ -229,6 +248,14 @@ Czasem wzór podano nie dla $a_n$, tylko np. dla $a_{m+1}$. Wtedy zadaj pytanie:
 >
 > Na koniec sprawdź na jednej konkretnej liczbie.
 
+> [!question] ✏️ Sprawdź się – 1.2
+> a) $a_{k+1} = \dfrac{k^2}{k+4}$. Znajdź $a_5$ i $a_n$. b) Z wyprostowanego wzoru z a) wypisz $a_{2n}$. c) $a_{m-2} = 3^m$. Znajdź $a_1$ i $a_n$.
+>
+> > [!success]- Rozwiązanie
+> > a) **$a_5$:** $k + 1 = 5$, więc $k = 4$: $\ a_5 = \dfrac{16}{8} = 2$. **$a_n$:** $k + 1 = n$, więc $k = n-1$: $\ a_n = \dfrac{(n-1)^2}{(n-1)+4} = \dfrac{(n-1)^2}{n+3}$. Sprawdzenie: $a_5 = \frac{16}{8} = 2$ ✓
+> > b) Czyste $a_n$ po lewej, więc jeden krok: $a_{2n} = \dfrac{(2n-1)^2}{2n+3}$
+> > c) **$a_1$:** $m - 2 = 1$, więc $m = 3$: $\ a_1 = 3^3 = 27$. **$a_n$:** $m - 2 = n$, więc $m = n+2$: $\ a_n = 3^{n+2}$. Sprawdzenie: $a_1 = 3^3 = 27$ ✓
+
 ##### 1.3 Zgadywanie wzoru na n-ty wyraz
 
 Masz kilka pierwszych wyrazów i szukasz wzoru $a_n$. Typowe schematy:
@@ -245,6 +272,15 @@ Masz kilka pierwszych wyrazów i szukasz wzoru $a_n$. Typowe schematy:
 > Jeśli liczniki „skaczą”, sprowadź je do jednej liczby. Ciąg $2, \frac12, \frac29, \frac18, \frac{2}{25}$ wygląda chaotycznie, ale po zapisie $\frac21, \frac24, \frac29, \frac{2}{16}, \frac{2}{25}$ od razu widać kwadraty w mianowniku: $a_n = \frac{2}{n^2}$.
 >
 > **Zawsze sprawdź wzór** dla $n = 1, 2, 3$.
+
+> [!question] ✏️ Sprawdź się – 1.3
+> Zapisz $n$-ty wyraz: a) $5,\ 9,\ 13,\ 17,\ \dots$ b) $2,\ -6,\ 18,\ -54,\ \dots$ c) $\dfrac13,\ \dfrac25,\ \dfrac37,\ \dfrac49,\ \dots$ d) $-1,\ 4,\ -9,\ 16,\ \dots$
+>
+> > [!success]- Rozwiązanie
+> > a) Arytmetyczny, $r = 4$: $a_n = 5 + (n-1)\cdot4 = 4n + 1$. Sprawdzenie: $5, 9, 13$ ✓
+> > b) Geometryczny, $q = -3$: $a_n = 2\cdot(-3)^{n-1}$. Sprawdzenie: $2, -6, 18$ ✓
+> > c) Liczniki $1, 2, 3, 4$ to $n$, mianowniki $3, 5, 7, 9$ to $2n+1$: $a_n = \dfrac{n}{2n+1}$
+> > d) Kwadraty $1, 4, 9, 16$, znak zaczyna się od $-$: $a_n = (-1)^n n^2$
 
 > [!success] ➡️ Teraz zrób
 > [[#Zadanie 0 – wyrazy ciągu|Zadanie 0]] (obie części). Potem wróć i czytaj rozdział 2.
@@ -272,6 +308,15 @@ Zobacz, co może się dziać z ciągiem, gdy $n$ rośnie:
 > - **Paradoks Zenona.** Żeby przejść 1 m, musisz przejść $\frac12$ m, potem $\frac14$, potem $\frac18$… Po $n$ krokach przeszedłeś $1 - \frac{1}{2^n}$ metra. Kroków jest nieskończenie wiele, ale ta suma ma granicę $1$, więc dojdziesz. Starożytni nie mieli pojęcia granicy i uważali to za paradoks.
 > - **Skoczek spadochronowy.** Prędkość w kolejnych sekundach rośnie coraz wolniej i dąży do ok. 55 m/s (ok. 200 km/h), bo opór powietrza rośnie razem z prędkością. Fizycy nazywają tę granicę **prędkością graniczną**.
 > - **Rozbieżny przykład:** temperatura w ciągu kolejnych dni skacze (dzień–noc) jak $(-1)^n$, więc „na dłuższą metę” nie dąży do jednej liczby.
+
+> [!question] ✏️ Sprawdź się – 2.1
+> Nazwij zachowanie ciągu (zbieżny do…, granica niewłaściwa, rozbieżny): a) $3 - \dfrac1n$ b) $2\cdot(-1)^n$ c) $n^3$ d) $\dfrac{(-1)^n}{n^2}$
+>
+> > [!success]- Rozwiązanie
+> > a) $\frac1n \to 0$, więc wyrazy $2;\ 2{,}5;\ 2{,}67;\ \dots$ zbliżają się do $3$: **zbieżny**, granica $3$
+> > b) skacze między $-2$ a $2$: **rozbieżny**, granicy nie ma
+> > c) rośnie bez końca: **granica niewłaściwa** $+\infty$
+> > d) skacze nad i pod zerem, ale coraz bliżej $0$: **zbieżny**, granica $0$
 
 ##### 2.2 Definicja: pasmo wokół granicy
 
@@ -308,6 +353,14 @@ Na rysunku: dla $\varepsilon = 0{,}25$ wystarczy $N = 9$. Węższe pasmo wymaga�
 >
 > Takich dowodów na kolokwium raczej nie ma. Liczy się, żebyś **rozumiał obrazek z pasmem**.
 
+> [!question] ✏️ Sprawdź się – 2.2
+> a) $a_n = \dfrac2n$, $g = 0$, $\varepsilon = 0{,}01$. Od jakiego $N$ wszystkie wyrazy są w paśmie? b) $a_n = 1 + \dfrac{1}{n^2}$, $g = 1$, $\varepsilon = 0{,}0001$. Znajdź $N$. c) Prawda czy fałsz: „Jeśli pierwsze 1000 wyrazów leży poza pasmem, to $g$ nie może być granicą”.
+>
+> > [!success]- Rozwiązanie
+> > a) $\left|\frac2n - 0\right| < 0{,}01 \Leftrightarrow n > 200$, więc $N = 201$
+> > b) $\left|\frac{1}{n^2}\right| < 0{,}0001 \Leftrightarrow n^2 > 10\,000 \Leftrightarrow n > 100$, więc $N = 101$
+> > c) **Fałsz.** Skończenie wiele wyrazów poza pasmem nie ma znaczenia. Liczy się tylko, czy **od pewnego miejsca** wszystkie są w środku.
+
 ##### 2.3 Granica niewłaściwa $\pm\infty$
 
 > [!important] Definicja
@@ -316,6 +369,14 @@ Na rysunku: dla $\varepsilon = 0{,}25$ wystarczy $N = 9$. Węższe pasmo wymaga�
 
 > [!warning] Nie wystarczy „być nieograniczonym”
 > Ciąg $0, 2, 0, 4, 0, 6, 0, 8, \dots$ ma dowolnie duże wyrazy, ale **nie dąży** do $\infty$. Co drugi wyraz wraca do zera, więc nigdy „wszystkie” nie są nad poprzeczką. Ten ciąg nie ma granicy.
+
+> [!question] ✏️ Sprawdź się – 2.3
+> a) $a_n = n^2$, poprzeczka $M = 10\,000$. Od którego wyrazu wszystkie są nad nią? b) $a_n = -2n$. Od którego wyrazu wszystkie są poniżej $-1000$? c) Czy ciąg $1, 0, 2, 0, 3, 0, 4, \dots$ dąży do $+\infty$?
+>
+> > [!success]- Rozwiązanie
+> > a) $n^2 > 10\,000 \Leftrightarrow n > 100$, więc od $n = 101$
+> > b) $-2n < -1000 \Leftrightarrow n > 500$, więc od $n = 501$. Ciąg dąży do $-\infty$.
+> > c) **Nie.** Ma dowolnie duże wyrazy, ale co drugi to $0$, więc nigdy „wszystkie” nie są nad poprzeczką. Granicy nie ma.
 
 ##### 2.4 Dwa ważne fakty
 
@@ -328,6 +389,14 @@ Na rysunku: dla $\varepsilon = 0{,}25$ wystarczy $N = 9$. Węższe pasmo wymaga�
 > Ciąg ma granicę $g$ $\Leftrightarrow$ **każdy** jego podciąg ma tę samą granicę $g$.
 >
 > **Zastosowanie: dowód, że granicy nie ma.** Znajdź dwa podciągi z różnymi granicami. Dla $(-1)^n$: parzyste wyrazy to $1, 1, 1, \dots \to 1$, nieparzyste to $-1, -1, \dots \to -1$. Granice są różne, więc $(-1)^n$ nie ma granicy.
+
+> [!question] ✏️ Sprawdź się – 2.4
+> a) Pokaż podciągami, że $a_n = (-1)^n\dfrac{n}{n+1}$ nie ma granicy. b) Wiadomo, że $a_n \to 5$. Do czego dążą $a_{2n}$ i $a_{n+3}$? c) Czy $\cos(n\pi)$ ma granicę?
+>
+> > [!success]- Rozwiązanie
+> > a) Parzyste $n$: $\frac{n}{n+1} \to 1$. Nieparzyste $n$: $-\frac{n}{n+1} \to -1$. Dwa podciągi, różne granice, więc granicy nie ma.
+> > b) Oba do $5$: każdy podciąg ciągu zbieżnego ma tę samą granicę.
+> > c) $\cos(n\pi) = -1, 1, -1, 1, \dots = (-1)^n$. Podciągi dążą do $1$ i $-1$, więc granicy **nie ma**.
 
 ---
 
@@ -357,6 +426,15 @@ Niech $c > 0$ będzie zwykłą liczbą.
 > Reguła $\frac{1}{0^+} = +\infty$ wymaga, żeby mianownik był od pewnego miejsca **dodatni**. Jeśli mianownik skacze ze znakiem, jak $(-1)^n\cdot\frac1n$, to $\frac{1}{(-1)^n/n} = (-1)^n n$ skacze między $+\infty$ a $-\infty$, więc **granicy nie ma**.
 >
 > Przykłady z wykładu: $\sqrt[n]{3} - \sqrt[n]{2} \to 0^+$ (bo $\sqrt[n]3 > \sqrt[n]2$), więc $\frac{1}{\sqrt[n]3 - \sqrt[n]2} \to +\infty$. Z kolei $\sqrt[n]2 - \sqrt[n]4 \to 0^-$, więc odwrotność $\to -\infty$.
+
+> [!question] ✏️ Sprawdź się – 3
+> Podaj typ w nawiasie i wynik: a) $\lim\dfrac{-3}{n^2}$ b) $\lim\left(5 - 2n^3\right)$ c) $\lim\left(\dfrac1n\right)^n$ d) $\lim\dfrac{1}{\sqrt[n]5 - \sqrt[n]7}$
+>
+> > [!success]- Rozwiązanie
+> > a) $\left[\frac{-3}{\infty}\right] = 0$
+> > b) $5 - 2n^3$: $[5 - \infty] = -\infty$
+> > c) podstawa $\to 0^+$, wykładnik $\to \infty$: $\left[(0^+)^\infty\right] = 0$
+> > d) $\sqrt[n]5 < \sqrt[n]7$, więc mianownik $\to 0^-$: $\left[\frac{1}{0^-}\right] = -\infty$
 
 ---
 
@@ -405,6 +483,37 @@ Tak jak w W0 funkcje elementarne budowało się z klocków, tak prawie każdą g
 > **$q > 1$, czyli ucieczka do nieskończoności:**
 > - **Oszczędności na procent** (rozdz. 9), **wirus w sieci** albo **łańcuszek**, gdzie każdy wysyła do 2 osób: $2^n$. Po 30 krokach to ponad miliard osób.
 
+> [!question] ✏️ Sprawdź się – 4.1
+> Podaj granice, wskazując klocek: a) $\left(\dfrac45\right)^n$ oraz $\left(\dfrac54\right)^n$ b) $\left(-\dfrac32\right)^n$ c) $\sqrt[n]{0{,}2}$ d) $\sqrt[n]{n^3}$
+>
+> > [!success]- Rozwiązanie
+> > Chodzi o to, żeby rozpoznać, który z czterech klocków pasuje. Najłatwiej to zobaczyć, wstawiając kolejne $n$.
+> >
+> > **a) klocek 2 ($q^n$)**
+> > $\frac45 = 0{,}8$, czyli mnożysz $0{,}8$ przez siebie coraz więcej razy: $0{,}8 \to 0{,}64 \to 0{,}512 \to 0{,}41 \to \dots$ Mnożenie przez liczbę mniejszą od 1 zmniejsza wynik, więc $\left(\frac45\right)^n \to 0$.
+> > $\frac54 = 1{,}25$: $1{,}25 \to 1{,}56 \to 1{,}95 \to 2{,}44 \to \dots$ Mnożenie przez liczbę większą od 1 zwiększa wynik, więc $\left(\frac54\right)^n \to \infty$.
+> > (Kreski $\lvert\ \rvert$ to wartość bezwzględna. Przy liczbie dodatniej możesz je pominąć: liczy się, czy $q$ jest między $-1$ a $1$.)
+> >
+> > **b) klocek 2, ale $q = -\frac32 \le -1$**
+> > $-1{,}5 \to 2{,}25 \to -3{,}375 \to 5{,}06 \to \dots$ Znak skacze między minusem a plusem i liczby są coraz większe. Wyrazy nie zbliżają się do żadnej jednej liczby, więc granicy **nie ma**.
+> >
+> > **c) klocek 3 (pierwiastek ze stałej, $a = 0{,}2 > 0$)**
+> >
+> > | $n$ | $1$ | $2$ | $10$ | $100$ |
+> > |---|---|---|---|---|
+> > | $\sqrt[n]{0{,}2}$ | $0{,}2$ | $0{,}447$ | $0{,}851$ | $0{,}984$ |
+> >
+> > Dąży do $1$, bo $\sqrt[n]{0{,}2} = 0{,}2^{1/n}$: wykładnik $\frac1n \to 0$, a każda liczba dodatnia do potęgi $0$ daje $1$.
+> >
+> > **d) klocek 4 (pierwiastek z $n$)**
+> > Pierwiastek można „przerzucić” na samo $n$: $\sqrt[n]{n^3} = \left(\sqrt[n]n\right)^3$. Z klocka 4 wiesz, że $\sqrt[n]n \to 1$, więc całość $\to 1^3 = 1$.
+> >
+> > | $n$ | $10$ | $100$ | $1000$ |
+> > |---|---|---|---|
+> > | $\sqrt[n]{n^3}$ | $1{,}995$ | $1{,}148$ | $1{,}021$ |
+> >
+> > **Do zapamiętania:** $q^n$ dąży do $0$, gdy $-1 < q < 1$, do $\infty$, gdy $q > 1$, a dla $q \le -1$ granicy nie ma. Pierwiastek $n$-tego stopnia ze stałej albo z potęgi $n$ zawsze dąży do $1$.
+
 ##### 4.2 Arytmetyka granic
 
 Jeśli $a_n \to a$ i $b_n \to b$, gdzie $a, b$ to **zwykłe liczby** (nie $\infty$), to:
@@ -424,6 +533,14 @@ Jeśli $a_n \to a$ i $b_n \to b$, gdzie $a, b$ to **zwykłe liczby** (nie $\inft
 > - $\lim \sqrt[n]{3^5} = \lim \left(\sqrt[n]{3}\right)^5 = 1^5 = 1$ (reguła 5 i klocek 3)
 > - $\lim \dfrac{\sqrt[3]{n+1}}{\sqrt[3]{n+2}} = \lim \sqrt[3]{\dfrac{1 + \frac1n}{1 + \frac2n}} = \sqrt[3]{1} = 1$
 
+> [!question] ✏️ Sprawdź się – 4.2
+> a) $\lim\left(2 + \dfrac3n\right)\left(5 - \dfrac{1}{n^2}\right)$ b) $\lim\dfrac{7 - \frac1n}{2 + \frac{4}{\sqrt n}}$ c) $\lim 3^{\frac{2n+1}{n}}$
+>
+> > [!success]- Rozwiązanie
+> > a) reguła 3: $(2 + 0)(5 - 0) = 10$
+> > b) reguła 4 (mianownik $\to 2 \ne 0$): $\dfrac{7 - 0}{2 + 0} = \dfrac72$
+> > c) wykładnik $\frac{2n+1}{n} = 2 + \frac1n \to 2$, więc z reguły 6: $3^2 = 9$
+
 ##### 4.3 Wejście z granicą do środka funkcji (ciągłość)
 
 Funkcje elementarne są **ciągłe** (zapowiadał to [[0_Analiza_Matematyczna|W0]]). W praktyce oznacza to, że **granicę można „przenieść” do środka**:
@@ -433,6 +550,14 @@ $$\lim_{n\to\infty} f(a_n) = f\left(\lim_{n\to\infty} a_n\right)$$
 > - $\lim \arcsin\left(\frac{n-1}{n+1}\right) = \arcsin\left(\lim \frac{n-1}{n+1}\right) = \arcsin 1 = \frac{\pi}{2}$
 > - $\lim \sqrt{4 + \frac1n} = \sqrt{4} = 2$
 > - **Logarytm:** jeśli to, co w środku, dąży do $0^+$, to $\ln \to -\infty$. Jeśli dąży do $\infty$, to $\ln \to \infty$ (wykres $\ln$ z W0).
+
+> [!question] ✏️ Sprawdź się – 4.3
+> a) $\lim\cos\left(\dfrac{\pi n}{3n+1}\right)$ b) $\lim\ln\left(\dfrac{en+1}{n}\right)$ c) $\lim\ln\dfrac1n$
+>
+> > [!success]- Rozwiązanie
+> > a) $\frac{\pi n}{3n+1} = \frac{\pi}{3 + \frac1n} \to \frac{\pi}{3}$, więc $\cos\frac{\pi}{3} = \frac12$
+> > b) $\frac{en+1}{n} = e + \frac1n \to e$, więc $\ln e = 1$
+> > c) $\frac1n \to 0^+$, więc $[\ln 0^+] = -\infty$
 
 ---
 
@@ -464,6 +589,14 @@ $$\lim_{n\to\infty} f(a_n) = f\left(\lim_{n\to\infty} a_n\right)$$
 > Gdy trafisz na symbol nieoznaczony, **przekształć wyrażenie algebraicznie**, aż typ stanie się oznaczony (rozdz. 3). Narzędzia są w rozdziałach 6–9.
 >
 > Symbole **oznaczone** z rozdziału 3 ($\frac{1}{\infty}$, $\frac{1}{0^+}$, $\frac{\infty}{0^+}$, $(0^+)^\infty$, …) **nie** są problemem: wynik czytasz od razu z tabeli.
+
+> [!question] ✏️ Sprawdź się – 5
+> a) Które są nieoznaczone: $\ \frac{0}{\infty}$, $\ 0\cdot\infty$, $\ 1^\infty$, $\ \frac{\infty}{0^+}$, $\ \infty^0$, $\ \infty + \infty$? b) Podaj typ: $\dfrac{2^n}{n!}$, $\ \left(1 + \dfrac2n\right)^n$, $\ \sqrt{n+1} - \sqrt n$. c) Podaj przykład typu $\infty - \infty$, który daje $3$.
+>
+> > [!success]- Rozwiązanie
+> > a) Nieoznaczone: $0\cdot\infty$, $1^\infty$, $\infty^0$. Oznaczone: $\frac{0}{\infty} = 0$, $\frac{\infty}{0^+} = \infty$, $\infty + \infty = \infty$.
+> > b) $\left[\frac{\infty}{\infty}\right]$, $\ [1^\infty]$, $\ [\infty - \infty]$
+> > c) np. $(n + 3) - n = 3 \to 3$
 
 ---
 
@@ -522,6 +655,15 @@ Jak wyciągać: $7n = n^2 \cdot \frac{7}{n}$, $\ 5 = n^2 \cdot \frac{5}{n^2}$. D
 > $\dfrac{n+2}{(n+3)(2n+3)(4n-5)}$. Każdy nawias ma stopień 1, więc mianownik ma stopień $1+1+1 = 3$. Licznik ma stopień 1, więc granica wynosi $0$.
 > Formalnie: z każdego nawiasu wyciągasz $n$: $\ (n+3) = n\left(1 + \frac3n\right)$ itd.
 
+> [!question] ✏️ Sprawdź się – 6.1
+> a) $\lim\dfrac{4n^3 - n + 2}{2n^3 + 5n^2}$ b) $\lim\dfrac{3n^2 + 1}{n^4 - 2n}$ c) $\lim\dfrac{2 - 5n^3}{n^2 + 4}$ d) $\lim\dfrac{(2n+1)(3n-2)}{(n+5)^2}$
+>
+> > [!success]- Rozwiązanie
+> > a) $\left[\frac{\infty}{\infty}\right]$, wyciągam $n^3$: $\dfrac{4 - \frac{1}{n^2} + \frac{2}{n^3}}{2 + \frac5n} \to \dfrac42 = 2$
+> > b) $\left[\frac{\infty}{\infty}\right]$, wyciągam $n^4$: $\dfrac{\frac{3}{n^2} + \frac{1}{n^4}}{1 - \frac{2}{n^3}} \to \dfrac{0}{1} = 0$
+> > c) $\left[\frac{-\infty}{\infty}\right]$, wyciągam $n^2$: $\dfrac{\frac{2}{n^2} - 5n}{1 + \frac{4}{n^2}} \to \left[\frac{-\infty}{1}\right] = -\infty$
+> > d) Stopnie $2$ i $2$. Z każdego nawiasu $n$: $\dfrac{\left(2 + \frac1n\right)\left(3 - \frac2n\right)}{\left(1 + \frac5n\right)^2} \to \dfrac{2\cdot3}{1} = 6$
+
 ##### 6.2 Pierwiastki to też potęgi
 
 Pierwiastek to potęga ułamkowa: $\sqrt{n} = n^{1/2}$, $\ n\sqrt n = n^{3/2}$. Stopień pierwiastka z wielomianu to **połowa** stopnia wielomianu:
@@ -537,6 +679,14 @@ Wyciąganie spod pierwiastka: $\sqrt{n^2 + n} = \sqrt{n^2\left(1 + \frac1n\right
 
 > [!warning] Pułapka: szefowie się skracają
 > W $\sqrt{n^2 + n} - n$ szef pierwiastka to $n$ i odejmujemy $n$, więc „$n - n = 0$”. **To nic nie mówi!** Drobne decydują o wyniku. Tutaj potrzebne jest sprzężenie (6.3).
+
+> [!question] ✏️ Sprawdź się – 6.2
+> a) $\lim\dfrac{\sqrt{4n^2 + 3n}}{5n - 1}$ b) $\lim\dfrac{n + \sqrt n}{\sqrt{n^3 + 1}}$ c) $\lim\dfrac{\sqrt{n^2+1} + 3n}{2n + 7}$
+>
+> > [!success]- Rozwiązanie
+> > a) $\left[\frac{\infty}{\infty}\right]$, stopnie $1$ i $1$. Dzielę przez $n$: $\dfrac{\sqrt{4 + \frac3n}}{5 - \frac1n} \to \dfrac25$
+> > b) licznik stopnia $1$, mianownik stopnia $\frac32$. Dzielę przez $n^{3/2}$: $\dfrac{\frac{1}{\sqrt n} + \frac1n}{\sqrt{1 + \frac{1}{n^3}}} \to \dfrac{0}{1} = 0$
+> > c) dzielę przez $n$: $\dfrac{\sqrt{1 + \frac{1}{n^2}} + 3}{2 + \frac7n} \to \dfrac{1 + 3}{2} = 2$
 
 ##### 6.3 Różnica pierwiastków (∞ − ∞) – sprzężenie
 
@@ -556,6 +706,14 @@ $$a - b = \frac{(a-b)(a+b)}{a + b} = \frac{a^2 - b^2}{a + b}$$
 > - Różnica pierwiastków stoi **w mianowniku** (zad. 1f): też tak. Mnożysz licznik i mianownik przez sprzężenie mianownika.
 > - **Suma** pierwiastków: nie trzeba, bo $\infty + \infty = \infty$.
 > - Szefowie się **nie** znoszą, np. $\sqrt{1 + 4n^2} - \sqrt{1 + 9n^2} \approx 2n - 3n$: nie trzeba, wystarczy 6.2 (zad. 1h).
+
+> [!question] ✏️ Sprawdź się – 6.3
+> a) $\lim\left(\sqrt{n+5} - \sqrt{n+1}\right)$ b) $\lim\left(\sqrt{4n^2 + 3n} - 2n\right)$ c) $\lim\dfrac{1}{\sqrt{n^2 + 2n} - n}$
+>
+> > [!success]- Rozwiązanie
+> > a) $[\infty - \infty]$, sprzężenie: $\dfrac{(n+5) - (n+1)}{\sqrt{n+5} + \sqrt{n+1}} = \dfrac{4}{\sqrt{n+5}+\sqrt{n+1}} \to \left[\frac{4}{\infty}\right] = 0$
+> > b) $[\infty - \infty]$: $\dfrac{(4n^2 + 3n) - 4n^2}{\sqrt{4n^2+3n} + 2n} = \dfrac{3n}{n\left(\sqrt{4 + \frac3n} + 2\right)} \to \dfrac{3}{2+2} = \dfrac34$
+> > c) sprzężenie mianownika: $\dfrac{\sqrt{n^2+2n} + n}{(n^2 + 2n) - n^2} = \dfrac{n\left(\sqrt{1 + \frac2n} + 1\right)}{2n} \to \dfrac{1+1}{2} = 1$
 
 ##### 6.4 Potęgi z n w wykładniku – wyciągnij największą podstawę
 
@@ -579,6 +737,14 @@ $$a - b = \frac{(a-b)(a+b)}{a + b} = \frac{a^2 - b^2}{a + b}$$
 > $$\frac{\left(\frac53\right)^n + \left(-\frac23\right)^n}{1 + \frac{4}{3^n}} \to \left[\frac{\infty + 0}{1 + 0}\right] = \infty$$
 > $\left(-\frac23\right)^n \to 0$, bo $\left|-\frac23\right| < 1$. To jest zadanie 3h, tylko bez trzech ciągów.
 
+> [!question] ✏️ Sprawdź się – 6.4
+> a) $\lim\dfrac{2^{2n+1} + 3^n}{4^n - 5}$ b) $\lim\left(5^n - 4^{n+1}\right)$ c) $\lim\dfrac{3^{2n-1} + 2^n}{9^{n+1}}$
+>
+> > [!success]- Rozwiązanie
+> > a) $2^{2n+1} = 2\cdot4^n$. $\left[\frac{\infty}{\infty}\right]$, dzielę przez $4^n$: $\dfrac{2 + \left(\frac34\right)^n}{1 - \frac{5}{4^n}} \to \dfrac{2 + 0}{1 - 0} = 2$
+> > b) $[\infty - \infty]$, $4^{n+1} = 4\cdot4^n$: $\ 5^n\left(1 - 4\left(\tfrac45\right)^n\right) \to [\infty\cdot(1 - 0)] = \infty$
+> > c) $3^{2n-1} = \frac13\cdot9^n$, $\ 9^{n+1} = 9\cdot9^n$. Dzielę przez $9^n$: $\dfrac{\frac13 + \left(\frac29\right)^n}{9} \to \dfrac{1/3}{9} = \dfrac{1}{27}$
+
 ##### 6.5 Silnie – wyciągnij wspólną silnię
 
 Wszystkie silnie zapisz przez **najmniejszą** z nich (wzór z rozdz. 0):
@@ -588,6 +754,14 @@ Potem skróć $n!$. Zostaje zwykły ułamek wielomianów (6.1).
 > [!example] Przykład z wykładu: $\lim\dfrac{(n+1)! + n!}{(n+1)! - n!}$
 > $$\frac{n!\,(n + 1 + 1)}{n!\,(n + 1 - 1)} = \frac{n+2}{n} = 1 + \frac2n \to 1$$
 > I drugi: $\dfrac{n!}{(n+1)!\cdot n} = \dfrac{n!}{(n+1)\,n!\cdot n} = \dfrac{1}{n(n+1)} \to 0$.
+
+> [!question] ✏️ Sprawdź się – 6.5
+> a) $\lim\dfrac{(n+2)! - n!}{(n+2)! + (n+1)!}$ b) $\lim\dfrac{(n+1)!}{n!\,(2n+3)}$ c) $\lim\dfrac{n\cdot(n-1)!}{(n+1)!}$
+>
+> > [!success]- Rozwiązanie
+> > a) wyciągam $n!$: $\dfrac{n!\,\big((n+2)(n+1) - 1\big)}{n!\,\big((n+2)(n+1) + (n+1)\big)} = \dfrac{n^2 + 3n + 1}{n^2 + 4n + 3} \to 1$ (stopnie równe, szefowie $\frac{n^2}{n^2}$)
+> > b) $\dfrac{(n+1)\,n!}{n!\,(2n+3)} = \dfrac{n+1}{2n+3} \to \dfrac12$
+> > c) $n\cdot(n-1)! = n!$, więc $\dfrac{n!}{(n+1)\,n!} = \dfrac{1}{n+1} \to 0$
 
 ##### 6.6 Ograniczony razy coś dążącego do zera daje zero
 
@@ -603,6 +777,14 @@ Funkcje $\sin$, $\cos$ mają wartości w $[-1, 1]$, $\operatorname{arctg}$ w $\l
 > [!warning] $\sin(n!)$ czy $\sin n$ **samo** nie ma granicy
 > Skacze chaotycznie po $[-1, 1]$. Nie wolno „wstawić” granicy do środka, bo $n!$ dąży do $\infty$, a $\sin \infty$ nie istnieje. Ratunek: 6.6 albo trzy ciągi (rozdz. 8).
 
+> [!question] ✏️ Sprawdź się – 6.6
+> a) $\lim\dfrac{\cos(n^2)}{\sqrt n}$ b) $\lim\dfrac{(-1)^n(n+1)}{n^2}$ c) Dlaczego tego twierdzenia **nie** można użyć do $\dfrac{n\sin n}{n+1}$?
+>
+> > [!success]- Rozwiązanie
+> > a) $\lvert\cos(n^2)\rvert \le 1$ (ograniczony), $\frac{1}{\sqrt n} \to 0$: $\left[\frac{\text{ograniczony}}{\infty}\right] = 0$
+> > b) $(-1)^n$ ograniczony, $\frac{n+1}{n^2} \to 0$ (stopień $1 < 2$), więc iloczyn $\to 0$
+> > c) $\sin n$ jest ograniczony, ale drugi czynnik $\frac{n}{n+1} \to 1$, a **nie** do $0$. Twierdzenie wymaga, żeby drugi czynnik dążył do zera.
+
 ##### 6.7 Logarytmy – różnica logarytmów to logarytm ilorazu
 
 $$\ln a - \ln b = \ln\frac{a}{b}$$
@@ -611,6 +793,14 @@ $$\ln a - \ln b = \ln\frac{a}{b}$$
 > [!example] $\lim\big(\ln(2n^4 - 2n + 1) - \ln(n^5 - 2n + 1)\big)$ (zadanie 1j)
 > $$= \lim \ln\frac{2n^4 - 2n + 1}{n^5 - 2n + 1} = \ln\left(\lim \frac{2n^4 - \dots}{n^5 - \dots}\right) = [\ln 0^+] = -\infty$$
 > Ułamek dąży do $0^+$ (stopień 4 < 5, ułamek dodatni), a $\ln$ przy $0^+$ spada do $-\infty$.
+
+> [!question] ✏️ Sprawdź się – 6.7
+> a) $\lim\big(\ln(3n^2 + 1) - \ln(n^2 + 5)\big)$ b) $\lim\big(\ln(n+1) - \ln n^3\big)$ c) $\lim\big(\ln(n^3 + n) - \ln n^2\big)$
+>
+> > [!success]- Rozwiązanie
+> > a) $[\infty - \infty]$: $\ln\dfrac{3n^2 + 1}{n^2 + 5}$, ułamek $\to 3$ (stopnie równe), więc $\to \ln 3$
+> > b) $\ln\dfrac{n+1}{n^3}$, ułamek $\to 0^+$ (stopień $1 < 3$), więc $[\ln 0^+] = -\infty$
+> > c) $\ln\dfrac{n^3 + n}{n^2} = \ln\left(n + \frac1n\right)$, w środku $\to \infty$, więc $[\ln\infty] = \infty$
 
 > [!success] ➡️ Teraz zrób
 > [[#Zadanie 1 – oblicz granice|Zadanie 1]] i [[#Zadanie 2 – potęgi i silnie|Zadanie 2]]. Potem wróć i czytaj rozdział 7.
@@ -651,6 +841,14 @@ Wszystkie poniższe ciągi dążą do $\infty$, ale w **bardzo różnym tempie**
 > - **Wyszukiwanie binarne** ($\log_2 n$) kontra przeglądanie po kolei ($n$): w bazie miliona rekordów to **20 kroków** zamiast nawet miliona. Dlatego książka telefoniczna jest posortowana, a bazy danych mają indeksy.
 > - **Hasła** ($a^n$, wykładnicza): hasło z 62 znaków (małe, duże litery, cyfry) o długości $n$ ma $62^n$ wariantów. Komputer sprawdzający 10 miliardów haseł na sekundę łamie 8 znaków w ok. **6 godzin**, a 12 znaków w ok. **10 000 lat**. Każdy dodatkowy znak mnoży czas przez 62. Dlatego długość hasła jest ważniejsza niż „dziwne znaki”.
 > - **Problem komiwojażera** ($n!$): kurier ma odwiedzić $n$ miast najkrótszą trasą. Tras jest $\frac{(n-1)!}{2}$. Przy 20 miastach sprawdzenie wszystkich przy miliardzie tras na sekundę zajmuje ok. **2 lata**, a przy 25 miastach ok. **10 milionów lat**. Dlatego firmy kurierskie używają algorytmów przybliżonych, a nie „sprawdź wszystko”.
+
+> [!question] ✏️ Sprawdź się – 7
+> a) Ustaw od najwolniejszego: $\ 5^n,\ n^3,\ n^n,\ \ln n,\ n!,\ 2^n$. b) $\lim\dfrac{n^4 + 3^n}{2\cdot3^n - n^2}$ c) $\lim\dfrac{3\cdot n! - 4^n}{n! + n^7}$
+>
+> > [!success]- Rozwiązanie
+> > a) $\ln n \prec n^3 \prec 2^n \prec 5^n \prec n! \prec n^n$
+> > b) $\left[\frac{\infty}{\infty}\right]$, rządzi $3^n$: $\dfrac{3^n\left(\frac{n^4}{3^n} + 1\right)}{3^n\left(2 - \frac{n^2}{3^n}\right)} \to \dfrac{0 + 1}{2 - 0} = \dfrac12$
+> > c) rządzi $n!$: $\dfrac{n!\left(3 - \frac{4^n}{n!}\right)}{n!\left(1 + \frac{n^7}{n!}\right)} \to \dfrac{3 - 0}{1 + 0} = 3$
 
 ---
 
@@ -698,6 +896,14 @@ Narzędzie na granice, których nie da się po prostu przekształcić: z $\sin$,
 >
 > Oba dążą do $\frac23$, więc wynik to $\frac23$. (Mianownik $3n^2 - 4 > 0$ dla $n \ge 2$, więc szacowanie jest uczciwe.)
 
+> [!question] ✏️ Sprawdź się – 8
+> Użyj twierdzenia o trzech ciągach: a) $\lim\dfrac{3n - \sin n}{n + 2}$ b) $\lim\dfrac{n^2 + (-1)^n n}{2n^2 + 1}$ c) $\lim\dfrac{2 + \cos(n!)}{n}$
+>
+> > [!success]- Rozwiązanie
+> > a) $-1 \le \sin n \le 1$, więc $\dfrac{3n - 1}{n+2} \le \dfrac{3n - \sin n}{n+2} \le \dfrac{3n + 1}{n+2}$. Obaj policjanci $\to 3$, więc wynik to $3$.
+> > b) $\dfrac{n^2 - n}{2n^2 + 1} \le \dfrac{n^2 + (-1)^n n}{2n^2 + 1} \le \dfrac{n^2 + n}{2n^2 + 1}$. Oba $\to \frac12$, więc wynik to $\frac12$.
+> > c) $1 \le 2 + \cos(n!) \le 3$, więc $\dfrac1n \le \dfrac{2 + \cos(n!)}{n} \le \dfrac3n$. Oba $\to 0$, więc wynik to $0$.
+
 ##### 8.1 Najważniejszy wzorzec – pierwiastek n-tego stopnia z sumy
 
 > [!important] Pierwiastek $n$-tego stopnia z sumy dąży do największej podstawy
@@ -711,6 +917,14 @@ $$4 \le \sqrt[n]{3^n + 4^n} \le \sqrt[n]{2}\cdot 4 \quad\Longrightarrow\quad \li
 > [!tip] Stałe i wielomiany pod $\sqrt[n]{\ }$ nie przeszkadzają
 > $\sqrt[n]{25} \to 1$, $\ \sqrt[n]{\tfrac12} \to 1$, $\ \sqrt[n]{n^2} \to 1$ (rozdz. 4.1). Dlatego w $\sqrt[n]{25\cdot 5^n + \tfrac12\cdot 8^n + 9\cdot 3^n}$ liczy się tylko największa **podstawa**, czyli $8$, a nie współczynniki. Najpierw jednak zapisz wszystko w postaci $\text{liczba}\cdot q^n$ (tabela z 6.4)!
 
+> [!question] ✏️ Sprawdź się – 8.1
+> a) $\lim\sqrt[n]{6^n + 2^n + 5^n}$ b) $\lim\sqrt[n]{3^{2n} + 2^{3n+1}}$ c) $\lim\sqrt[n]{n^2 + 4^{n-1}}$
+>
+> > [!success]- Rozwiązanie
+> > a) największa podstawa $6$: $\ \sqrt[n]{6^n} = 6 \le \sqrt[n]{6^n + 2^n + 5^n} \le \sqrt[n]{3\cdot6^n} = 6\sqrt[n]3 \to 6$. Wynik: $6$
+> > b) $3^{2n} = 9^n$, $\ 2^{3n+1} = 2\cdot8^n$: $\ 9 \le \sqrt[n]{9^n + 2\cdot8^n} \le \sqrt[n]{3\cdot9^n} = 9\sqrt[n]3 \to 9$. Wynik: $9$
+> > c) $4^{n-1} = \frac14\cdot4^n$, a $n^2 \le 4^n$. W dół: $\sqrt[n]{\frac14\cdot4^n} = 4\sqrt[n]{\tfrac14} \to 4$. W górę: $\sqrt[n]{4^n + \frac14\cdot4^n} = 4\sqrt[n]{\tfrac54} \to 4$. Wynik: $4$
+
 ##### 8.2 Wersja z jednym policjantem dla nieskończoności
 
 > [!important] Twierdzenie (o dwóch ciągach)
@@ -719,6 +933,14 @@ $$4 \le \sqrt[n]{3^n + 4^n} \le \sqrt[n]{2}\cdot 4 \quad\Longrightarrow\quad \li
 
 > [!example] $\lim\left(n^2 + 2n\cos n\right)$ (zadanie 3j)
 > $\cos n \ge -1$, więc $n^2 + 2n\cos n \ge n^2 - 2n = n(n - 2) \to \infty$. Wynik to $\infty$.
+
+> [!question] ✏️ Sprawdź się – 8.2
+> a) $\lim\left(n^3 - n^2\sin n\right)$ b) $\lim\left(3\cos n - n\right)$ c) $\lim\dfrac{n^2 + (-1)^n n}{n + 1}$
+>
+> > [!success]- Rozwiązanie
+> > a) $\sin n \le 1$, więc $n^3 - n^2\sin n \ge n^3 - n^2 = n^2(n-1) \to \infty$. Wynik: $\infty$
+> > b) $\cos n \le 1$, więc $3\cos n - n \le 3 - n \to -\infty$. Wynik: $-\infty$
+> > c) $(-1)^n n \ge -n$, więc $\ge \dfrac{n^2 - n}{n+1} \to \infty$ (stopień $2 > 1$). Wynik: $\infty$
 
 > [!success] ➡️ Teraz zrób
 > [[#Zadanie 3 – twierdzenie o trzech ciągach|Zadanie 3]]. Potem wróć i czytaj rozdział 9.
@@ -743,6 +965,14 @@ To typ $1^\infty$: podstawa dąży do $1$, wykładnik do $\infty$. Obie siły wa
 
 **Logarytm naturalny** to logarytm o podstawie $e$: $\ln x = \log_e x$. Znoszą się nawzajem: $e^{\ln t} = t$, $\ \ln e^t = t$.
 
+> [!question] ✏️ Sprawdź się – 9.1
+> a) Policz $\left(1 + \frac1n\right)^n$ dla $n = 4$. b) $\lim\left(\dfrac{n+1}{n}\right)^n$ c) Oblicz $\ln e^3$ oraz $e^{\ln 7}$.
+>
+> > [!success]- Rozwiązanie
+> > a) $\left(\frac54\right)^4 = \frac{625}{256} \approx 2{,}441$ (pasuje do tabeli: między $2{,}25$ a $2{,}594$)
+> > b) $\frac{n+1}{n} = 1 + \frac1n$, więc to dokładnie definicja: $\to e$
+> > c) $\ln e^3 = 3$, $\ e^{\ln 7} = 7$ (znoszą się)
+
 ##### 9.2 Wzór, którego używasz w zadaniach
 
 > [!important] Uogólnienie
@@ -755,6 +985,15 @@ To typ $1^\infty$: podstawa dąży do $1$, wykładnik do $\infty$. Obie siły wa
 > - $\left(1 + \frac{-3}{n+5}\right)^{n+5} \to e^{-3}$
 > - $\left(1 + \frac2n\right)^{n^2} = \left[\left(1+\frac2n\right)^n\right]^n \to \left(e^2\right)^n$, więc $\to \infty$ (bo $e^2 > 1$)
 > - $\left(1 - \frac2n\right)^{n^2} = \left[\left(1+\frac{-2}{n}\right)^n\right]^n \to \left(e^{-2}\right)^n$, więc $\to 0$ (bo $e^{-2} < 1$)
+
+> [!question] ✏️ Sprawdź się – 9.2
+> a) $\lim\left(1 + \dfrac{4}{n^2+1}\right)^{n^2+1}$ b) $\lim\left(1 - \dfrac{5}{2n}\right)^{2n}$ c) $\lim\left(1 + \dfrac1n\right)^{4n}$ d) $\lim\left(1 + \dfrac3n\right)^{n^2}$
+>
+> > [!success]- Rozwiązanie
+> > a) to samo $n^2+1$ na dole i w wykładniku, $A = 4$: $\to e^4$
+> > b) $\left(1 + \frac{-5}{2n}\right)^{2n}$, $A = -5$: $\to e^{-5}$
+> > c) $\left[\left(1 + \frac1n\right)^n\right]^4 \to e^4$
+> > d) $\left[\left(1 + \frac3n\right)^n\right]^n \to \left(e^3\right)^n$, a $e^3 > 1$, więc $\to \infty$
 
 ##### 9.3 Przepis na typ jeden do nieskończoności (metoda II)
 
@@ -784,6 +1023,14 @@ To typ $1^\infty$: podstawa dąży do $1$, wykładnik do $\infty$. Obie siły wa
 > $\left(0{,}99 + \frac1n\right)^n$: podstawa dąży do $0{,}99$, a **nie** do 1. To nie jest $1^\infty$, tylko „$0{,}99^\infty$” $= 0$ (klocek 2, $\lvert q\rvert < 1$). Liczby $e$ tu nie ma (zadanie 4g*).
 > Analogicznie $\left(\frac{2n+1}{n}\right)^n$: podstawa $\to 2$, więc to „$2^\infty$” $= \infty$.
 
+> [!question] ✏️ Sprawdź się – 9.3
+> a) $\lim\left(\dfrac{n+3}{n-2}\right)^{2n+1}$ b) $\lim\left(\dfrac{2n^2 - 1}{2n^2 + 3}\right)^{n^2}$ c) $\lim\left(\dfrac{4n+1}{n+2}\right)^n$
+>
+> > [!success]- Rozwiązanie
+> > a) $[1^\infty]$. $\frac{n+3}{n-2} - 1 = \frac{5}{n-2}$. $\ \left[\left(1 + \frac{5}{n-2}\right)^{n-2}\right]^{\frac{2n+1}{n-2}} \to \left(e^5\right)^2 = e^{10}$
+> > b) $[1^\infty]$. $\frac{2n^2-1}{2n^2+3} - 1 = \frac{-4}{2n^2+3}$. $\ \left[\left(1 + \frac{-4}{2n^2+3}\right)^{2n^2+3}\right]^{\frac{n^2}{2n^2+3}} \to \left(e^{-4}\right)^{1/2} = e^{-2}$
+> > c) **Pułapka:** podstawa $\to 4$, a nie $1$. To nie jest $1^\infty$, tylko „$4^\infty$” $= \infty$.
+
 ##### 9.4 Po co komu $e$? Kapitalizacja ciągła (przykład z wykładu)
 
 Wkładasz $S_0$ zł na $a = 30\%$ rocznie. Jeśli bank dopisuje odsetki $n$ razy w roku (za każdym razem $\frac{a}{n}$), to po roku masz $S_0\left(1 + \frac{a}{n}\right)^n$:
@@ -804,6 +1051,14 @@ Częstsza kapitalizacja daje więcej, ale **nie bez końca**: sufitem jest $e^a$
 > To wzór z 9.2 z $A = -1$. Wychodzi **37%** i to niezależnie od tego, czy szansa wynosi 1 na 100, 1 na 1000, czy 1 na milion (o ile próbujesz tyle samo razy). Tak samo liczy się np. szansę, że serwer obsługujący $n$ żądań nie dostanie żadnego błędu, gdy każde psuje się z prawdopodobieństwem $\frac1n$.
 >
 > **Inne miejsca, gdzie pojawia się $e$:** stygnięcie kawy (temperatura zbliża się do temperatury pokoju jak $e^{-kt}$), rozładowanie kondensatora, wzrost epidemii na początku, w statystyce rozkład normalny (krzywa Gaussa $e^{-x^2}$), a w uczeniu maszynowym funkcja softmax.
+
+> [!question] ✏️ Sprawdź się – 9.4
+> Lokata $12\%$ rocznie. a) Jaki jest mnożnik po roku przy kapitalizacji kwartalnej ($n = 4$)? b) A przy ciągłej? c) Ile będzie po 2 latach z 1000 zł przy $10\%$ i kapitalizacji ciągłej?
+>
+> > [!success]- Rozwiązanie
+> > a) $\left(1 + \frac{0{,}12}{4}\right)^4 = 1{,}03^4 \approx 1{,}1255$
+> > b) $\lim\left(1 + \frac{0{,}12}{n}\right)^n = e^{0{,}12} \approx 1{,}1275$ (tylko trochę więcej niż kwartalnie)
+> > c) każdy rok mnoży przez $e^{0{,}1}$, więc $1000\cdot e^{0{,}1\cdot2} = 1000\,e^{0{,}2} \approx 1221{,}40$ zł
 
 > [!success] ➡️ Teraz zrób
 > [[#Zadanie 4 – granice typu e|Zadanie 4]]. Na koniec przeczytaj rozdział 10 (zapowiedź kolejnych zajęć).
@@ -854,6 +1109,15 @@ Granicę **ciągu** liczy się tylko przy $n \to \infty$, bo $n$ to liczby natur
 > Rozwiązanie: liczysz prędkość średnią na coraz krótszym odcinku czasu (1 s, 0,1 s, 0,001 s…) i bierzesz **granicę**. Tak definiuje się **pochodną** (W2). Na niej opiera się cała fizyka ruchu, a w informatyce uczenie sieci neuronowych (spadek gradientu).
 >
 > $\frac{\sin x}{x} \to 1$ też ma praktyczne użycie: dla małych kątów $\sin x \approx x$. Fizycy liczą tak ruch wahadła, a inżynierowie ugięcie mostu.
+
+> [!question] ✏️ Sprawdź się – 10
+> a) $\lim\limits_{x\to2}\dfrac{1}{x-2}$: policz obie granice jednostronne. Czy granica istnieje? b) $\lim\limits_{x\to-1}\dfrac{3}{(x+1)^2}$ c) $\lim\limits_{x\to0}\dfrac{\sin 5x}{x}$ d) $\lim\limits_{x\to\infty}\left(1 + \dfrac2x\right)^x$
+>
+> > [!success]- Rozwiązanie
+> > a) z prawej $\left[\frac{1}{0^+}\right] = +\infty$, z lewej $\left[\frac{1}{0^-}\right] = -\infty$. Różne, więc granica **nie istnieje**.
+> > b) kwadrat jest zawsze dodatni, z obu stron $\left[\frac{3}{0^+}\right] = +\infty$
+> > c) $\left[\frac00\right]$: $5\cdot\dfrac{\sin 5x}{5x} \to 5\cdot1 = 5$
+> > d) wzór $\left(1 + \frac{C}{x}\right)^x \to e^C$ z $C = 2$: $\to e^2$
 
 ---
 

@@ -84,6 +84,17 @@ Przy ciągu $n$ mogło iść tylko w jedną stronę: do $\infty$. Przy funkcji $
 
 **Wszystko z W1 działa dalej**, tylko piszesz $x$ zamiast $n$: najwyższa potęga, sprzężenie, liczba $e$, trzy ciągi (tu: trzy funkcje), hierarchia wzrostu.
 
+> [!question] ✏️ Sprawdź się – 1.1
+> Czy granica istnieje? Jeśli tak, podaj ją.
+> a) $\lim\limits_{x\to2} f(x)$ dla $f(x) = x + 1$ przy $x < 2$ i $f(x) = 5 - x$ przy $x \ge 2$
+> b) $\lim\limits_{x\to1} f(x)$ dla $f(x) = x^2$ przy $x < 1$ i $f(x) = 2x$ przy $x \ge 1$
+> c) Wiadomo tylko, że $\lim\limits_{x\to0^-} f(x) = 4$ i $\lim\limits_{x\to0^+} f(x) = 4$. Ile wynosi $\lim\limits_{x\to0} f(x)$?
+>
+> > [!success]- Rozwiązanie
+> > a) Z lewej: $x + 1 \to 3$. Z prawej: $5 - x \to 3$. Równe, więc granica **istnieje** i wynosi $3$.
+> > b) Z lewej: $x^2 \to 1$. Z prawej: $2x \to 2$. $1 \ne 2$, więc granica **nie istnieje**.
+> > c) Obie jednostronne istnieją i są równe, więc $\lim\limits_{x\to0} f(x) = 4$. Nie ma znaczenia, ile wynosi $f(0)$ (i czy w ogóle istnieje).
+
 ##### 1.2 Granice w plus i minus nieskończoności
 
 Przy $x \to +\infty$ wszystko jest jak w W1. Przy $x \to -\infty$ trzeba uważać na **znaki**:
@@ -104,6 +115,16 @@ Przy $x \to +\infty$ wszystko jest jak w W1. Przy $x \to -\infty$ trzeba uważa�
 > $$\sqrt{x^2 + 4x + 5} = \lvert x\rvert\sqrt{1 + \tfrac4x + \tfrac{5}{x^2}} = -x\sqrt{1 + \tfrac4x + \tfrac{5}{x^2}}$$
 > Przykład: $\lim\limits_{x\to-\infty}\left(\sqrt{x^2} + x\right) = \lim(-x + x) = 0$, a nie $\infty$! (zadanie Z03 2g)
 
+> [!question] ✏️ Sprawdź się – 1.2
+> a) $\lim\limits_{x\to-\infty}\left(x^3 - 5x^2\right)$ b) $\lim\limits_{x\to-\infty}\left(5^x + \operatorname{arctg} x\right)$ c) $\lim\limits_{x\to-\infty}\dfrac{3x + 1}{\sqrt{x^2 + 4}}$
+>
+> > [!success]- Rozwiązanie
+> > a) Wyciągam szefa: $x^3\left(1 - \frac5x\right)$, typ $[(-\infty)\cdot 1] = -\infty$ (potęga nieparzysta).
+> > b) $5^x \to 0$, $\ \operatorname{arctg} x \to -\frac{\pi}{2}$. Wynik: $-\frac{\pi}{2}$.
+> > c) Przy $x \to -\infty$: $\sqrt{x^2 + 4} = \lvert x\rvert\sqrt{1 + \frac{4}{x^2}} = -x\sqrt{1 + \frac{4}{x^2}}$. Zatem
+> > $$\frac{x\left(3 + \frac1x\right)}{-x\sqrt{1 + \frac{4}{x^2}}} = \frac{3 + \frac1x}{-\sqrt{1 + \frac{4}{x^2}}} \to \frac{3}{-1} = -3$$
+> > (Bez minusa wyszłoby $3$, czyli błąd z ramki wyżej.)
+
 ##### 1.3 Granica w punkcie – najpierw wstaw
 
 > [!tip] Algorytm na $\lim\limits_{x\to a} f(x)$
@@ -120,6 +141,14 @@ Przy $x \to +\infty$ wszystko jest jak w W1. Przy $x \to -\infty$ trzeba uważa�
 >
 > **Trik:** podstaw liczbę „tuż obok” ($1{,}01$ albo $0{,}99$) i sprawdź tylko **znak** mianownika.
 
+> [!question] ✏️ Sprawdź się – 1.3
+> a) $\lim\limits_{x\to2}\dfrac{x^2 + 1}{x + 3}$ b) $\lim\limits_{x\to3^+}\dfrac{x + 1}{x^2 - 9}$ i $\lim\limits_{x\to3^-}\dfrac{x + 1}{x^2 - 9}$ c) $\lim\limits_{x\to-1}\dfrac{2}{(x + 1)^2}$
+>
+> > [!success]- Rozwiązanie
+> > a) Wstawiam: $\frac{4 + 1}{2 + 3} = \frac55 = 1$. Koniec.
+> > b) Wstawiam: $\left[\frac{4}{0}\right]$. Mianownik: $(x - 3)(x + 3)$. Dla $x = 3{,}01$: $x - 3 > 0$, więc $\left[\frac{4}{0^+}\right] = +\infty$. Dla $x = 2{,}99$: $x - 3 < 0$, więc $\left[\frac{4}{0^-}\right] = -\infty$. Granica w $3$ nie istnieje.
+> > c) $\left[\frac{2}{0}\right]$, ale $(x + 1)^2 \ge 0$ z obu stron, więc $\left[\frac{2}{0^+}\right] = +\infty$ z lewej i z prawej. Granica (niewłaściwa) wynosi $+\infty$.
+
 ##### 1.4 Typ zero przez zero – skróć albo sprzężenie
 
 $\left[\frac00\right]$ w punkcie $a$ oznacza zwykle, że licznik i mianownik **mają wspólny czynnik** $(x - a)$, który trzeba „wydłubać” i skrócić.
@@ -135,6 +164,17 @@ $\left[\frac00\right]$ w punkcie $a$ oznacza zwykle, że licznik i mianownik **m
 > Ogólnie: pierwiastek w różnicy, więc mnożysz przez sprzężenie, jak w [[1_Analiza_Matematyczna#6.3 Różnica pierwiastków (∞ − ∞) – sprzężenie|W1, 6.3]].
 
 Przydatne wzory skróconego mnożenia: $a^2 - b^2 = (a-b)(a+b)$, $\ a^3 - b^3 = (a-b)(a^2+ab+b^2)$, $\ a^3 + b^3 = (a+b)(a^2-ab+b^2)$.
+
+> [!question] ✏️ Sprawdź się – 1.4
+> a) $\lim\limits_{x\to2}\dfrac{x^2 - 5x + 6}{x^2 - 4}$ b) $\lim\limits_{x\to1}\dfrac{x^3 - 1}{x^2 - 1}$ c) $\lim\limits_{x\to0}\dfrac{\sqrt{x + 4} - 2}{x}$
+>
+> > [!success]- Rozwiązanie
+> > a) $\left[\frac00\right]$. Licznik: pierwiastki $2$ i $3$; mianownik: $(x - 2)(x + 2)$.
+> > $$\frac{(x - 2)(x - 3)}{(x - 2)(x + 2)} = \frac{x - 3}{x + 2} \to \frac{-1}{4} = -\frac14$$
+> > b) $\left[\frac00\right]$. Wzór $a^3 - b^3$: $\ x^3 - 1 = (x - 1)(x^2 + x + 1)$, a $x^2 - 1 = (x - 1)(x + 1)$.
+> > $$\frac{x^2 + x + 1}{x + 1} \to \frac{3}{2}$$
+> > c) $\left[\frac00\right]$, pierwiastek w różnicy, więc sprzężenie:
+> > $$\frac{\sqrt{x + 4} - 2}{x}\cdot\frac{\sqrt{x + 4} + 2}{\sqrt{x + 4} + 2} = \frac{x + 4 - 4}{x\left(\sqrt{x + 4} + 2\right)} = \frac{1}{\sqrt{x + 4} + 2} \to \frac14$$
 
 ##### 1.5 Ważne granice funkcji
 
@@ -158,6 +198,15 @@ Przydatne wzory skróconego mnożenia: $a^2 - b^2 = (a-b)(a+b)$, $\ a^3 - b^3 = 
 >
 > Morał: **dla małych $t$:** $\sin t \approx t$, $\operatorname{tg} t \approx t$, $\ln(1+t) \approx t$, $e^t - 1 \approx t$.
 
+> [!question] ✏️ Sprawdź się – 1.5
+> a) $\lim\limits_{x\to\infty}\left(1 + \dfrac4x\right)^x$ b) $\lim\limits_{x\to\infty}\left(\operatorname{arctg} x + \left(\tfrac13\right)^x\right)$ c) $\lim\limits_{x\to0}\dfrac{\ln(1 + 2x)}{x}$ d) $\lim\limits_{x\to0}\dfrac{e^{3x} - 1}{x}$
+>
+> > [!success]- Rozwiązanie
+> > a) Wzór 3 z tabelki z $C = 4$: wynik $e^4$.
+> > b) $\operatorname{arctg} x \to \frac{\pi}{2}$, a $\left(\frac13\right)^x \to 0$ (podstawa między $0$ a $1$). Wynik: $\frac{\pi}{2}$.
+> > c) $\left[\frac00\right]$. Dopasowuję mianownik: $\frac{\ln(1 + 2x)}{x} = 2\cdot\underbrace{\frac{\ln(1 + 2x)}{2x}}_{\to 1} \to 2$ (bonus z $t = 2x$).
+> > d) $\left[\frac00\right]$. $\frac{e^{3x} - 1}{x} = 3\cdot\underbrace{\frac{e^{3x} - 1}{3x}}_{\to 1} \to 3$.
+
 ##### 1.6 Typ sin x przez x
 
 $\lim\limits_{x\to0}\frac{\sin x}{x} = 1$ działa także, gdy zamiast $x$ stoi **cokolwiek, co dąży do zera**, ale **to samo** na górze w sinusie i na dole:
@@ -174,6 +223,15 @@ $$\frac{\sin(\heartsuit)}{\heartsuit} \to 1, \qquad\text{gdy } \heartsuit \to 0$
 > $\lim\limits_{x\to2^+}\dfrac{\sin x}{x^2} = \dfrac{\sin 2}{4}$. Tu po prostu **wstawiasz**, bo nie ma żadnego symbolu nieoznaczonego (Z03 6f, pułapka).
 > Przesunięty punkt: $\lim\limits_{x\to5}\frac{x-5}{\sin(3(x-5))}$. Podstawiasz $t = x - 5 \to 0$ i masz $\frac{t}{\sin 3t} \to \frac13$.
 
+> [!question] ✏️ Sprawdź się – 1.6
+> a) $\lim\limits_{x\to0}\dfrac{\sin 6x}{2x}$ b) $\lim\limits_{x\to0}\dfrac{\sin 5x}{\sin 2x}$ c) $\lim\limits_{x\to1}\dfrac{\sin(x - 1)}{x^2 - 1}$ d) $\lim\limits_{x\to\pi}\dfrac{\sin x}{x}$
+>
+> > [!success]- Rozwiązanie
+> > a) $\left[\frac00\right]$. $\frac{\sin 6x}{6x}\cdot\frac{6x}{2x} \to 1\cdot 3 = 3$.
+> > b) $\left[\frac00\right]$. $\dfrac{\frac{\sin 5x}{5x}\cdot 5x}{\frac{\sin 2x}{2x}\cdot 2x} \to \dfrac{5x}{2x} = \dfrac52$.
+> > c) $\left[\frac00\right]$. Podstawiam $t = x - 1 \to 0$ i rozkładam mianownik: $\frac{\sin(x - 1)}{(x - 1)(x + 1)} = \underbrace{\frac{\sin(x - 1)}{x - 1}}_{\to 1}\cdot\frac{1}{x + 1} \to \frac12$.
+> > d) Pułapka: argument sinusa dąży do $\pi$, a nie do $0$. Nie ma symbolu nieoznaczonego, więc **wstawiam**: $\frac{\sin\pi}{\pi} = \frac{0}{\pi} = 0$.
+
 ##### 1.7 Typ e dla funkcji
 
 Działa to samo co w [[1_Analiza_Matematyczna#9. Liczba e i symbol jeden do nieskończoności|W1, rozdz. 9]], tylko $x$ może dążyć także do **zera**:
@@ -183,6 +241,16 @@ $$\lim_{x\to0}(1 + x)^{1/x} = e, \qquad \lim_{x\to0}(1 + ax)^{1/x} = e^a$$
 > Typ $1^\infty$: podstawa $p(x) \to 1$, wykładnik $w(x) \to \pm\infty$. Wtedy $\lim p^w = e^{\lim (p - 1)\cdot w}$.
 > Przykład: $\lim\limits_{x\to\infty}\left(\frac{2x-1}{2x+5}\right)^{3x}$: $\ p - 1 = \frac{-6}{2x+5}$, $\ (p-1)\cdot 3x = \frac{-18x}{2x+5} \to -9$. Wynik: $e^{-9}$.
 > Na kolokwium rozpisz „po bożemu” (dopasowanie wykładnika), skrótem tylko sprawdzaj.
+
+> [!question] ✏️ Sprawdź się – 1.7
+> a) $\lim\limits_{x\to0}(1 + 5x)^{1/x}$ b) $\lim\limits_{x\to0}(1 - 2x)^{3/x}$ c) $\lim\limits_{x\to\infty}\left(\dfrac{x + 3}{x + 1}\right)^x$
+>
+> > [!success]- Rozwiązanie
+> > a) $[1^\infty]$. Wzór $(1 + ax)^{1/x} \to e^a$ z $a = 5$: wynik $e^5$.
+> > b) $[1^\infty]$. $(1 - 2x)^{3/x} = \left[(1 - 2x)^{1/x}\right]^3 \to \left(e^{-2}\right)^3 = e^{-6}$.
+> > c) $[1^\infty]$. $\frac{x + 3}{x + 1} = 1 + \frac{2}{x + 1}$. Dopasowuję wykładnik:
+> > $$\left(1 + \frac{2}{x + 1}\right)^x = \left[\left(1 + \frac{2}{x + 1}\right)^{\frac{x + 1}{2}}\right]^{\frac{2x}{x + 1}} \to e^2$$
+> > bo nawias $\to e$, a $\frac{2x}{x + 1} \to 2$. Sprawdzenie skrótem: $(p - 1)\cdot x = \frac{2x}{x + 1} \to 2$ ✓.
 
 ##### 1.8 Kiedy granica nie istnieje
 
@@ -199,6 +267,17 @@ Dwa sposoby, żeby to **udowodnić**:
 >
 > $0 \ne 1$, więc granica nie istnieje. **Jak dobrać ciągi:** wybierz $x$, dla których to, co w środku, trafia w „ładne” kąty z różnymi wartościami.
 
+> [!question] ✏️ Sprawdź się – 1.8
+> Wykaż, że granica nie istnieje:
+> a) $\lim\limits_{x\to2}\dfrac{\lvert x - 2\rvert}{x - 2}$ b) $\lim\limits_{x\to-2}\operatorname{arctg}\dfrac{1}{x + 2}$ c) $\lim\limits_{x\to0}\cos\dfrac1x$ (sposób dwóch ciągów)
+>
+> > [!success]- Rozwiązanie
+> > a) Dla $x > 2$: $\frac{x - 2}{x - 2} = 1$, dla $x < 2$: $\frac{-(x - 2)}{x - 2} = -1$. Z prawej $1$, z lewej $-1$, różne, więc granica nie istnieje.
+> > b) $x \to -2^+$: $\frac{1}{x + 2} \to +\infty$, więc $\operatorname{arctg} \to \frac{\pi}{2}$. $\ x \to -2^-$: $\frac{1}{x + 2} \to -\infty$, więc $\operatorname{arctg} \to -\frac{\pi}{2}$. Różne, granica nie istnieje.
+> > c) $a_n = \frac{1}{2n\pi} \to 0$: $\ \cos\frac{1}{a_n} = \cos(2n\pi) = 1 \to 1$.
+> > $b_n = \frac{1}{\pi + 2n\pi} \to 0$: $\ \cos\frac{1}{b_n} = \cos(\pi + 2n\pi) = -1 \to -1$.
+> > $1 \ne -1$, więc granica nie istnieje.
+
 ##### 1.9 Twierdzenie o trzech funkcjach
 
 Dokładnie jak [[1_Analiza_Matematyczna#8. Twierdzenie o trzech ciągach (dwóch policjantów)|trzy ciągi z W1]]: jeśli $g(x) \le f(x) \le h(x)$ blisko punktu i $g, h$ mają tę samą granicę $L$, to $f$ też.
@@ -206,6 +285,14 @@ Dokładnie jak [[1_Analiza_Matematyczna#8. Twierdzenie o trzech ciągach (dwóch
 > [!example] $\lim\limits_{x\to0} x\sin\frac1x$
 > $\sin\frac1x$ wariuje, ale jest między $-1$ a $1$. Więc $-\lvert x\rvert \le x\sin\frac1x \le \lvert x\rvert$, oba końce $\to 0$. Wynik: $0$.
 > Krócej: [ograniczony · coś $\to 0$] $= 0$, jak w [[1_Analiza_Matematyczna#6.6 Ograniczony razy coś dążącego do zera daje zero|W1, 6.6]].
+
+> [!question] ✏️ Sprawdź się – 1.9
+> a) $\lim\limits_{x\to0} x^2\cos\dfrac1x$ b) $\lim\limits_{x\to\infty}\dfrac{\sin x}{x}$ c) $\lim\limits_{x\to\infty}\dfrac{3x + \cos x}{x}$
+>
+> > [!success]- Rozwiązanie
+> > a) $-1 \le \cos\frac1x \le 1$, więc $-x^2 \le x^2\cos\frac1x \le x^2$. Oba końce $\to 0$, wynik: $0$.
+> > b) $-\frac1x \le \frac{\sin x}{x} \le \frac1x$ (dla $x > 0$). Oba końce $\to 0$, wynik: $0$. (Uwaga: to **nie** jest wzór $\frac{\sin x}{x} \to 1$, bo $x \to \infty$, a nie do $0$!)
+> > c) $\frac{3x + \cos x}{x} = 3 + \frac{\cos x}{x}$. Jak w b): $-\frac1x \le \frac{\cos x}{x} \le \frac1x$, więc $\frac{\cos x}{x} \to 0$. Wynik: $3$.
 
 > [!success] ➡️ Teraz zrób
 > [[#Z03 Zadanie 1 – symbole z f i g|Z03: zadania 1–7]]. Potem wróć i czytaj rozdział 2.
@@ -232,6 +319,17 @@ Każdy warunek może się „zepsuć” na swój sposób:
 
 ![[AM_W2_ciaglosc.svg|700]]
 
+> [!question] ✏️ Sprawdź się – 2.1
+> Czy funkcja jest ciągła we wskazanym punkcie? Jeśli nie, który z trzech warunków się psuje?
+> a) $f(x) = \dfrac{x^2 - 1}{x - 1}$ dla $x \ne 1$, $\ f(1) = 2$; punkt $x_0 = 1$
+> b) ta sama funkcja, ale $f(1) = 3$
+> c) $f(x) = x + 1$ dla $x < 0$, $\ f(x) = x - 1$ dla $x \ge 0$; punkt $x_0 = 0$
+>
+> > [!success]- Rozwiązanie
+> > a) 1. $f(1) = 2$ ✓. 2. $\frac{(x - 1)(x + 1)}{x - 1} = x + 1 \to 2$ ✓. 3. $2 = f(1)$ ✓. **Ciągła.**
+> > b) Warunki 1 i 2 jak wyżej, ale $2 \ne 3 = f(1)$. Psuje się **warunek 3**: nieciągła.
+> > c) 1. $f(0) = -1$ ✓. 2. Z lewej $x + 1 \to 1$, z prawej $x - 1 \to -1$. Różne, więc psuje się **warunek 2** (skok): nieciągła.
+
 ##### 2.2 Co jest ciągłe automatycznie
 
 > [!important] Twierdzenia z wykładu
@@ -250,6 +348,17 @@ Każdy warunek może się „zepsuć” na swój sposób:
 > 3. $1 \ne 2 = f(0)$ ✗
 >
 > **Nieciągła** w zerze (przypadek 2 z rysunku: punkt „obok”). Gdyby ustalić $f(0) = 1$, byłaby ciągła.
+
+> [!question] ✏️ Sprawdź się – 2.2
+> Zbadaj ciągłość (gdzie są punkty „podejrzane”?):
+> a) $f(x) = e^{x^2} + \cos x$
+> b) $f(x) = \dfrac{\sin 3x}{x}$ dla $x \ne 0$, $\ f(0) = 3$
+> c) $f(x) = \dfrac{e^x - 1}{x}$ dla $x \ne 0$, $\ f(0) = 0$
+>
+> > [!success]- Rozwiązanie
+> > a) Funkcja elementarna (suma i złożenie klocków), dziedzina $\mathbb{R}$, więc **ciągła wszędzie**. Nie ma punktów podejrzanych.
+> > b) Dla $x \ne 0$ elementarna, więc ciągła. Podejrzany $x_0 = 0$: $\ \frac{\sin 3x}{x} = 3\cdot\frac{\sin 3x}{3x} \to 3 = f(0)$ ✓. **Ciągła wszędzie.**
+> > c) Dla $x \ne 0$ ciągła. W $x_0 = 0$: $\ \frac{e^x - 1}{x} \to 1$ (bonus z 1.5), a $f(0) = 0$. $1 \ne 0$, więc **nieciągła w zerze** (ciągła w pozostałych punktach).
 
 ##### 2.3 Funkcje sklejane i parametry
 
@@ -273,6 +382,17 @@ Typowe zadanie: dobierz $a$ (i $b$), żeby funkcja „z klamerką” była ciąg
 > - **Nieciągłe (skokowe):** cena przesyłki zależna od wagi (do 1 kg jedna cena, powyżej wyższa), opłata za parkowanie liczona za rozpoczętą godzinę, ocena z kolokwium w zależności od punktów (49 pkt → 2, 50 pkt → 3).
 > - W programowaniu `if` tworzy funkcję sklejaną. Zadanie 2.3 to pytanie: czy przy granicznym warunku obie gałęzie dają ten sam wynik? Jeśli nie, masz „skok”, a często też buga.
 
+> [!question] ✏️ Sprawdź się – 2.3
+> Dobierz parametry tak, żeby funkcja była ciągła:
+> a) $f(x) = ax + 1$ dla $x < 2$, $\ f(x) = x^2 - 1$ dla $x \ge 2$
+> b) $f(x) = \dfrac{\sin(ax)}{x}$ dla $x < 0$, $\ f(x) = x + 5$ dla $x \ge 0$
+> c) $f(x) = 2x + a$ dla $x < 0$, $\ f(x) = x^2 + b$ dla $0 \le x < 1$, $\ f(x) = 4x$ dla $x \ge 1$
+>
+> > [!success]- Rozwiązanie
+> > a) Punkt sklejenia $2$. Z lewej: $2a + 1$. Z prawej i wartość: $4 - 1 = 3$. $\ 2a + 1 = 3$, więc $a = 1$.
+> > b) Punkt sklejenia $0$. Z prawej i wartość: $f(0) = 5$. Z lewej (dla $a \ne 0$): $\frac{\sin(ax)}{x} = a\cdot\frac{\sin(ax)}{ax} \to a$. Więc $a = 5$. (Dla $a = 0$ lewy wzór to $0$, a $0 \ne 5$.)
+> > c) W $x = 0$: z lewej $a$, z prawej i wartość $b$, więc $a = b$. W $x = 1$: z lewej $1 + b$, z prawej i wartość $4$, więc $b = 3$. Odpowiedź: $a = b = 3$.
+
 ##### 2.4 Własność Darboux
 
 > [!important] Twierdzenie (Darboux, o wartości pośredniej)
@@ -288,6 +408,18 @@ Typowe zadanie: dobierz $a$ (i $b$), żeby funkcja „z klamerką” była ciąg
 > To ten sam pomysł co **wyszukiwanie binarne** (binary search) z ASD, a `git bisect` w ten sam sposób szuka commita, który wprowadził błąd.
 >
 > Druga wersja na co dzień: wchodzisz na górę i o 8:00 jesteś na 500 m n.p.m., a o 12:00 na 1500 m. **Na pewno** w którymś momencie byłeś dokładnie na 1000 m.
+
+> [!question] ✏️ Sprawdź się – 2.4
+> a) Wykaż, że równanie $x^3 + x - 1 = 0$ ma pierwiastek w przedziale $(0, 1)$.
+> b) Zrób jeden krok bisekcji dla a): w której połowie leży pierwiastek?
+> c) Wykaż, że równanie $e^x = 3 - x$ ma rozwiązanie w $(0, 1)$.
+> d) Dla $f(x) = \frac1x$ mamy $f(-1) = -1 < 0$ i $f(1) = 1 > 0$, a jednak $f$ nigdzie nie ma zera. Dlaczego to nie przeczy twierdzeniu Darboux?
+>
+> > [!success]- Rozwiązanie
+> > a) $f(x) = x^3 + x - 1$ jest ciągła (wielomian). $f(0) = -1 < 0$, $\ f(1) = 1 > 0$. Z Darboux istnieje $c \in (0, 1)$, że $f(c) = 0$.
+> > b) Środek: $f(0{,}5) = 0{,}125 + 0{,}5 - 1 = -0{,}375 < 0$. Znak zmienia się między $0{,}5$ a $1$, więc pierwiastek jest w $(0{,}5;\ 1)$.
+> > c) Przenoszę wszystko na jedną stronę: $f(x) = e^x + x - 3$, ciągła. $f(0) = 1 - 3 = -2 < 0$, $\ f(1) = e - 2 \approx 0{,}72 > 0$. Z Darboux jest rozwiązanie w $(0, 1)$.
+> > d) $\frac1x$ **nie jest ciągła na $[-1, 1]$** (w $0$ nie jest nawet określona, wykres „przeskakuje” z $-\infty$ na $+\infty$). Założenie twierdzenia nie jest spełnione.
 
 > [!success] ➡️ Teraz zrób
 > [[#Z03 Zadanie 8 – czy ciągła|Z03: zadania 8–10]]. Potem wróć i czytaj rozdział 3.
@@ -312,12 +444,30 @@ Typowe zadanie: dobierz $a$ (i $b$), żeby funkcja „z klamerką” była ciąg
 > [!warning] Dziura w dziedzinie to nie zawsze asymptota
 > $\frac{x^2 - 4}{x - 2} = x + 2$ dla $x \ne 2$. W $x = 2$ jest dziura, ale granica wynosi $4$ (skończona), więc **asymptoty brak**. Asymptota pionowa wymaga $\pm\infty$.
 
+> [!question] ✏️ Sprawdź się – 3.1
+> Znajdź asymptoty pionowe (z której strony?):
+> a) $f(x) = \dfrac{x + 2}{x - 3}$ b) $f(x) = \dfrac{x^2 - 9}{x + 3}$ c) $f(x) = \ln(x - 1)$
+>
+> > [!success]- Rozwiązanie
+> > a) Brak w dziedzinie: $x = 3$. $\left[\frac{5}{0}\right]$: z prawej $\left[\frac{5}{0^+}\right] = +\infty$, z lewej $\left[\frac{5}{0^-}\right] = -\infty$. Asymptota $x = 3$ **obustronna**.
+> > b) Brak w dziedzinie: $x = -3$. Ale $\left[\frac00\right]$: $\frac{(x - 3)(x + 3)}{x + 3} = x - 3 \to -6$. Granica skończona, więc **brak** asymptoty pionowej (tylko dziura).
+> > c) Dziedzina: $x > 1$. Przy $x \to 1^+$: $x - 1 \to 0^+$, więc $\ln(x - 1) \to -\infty$. Asymptota $x = 1$ **prawostronna** (z lewej nie ma dziedziny).
+
 ##### 3.2 Poziome
 
 > [!important] Definicja
 > Prosta $y = B$ jest **asymptotą poziomą** w $+\infty$ (w $-\infty$), gdy $\lim\limits_{x\to+\infty} f(x) = B$ (odpowiednio $x \to -\infty$), gdzie $B$ to **liczba**.
 
 W $+\infty$ i $-\infty$ mogą być **różne** asymptoty, np. $\operatorname{arctg} x$: $y = \frac{\pi}{2}$ w $+\infty$ i $y = -\frac{\pi}{2}$ w $-\infty$.
+
+> [!question] ✏️ Sprawdź się – 3.2
+> Znajdź asymptoty poziome (osobno w $+\infty$ i $-\infty$):
+> a) $f(x) = \dfrac{4x^2 - x}{2x^2 + 3}$ b) $f(x) = 3^x + 1$ c) $f(x) = 2\operatorname{arctg} x$
+>
+> > [!success]- Rozwiązanie
+> > a) Dzielę przez $x^2$: $\frac{4 - \frac1x}{2 + \frac{3}{x^2}} \to 2$ w obu nieskończonościach. Asymptota $y = 2$ w $\pm\infty$.
+> > b) $x \to -\infty$: $3^x \to 0$, więc $f \to 1$: asymptota $y = 1$ w $-\infty$. $\ x \to +\infty$: $3^x \to \infty$, brak asymptoty poziomej.
+> > c) $x \to +\infty$: $2\cdot\frac{\pi}{2} = \pi$; $\ x \to -\infty$: $2\cdot\left(-\frac{\pi}{2}\right) = -\pi$. Asymptoty: $y = \pi$ w $+\infty$, $\ y = -\pi$ w $-\infty$.
 
 ##### 3.3 Ukośne
 
@@ -340,6 +490,17 @@ W $+\infty$ i $-\infty$ mogą być **różne** asymptoty, np. $\operatorname{arc
 > | licznik = mianownik + 1 | **ukośna** (licz $m$ i $k$) |
 > | licznik ≥ mianownik + 2 | brak (rośnie szybciej niż prosta) |
 
+> [!question] ✏️ Sprawdź się – 3.3
+> a) Asymptota ukośna $f(x) = \dfrac{x^2 + 5x}{x + 1}$
+> b) Asymptota ukośna $f(x) = \dfrac{2x^3 + x}{x^2 + 1}$
+> c) Bez liczenia (skrót ze stopni): jaka asymptota w $\pm\infty$? $\ \text{(i) } \dfrac{x^4 + 1}{x^2 + 5}$, $\ \text{(ii) } \dfrac{5x - 1}{x^3 + 2}$, $\ \text{(iii) } \dfrac{3x^2 + 1}{6x^2 - x}$
+>
+> > [!success]- Rozwiązanie
+> > a) $m = \lim\dfrac{x^2 + 5x}{x(x + 1)} = \lim\dfrac{x^2 + 5x}{x^2 + x} = 1$.
+> > $k = \lim\left(\dfrac{x^2 + 5x}{x + 1} - x\right) = \lim\dfrac{x^2 + 5x - x^2 - x}{x + 1} = \lim\dfrac{4x}{x + 1} = 4$. Asymptota $y = x + 4$ w $\pm\infty$.
+> > b) $m = \lim\dfrac{2x^3 + x}{x^3 + x} = 2$. $\ k = \lim\left(\dfrac{2x^3 + x}{x^2 + 1} - 2x\right) = \lim\dfrac{2x^3 + x - 2x^3 - 2x}{x^2 + 1} = \lim\dfrac{-x}{x^2 + 1} = 0$. Asymptota $y = 2x$ w $\pm\infty$.
+> > c) (i) stopień licznika $4 \ge 2 + 2$: **brak**. (ii) licznik < mianownik: $y = 0$. (iii) stopnie równe: $y = \frac36 = \frac12$.
+
 ##### 3.4 Przepis na wszystkie asymptoty
 
 > [!tip] 4 kroki
@@ -360,6 +521,15 @@ W $+\infty$ i $-\infty$ mogą być **różne** asymptoty, np. $\operatorname{arc
 > **Pionowa: obciążenie serwera.** Średni czas obsługi żądania rośnie jak $\dfrac{1}{1 - \rho}$, gdzie $\rho$ to obciążenie (0 = bezczynny, 1 = 100%). Przy 50% obciążenia czekasz $2\times$ dłużej niż na pustym serwerze, przy 90% $10\times$, przy 99% $100\times$. Asymptota $\rho = 1$: dlatego admini alarmują już przy 80%, a nie przy 100%.
 >
 > **Pozioma w życiu:** ładowanie baterii zwalnia przy 100%, a herbata stygnie do temperatury pokoju.
+
+> [!question] ✏️ Sprawdź się – 3.4
+> Wyznacz wszystkie asymptoty:
+> a) $f(x) = \dfrac{x^2 + 3}{x - 2}$ b) $f(x) = \dfrac{x}{\sqrt{x^2 + 1}}$ c) $f(x) = e^{1/x}$
+>
+> > [!success]- Rozwiązanie
+> > a) Dziedzina $x \ne 2$. Pionowa: $\left[\frac{7}{0}\right]$, z prawej $+\infty$, z lewej $-\infty$, więc $x = 2$ obustronna. Ukośna: $m = \lim\frac{x^2 + 3}{x^2 - 2x} = 1$, $\ k = \lim\left(\frac{x^2 + 3}{x - 2} - x\right) = \lim\frac{2x + 3}{x - 2} = 2$. Asymptota $y = x + 2$ w $\pm\infty$.
+> > b) Dziedzina $\mathbb{R}$ ($x^2 + 1 > 0$), więc pionowych brak. $x \to +\infty$: $\frac{x}{x\sqrt{1 + 1/x^2}} \to 1$. $\ x \to -\infty$: $\sqrt{x^2 + 1} = -x\sqrt{1 + 1/x^2}$, więc $\frac{x}{-x\sqrt{\ldots}} \to -1$. Asymptoty: $y = 1$ w $+\infty$, $\ y = -1$ w $-\infty$.
+> > c) Dziedzina $x \ne 0$. $x \to 0^+$: $\frac1x \to +\infty$, $e^{+\infty} = +\infty$, więc $x = 0$ **prawostronna**. $x \to 0^-$: $\frac1x \to -\infty$, $e^{-\infty} = 0$ (z lewej asymptoty brak). W $\pm\infty$: $\frac1x \to 0$, $e^0 = 1$, więc $y = 1$ w $\pm\infty$.
 
 > [!success] ➡️ Teraz zrób
 > [[#Z03 Zadanie 11 – dopasuj wykres|Z03: zadania 11–12]]. Potem wróć i czytaj rozdział 4.
@@ -388,6 +558,14 @@ Styczną do okręgu łatwo zdefiniować („jeden punkt wspólny”), ale do dow
 Nachylenie siecznej $PQ$, gdy $P = (a, f(a))$ i $Q = (x, f(x))$, to „przyrost w pionie przez przyrost w poziomie”:
 $$m_Q = \frac{f(x) - f(a)}{x - a} = \frac{\Delta f}{\Delta x}$$
 
+> [!question] ✏️ Sprawdź się – 4.1
+> $f(x) = 2x^2$, punkt $P = (1, 2)$. Policz nachylenie siecznej $PQ$, gdy $Q$ ma pierwszą współrzędną: a) $x = 2$ b) $x = 1{,}1$ c) $x = 1{,}01$. Do jakiej liczby to dąży i co ta liczba oznacza?
+>
+> > [!success]- Rozwiązanie
+> > $m_Q = \frac{f(x) - f(1)}{x - 1} = \frac{2x^2 - 2}{x - 1}$:
+> > a) $\frac{8 - 2}{1} = 6$ b) $\frac{2{,}42 - 2}{0{,}1} = 4{,}2$ c) $\frac{2{,}0402 - 2}{0{,}01} = 4{,}02$
+> > Nachylenia dążą do $4$. To nachylenie **stycznej** do wykresu w punkcie $P$, czyli $f'(1) = 4$.
+
 ##### 4.2 Definicja i oznaczenia
 
 > [!important] Definicja pochodnej
@@ -402,6 +580,15 @@ $$m_Q = \frac{f(x) - f(a)}{x - a} = \frac{\Delta f}{\Delta x}$$
 > Jeśli widzisz $\lim\limits_{x\to a}\frac{f(x) - f(a)}{x - a}$, to **jest** $f'(a)$, nic nie licz!
 > $\lim\limits_{x\to\pi/7}\dfrac{\sin x - \sin\frac{\pi}{7}}{x - \frac{\pi}{7}} = (\sin x)'\big|_{x=\pi/7} = \cos\frac{\pi}{7}$
 
+> [!question] ✏️ Sprawdź się – 4.2
+> Rozpoznaj definicję pochodnej i podaj wynik bez liczenia granicy (pochodne z tablicy, rozdz. 6):
+> a) $\lim\limits_{x\to\pi/3}\dfrac{\cos x - \frac12}{x - \frac{\pi}{3}}$ b) $\lim\limits_{x\to1}\dfrac{\ln x}{x - 1}$ c) $\lim\limits_{\Delta x\to0}\dfrac{(2 + \Delta x)^4 - 16}{\Delta x}$
+>
+> > [!success]- Rozwiązanie
+> > a) $\frac12 = \cos\frac{\pi}{3}$, więc to $f'\left(\frac{\pi}{3}\right)$ dla $f = \cos x$: $\ -\sin\frac{\pi}{3} = -\frac{\sqrt3}{2}$.
+> > b) $\ln 1 = 0$, więc $\frac{\ln x - \ln 1}{x - 1}$ to $f'(1)$ dla $f = \ln x$: $\ \frac11 = 1$.
+> > c) $16 = 2^4$ i $x = 2 + \Delta x$, więc to $f'(2)$ dla $f = x^4$: $\ 4\cdot 2^3 = 32$.
+
 ##### 4.3 Pochodna z definicji
 
 > [!example] Przykład z wykładu: $f(x) = x^2$
@@ -414,6 +601,15 @@ $$m_Q = \frac{f(x) - f(a)}{x - a} = \frac{\Delta f}{\Delta x}$$
 > **Morał:** pochodna to **nowa funkcja**: w każdym punkcie podaje nachylenie. Dla $x^2$: w $x = 0$ płasko ($0$), w $x = 1$ nachylenie $2$, w $x = 3$ już $6$.
 
 Na szczęście nie trzeba tak liczyć za każdym razem. Raz policzone pochodne podstawowych funkcji trafiają do **tabeli** (rozdz. 6), a reguły (rozdz. 7) pozwalają składać z nich resztę.
+
+> [!question] ✏️ Sprawdź się – 4.3
+> Policz z definicji:
+> a) $f(x) = 3x^2$ w punkcie $a = 1$ b) $f(x) = \dfrac1x$ w punkcie $a = 2$ c) $f(x) = x^2 + 5x$ w dowolnym punkcie $a$
+>
+> > [!success]- Rozwiązanie
+> > a) $\lim\limits_{x\to1}\dfrac{3x^2 - 3}{x - 1}\left[\frac00\right] = \lim\limits_{x\to1}\dfrac{3(x - 1)(x + 1)}{x - 1} = \lim\limits_{x\to1} 3(x + 1) = 6$
+> > b) $\dfrac{\frac1x - \frac12}{x - 2} = \dfrac{\frac{2 - x}{2x}}{x - 2} = \dfrac{-(x - 2)}{2x(x - 2)} = -\dfrac{1}{2x} \to -\dfrac14$
+> > c) $\dfrac{x^2 + 5x - a^2 - 5a}{x - a} = \dfrac{(x - a)(x + a) + 5(x - a)}{x - a} = x + a + 5 \to 2a + 5$. Czyli $f'(x) = 2x + 5$.
 
 ##### 4.4 Interpretacja fizyczna – prędkość
 
@@ -443,6 +639,16 @@ Tabela z wykładu to swobodny spadek $f(t) = 16t^2$ (w stopach; w metrach byłob
 >
 > Gdy w wiadomościach mówią „inflacja spada”, a ceny dalej rosną, chodzi o to, że **pochodna** cen jest nadal dodatnia (ceny rosną), tylko maleje (rosną wolniej).
 
+> [!question] ✏️ Sprawdź się – 4.4
+> a) Droga kamienia to $s(t) = 5t^2$ (metry, sekundy). Policz prędkość średnią od $t = 2$ do $t = 3$ i prędkość chwilową w $t = 2$ (z definicji).
+> b) Samochód jedzie zgodnie ze wzorem $s(t) = 3t + 2$. Jaka jest jego prędkość chwilowa w dowolnej chwili?
+> c) $T(t)$ to temperatura herbaty (°C) po $t$ minutach. Co oznacza $T'(5) = -2$?
+>
+> > [!success]- Rozwiązanie
+> > a) Średnia: $\frac{s(3) - s(2)}{3 - 2} = \frac{45 - 20}{1} = 25$ m/s. Chwilowa: $\lim\limits_{t\to2}\frac{5t^2 - 20}{t - 2} = \lim\limits_{t\to2} 5(t + 2) = 20$ m/s.
+> > b) $\frac{(3t + 2) - (3t_0 + 2)}{t - t_0} = \frac{3(t - t_0)}{t - t_0} = 3$. Prędkość stała, $3$ w każdej chwili (ruch jednostajny, wykres to prosta o nachyleniu $3$).
+> > c) W 5. minucie herbata stygnie w tempie około **2 stopni na minutę** (minus: temperatura maleje).
+
 > [!success] ➡️ Teraz zrób
 > [[#Z04 Zadanie 0 – definicja pochodnej|Z04: zadanie 0]]. Potem wróć i czytaj rozdział 5.
 
@@ -465,6 +671,18 @@ Pochodne z wykładu: $\left(\sqrt[3]{x}\right)' = \dfrac{1}{3\sqrt[3]{x^2}} \to 
 
 > [!important] Różniczkowalna ⇒ ciągła (ale nie odwrotnie!)
 > Jeśli funkcja ma pochodną w punkcie, to jest w nim ciągła. **Odwrotnie nie:** $\lvert x\rvert$ jest ciągła w zerze, a pochodnej tam nie ma (kąt).
+
+> [!question] ✏️ Sprawdź się – 5
+> a) Czy $f(x) = \lvert x - 3\rvert$ ma pochodną w $x_0 = 3$? Policz ilorazy z lewej i z prawej.
+> b) Co się dzieje z pochodną $f(x) = \sqrt[5]{x}$ w $x_0 = 0$?
+> c) Czy $f(x) = x\lvert x\rvert$ ma pochodną w $x_0 = 0$?
+> d) Prawda czy fałsz: „jeśli $f$ jest ciągła w $x_0$, to ma tam pochodną”?
+>
+> > [!success]- Rozwiązanie
+> > a) $\frac{f(x) - f(3)}{x - 3} = \frac{\lvert x - 3\rvert}{x - 3}$: z prawej $1$, z lewej $-1$. Różne, więc pochodnej **nie ma** (kąt).
+> > b) $\frac{\sqrt[5]{x} - 0}{x - 0} = \frac{x^{1/5}}{x} = x^{-4/5} = \frac{1}{\sqrt[5]{x^4}}$. Mianownik $\to 0^+$ z obu stron, więc iloraz $\to +\infty$: pochodna niewłaściwa, **pionowa styczna** (jak $\sqrt[3]{x}$).
+> > c) $\frac{x\lvert x\rvert - 0}{x - 0} = \lvert x\rvert \to 0$ z obu stron. **Tak**, $f'(0) = 0$ (moduł nie zawsze psuje pochodną!).
+> > d) **Fałsz.** Kontrprzykład: $\lvert x\rvert$ w zerze jest ciągła, ale pochodnej nie ma. Prawdziwe jest odwrotne: różniczkowalna ⇒ ciągła.
 
 ---
 
@@ -503,6 +721,16 @@ Pochodne z wykładu: $\left(\sqrt[3]{x}\right)' = \dfrac{1}{3\sqrt[3]{x^2}} \to 
 > [!warning] Pochodna „względem czego”?
 > $f(y) = \dfrac{1}{x^3}$: zmienną jest $y$, a $x$ to tu **stała**. Pochodna względem $y$ wynosi więc $0$ (Z04 1i, pułapka). Zawsze patrz, **jaka litera jest w nawiasie** przy $f(\cdot)$.
 
+> [!question] ✏️ Sprawdź się – 6
+> Oblicz pochodne z tablicy (najpierw przepisz na potęgę, gdzie się da):
+> a) $x^6$, $\ \dfrac{1}{x^3}$ b) $\sqrt[5]{x^2}$, $\ f(t) = t\sqrt t$ c) $5^x$, $\ \log_3 x$ d) $f(t) = a^2 t$ (pochodna względem $t$)
+>
+> > [!success]- Rozwiązanie
+> > a) $(x^6)' = 6x^5$; $\ \frac{1}{x^3} = x^{-3}$, więc $-3x^{-4} = -\frac{3}{x^4}$.
+> > b) $x^{2/5}$, więc $\frac25 x^{-3/5} = \frac{2}{5\sqrt[5]{x^3}}$ (bo $\frac25 - 1 = -\frac35$); $\ t\sqrt t = t^{3/2}$, więc $\frac32 t^{1/2} = \frac32\sqrt t$.
+> > c) $(5^x)' = 5^x\ln 5$; $\ (\log_3 x)' = \frac{1}{x\ln 3}$.
+> > d) Zmienną jest $t$, a $a^2$ to stała: $(a^2 t)' = a^2$.
+
 > [!success] ➡️ Teraz zrób
 > [[#Z04 Zadanie 1 – z tablic|Z04: zadanie 1]]. Potem wróć i czytaj rozdział 7.
 
@@ -523,6 +751,13 @@ Pochodne z wykładu: $\left(\sqrt[3]{x}\right)' = \dfrac{1}{3\sqrt[3]{x^2}} \to 
 Stałą wyciągasz przed pochodną, a sumę różniczkujesz wyraz po wyrazie:
 $$\left(3x^4 - 5\sin x + 7\right)' = 3\cdot4x^3 - 5\cos x + 0 = 12x^3 - 5\cos x$$
 
+> [!question] ✏️ Sprawdź się – 7.1
+> a) $\left(2x^5 - 4\cos x + 3\sqrt x - 9\right)'$ b) $\left(7e^x - \ln x + \dfrac x3\right)'$
+>
+> > [!success]- Rozwiązanie
+> > a) $2\cdot5x^4 - 4\cdot(-\sin x) + 3\cdot\frac{1}{2\sqrt x} - 0 = 10x^4 + 4\sin x + \frac{3}{2\sqrt x}$ (uwaga na minus przy cosinusie: minus razy minus daje plus).
+> > b) $7e^x - \frac1x + \frac13$.
+
 ##### 7.2 Iloczyn
 
 > [!tip] „Pierwszy pochodna razy drugi plus pierwszy razy drugi pochodna”
@@ -530,6 +765,14 @@ $$\left(3x^4 - 5\sin x + 7\right)' = 3\cdot4x^3 - 5\cos x + 0 = 12x^3 - 5\cos x$
 
 > [!warning] Najczęstszy błąd: $(f\cdot g)' \ne f'\cdot g'$
 > Sprawdź na $x\cdot x = x^2$: poprawnie $(x^2)' = 2x$. A „pochodna razy pochodna” dałaby $1\cdot1 = 1$ ✗.
+
+> [!question] ✏️ Sprawdź się – 7.2
+> a) $\left(x^3 e^x\right)'$ b) $(x\ln x)'$ c) $\left(\sqrt x\cos x\right)'$
+>
+> > [!success]- Rozwiązanie
+> > a) $3x^2\cdot e^x + x^3\cdot e^x = x^2 e^x(x + 3)$
+> > b) $1\cdot\ln x + x\cdot\frac1x = \ln x + 1$
+> > c) $\frac{1}{2\sqrt x}\cos x + \sqrt x\cdot(-\sin x) = \frac{\cos x}{2\sqrt x} - \sqrt x\sin x$
 
 ##### 7.3 Iloraz
 
@@ -545,6 +788,15 @@ $$\left(3x^4 - 5\sin x + 7\right)' = 3\cdot4x^3 - 5\cos x + 0 = 12x^3 - 5\cos x$
 > - Stała w mianowniku: $\left(\frac{x^3}{5}\right)' = \frac15\cdot3x^2$ (reguła 1).
 > - Stała w liczniku: $\frac{1}{x^4} = x^{-4}$, więc pochodna to $-4x^{-5}$ (wzór na potęgę).
 > - Czasem warto najpierw **uprościć**: $\frac{e^{x^2 + \ln x + 1}}{\sqrt x} = \frac{e^{x^2+1}\cdot e^{\ln x}}{\sqrt x} = \frac{x\,e^{x^2+1}}{\sqrt x} = \sqrt x\, e^{x^2+1}$ (Z04 2k).
+
+> [!question] ✏️ Sprawdź się – 7.3
+> a) $\left(\dfrac{x}{x + 1}\right)'$ b) $\left(\dfrac{x^2 + 1}{x - 3}\right)'$ c) $\left(\dfrac{\sin x}{x}\right)'$ d) $\left(\dfrac{x^2}{7}\right)'$
+>
+> > [!success]- Rozwiązanie
+> > a) $\dfrac{1\cdot(x + 1) - x\cdot 1}{(x + 1)^2} = \dfrac{1}{(x + 1)^2}$
+> > b) $\dfrac{2x(x - 3) - (x^2 + 1)\cdot 1}{(x - 3)^2} = \dfrac{2x^2 - 6x - x^2 - 1}{(x - 3)^2} = \dfrac{x^2 - 6x - 1}{(x - 3)^2}$
+> > c) $\dfrac{\cos x\cdot x - \sin x\cdot 1}{x^2} = \dfrac{x\cos x - \sin x}{x^2}$
+> > d) Stała w mianowniku, wzór na iloraz niepotrzebny: $\frac17\cdot 2x = \frac{2x}{7}$.
 
 ##### 7.4 Funkcja złożona – reguła łańcuchowa
 
@@ -575,6 +827,16 @@ To najważniejsza i najczęściej psuta reguła. Złożenie to „funkcja w funk
 > [!example] 🌍 Z życia: reguła łańcuchowa uczy sieci neuronowe
 > Sieć neuronowa to **złożenie** setek funkcji: wynik warstwy 1 wchodzi do warstwy 2, ta do warstwy 3 i tak dalej. Żeby poprawić wagi, trzeba wiedzieć, jak błąd na końcu zależy od wagi na początku, czyli policzyć pochodną funkcji złożonej. Algorytm **backpropagation**, którym trenuje się ChatGPT, rozpoznawanie twarzy czy tłumacze, to po prostu **reguła łańcuchowa** stosowana warstwa po warstwie od końca. Biblioteki jak PyTorch robią to automatycznie („autograd”), ale pod spodem jest dokładnie ten wzór.
 
+> [!question] ✏️ Sprawdź się – 7.4
+> a) $\left(\cos 5x\right)'$ b) $\left((x^2 + 1)^4\right)'$ c) $\left(\ln(\sin x)\right)'$ d) $\left(\sqrt{1 + e^{2x}}\right)'$
+>
+> > [!success]- Rozwiązanie
+> > a) Zewnętrzna $\cos t$, środek $5x$: $\ -\sin 5x\cdot 5 = -5\sin 5x$.
+> > b) Zewnętrzna $t^4$, środek $x^2 + 1$: $\ 4(x^2 + 1)^3\cdot 2x = 8x(x^2 + 1)^3$.
+> > c) Zewnętrzna $\ln t$, środek $\sin x$: $\ \frac{1}{\sin x}\cdot\cos x = \frac{\cos x}{\sin x} = \operatorname{ctg} x$.
+> > d) Trzy warstwy (pierwiastek, $1 + e^{\ldots}$, $2x$):
+> > $$\frac{1}{2\sqrt{1 + e^{2x}}}\cdot e^{2x}\cdot 2 = \frac{e^{2x}}{\sqrt{1 + e^{2x}}}$$
+
 > [!success] ➡️ Teraz zrób
 > [[#Z04 Zadanie 2 – reguły|Z04: zadanie 2]]. Potem wróć i czytaj rozdział 8.
 
@@ -596,6 +858,14 @@ Co z $x^x$? To nie jest $x^r$ (wykładnik nie jest stały) ani $a^x$ (podstawa n
 > **Ogólny wzór** (dobry do sprawdzania): $\left(f^g\right)' = f^g\cdot\left(g'\ln f + g\cdot\frac{f'}{f}\right)$.
 
 Przykład z wykładu: $\left(\sqrt[x]{x}\right)' = \left(x^{1/x}\right)' = \left(e^{\frac{\ln x}{x}}\right)' = x^{1/x}\cdot\dfrac{1 - \ln x}{x^2}$.
+
+> [!question] ✏️ Sprawdź się – 8
+> a) $\left(x^{2x}\right)'$ b) $\left(x^{\sqrt x}\right)'$ c) Sprawdź sztuczką $e^{\ln}$, że $(2^x)' = 2^x\ln 2$.
+>
+> > [!success]- Rozwiązanie
+> > a) $x^{2x} = e^{2x\ln x}$. $\ (2x\ln x)' = 2\ln x + 2x\cdot\frac1x = 2\ln x + 2$. Wynik: $x^{2x}(2\ln x + 2)$.
+> > b) $x^{\sqrt x} = e^{\sqrt x\ln x}$. $\ (\sqrt x\ln x)' = \frac{\ln x}{2\sqrt x} + \sqrt x\cdot\frac1x = \frac{\ln x}{2\sqrt x} + \frac{1}{\sqrt x} = \frac{\ln x + 2}{2\sqrt x}$. Wynik: $x^{\sqrt x}\cdot\dfrac{\ln x + 2}{2\sqrt x}$.
+> > c) $2^x = e^{x\ln 2}$, a $\ln 2$ to stała, więc $(x\ln 2)' = \ln 2$. Wynik: $e^{x\ln 2}\cdot\ln 2 = 2^x\ln 2$ ✓ (zgadza się z tablicą).
 
 > [!success] ➡️ Teraz zrób
 > [[#Z04 Zadanie 3 – x w wykładniku|Z04: zadanie 3*]]. Potem wróć i czytaj rozdział 9.
@@ -620,6 +890,18 @@ $$f'' = (f')', \qquad f''' = (f'')', \qquad f^{(n)} = \left(f^{(n-1)}\right)', \
 > - Położenie, **prędkość** ($f'$), **przyspieszenie** ($f''$). Spadek $16t^2$: prędkość $32t$, przyspieszenie $32$ ft/s², czyli stałe $g$!
 > - Na wykresie $f'' > 0$ oznacza wykres wygięty jak uśmiech ∪, a $f'' < 0$ jak smutna buźka ∩. To narzędzie z W4 (punkty przegięcia).
 > - W ekonomii: „dynamika wzrostu PKB spada” to $f' > 0$, ale $f'' < 0$.
+
+> [!question] ✏️ Sprawdź się – 9
+> a) $f(x) = x^4 - 2x^3 + x$: policz $f'$, $f''$, $f'''$, $f^{(4)}$, $f^{(5)}$.
+> b) $y = \sin 2x$: policz $y''$. c) $y = x\ln x$: policz $y''$.
+> d) $f$ dwukrotnie różniczkowalna, $y = f(e^x)$: policz $y''$.
+>
+> > [!success]- Rozwiązanie
+> > a) $f' = 4x^3 - 6x^2 + 1$, $\ f'' = 12x^2 - 12x$, $\ f''' = 24x - 12$, $\ f^{(4)} = 24$, $\ f^{(5)} = 0$.
+> > b) $y' = 2\cos 2x$, $\ y'' = 2\cdot(-\sin 2x)\cdot 2 = -4\sin 2x$.
+> > c) $y' = \ln x + 1$ (iloczyn, jak w 7.2), $\ y'' = \frac1x$.
+> > d) $y' = f'(e^x)\cdot e^x$. Druga to pochodna iloczynu:
+> > $$y'' = \underbrace{f''(e^x)\cdot e^x}_{\text{łańcuch}}\cdot e^x + f'(e^x)\cdot e^x = e^{2x}f''(e^x) + e^x f'(e^x)$$
 
 > [!success] ➡️ Teraz zrób
 > [[#Z04 Zadanie 4 – druga pochodna|Z04: zadania 4–5]]. Potem wróć i czytaj rozdział 10.
@@ -647,6 +929,17 @@ $$f'' = (f')', \qquad f''' = (f'')', \qquad f^{(n)} = \left(f^{(n-1)}\right)', \
 > **Ile to jest $\sqrt{4{,}1}$?** $f = \sqrt x$, $x_0 = 4$, $f(4) = 2$, $f'(x) = \frac{1}{2\sqrt x}$, $f'(4) = \frac14$.
 > $$\sqrt{4{,}1} \approx 2 + \tfrac14\cdot0{,}1 = 2{,}025 \qquad(\text{dokładnie } 2{,}02485\ldots)$$
 > W ten sposób fizycy upraszczają wzory ($\sin x \approx x$ dla małych kątów to styczna do sinusa w zerze), a inżynierowie „linearyzują” układy. W W3 zobaczysz rozwinięcie: **wielomian Taylora**, czyli przybliżenie parabolą i wyższymi wielomianami.
+
+> [!question] ✏️ Sprawdź się – 10
+> Napisz równanie stycznej:
+> a) $y = x^3 - 2x$ w $x_0 = 2$ b) $y = e^x$ w $x_0 = 0$ c) $y = \frac1x$ w $x_0 = 2$
+> d) Oszacuj $\sqrt[3]{8{,}12}$ przybliżeniem liniowym w $x_0 = 8$.
+>
+> > [!success]- Rozwiązanie
+> > a) $f(2) = 8 - 4 = 4$, $\ f' = 3x^2 - 2$, $\ f'(2) = 10$. $\ y = 4 + 10(x - 2) = 10x - 16$. Sprawdzenie: $20 - 16 = 4$ ✓.
+> > b) $f(0) = 1$, $\ f'(0) = e^0 = 1$. $\ y = 1 + 1\cdot(x - 0) = x + 1$.
+> > c) $f(2) = \frac12$, $\ f' = -\frac{1}{x^2}$, $\ f'(2) = -\frac14$. $\ y = \frac12 - \frac14(x - 2) = -\frac14 x + 1$.
+> > d) $f = \sqrt[3]{x} = x^{1/3}$, $\ f(8) = 2$, $\ f' = \frac{1}{3\sqrt[3]{x^2}}$, $\ f'(8) = \frac{1}{3\cdot 4} = \frac{1}{12}$. $\ \sqrt[3]{8{,}12} \approx 2 + \frac{1}{12}\cdot 0{,}12 = 2{,}01$ (dokładnie $2{,}00995\ldots$).
 
 > [!success] ➡️ Teraz zrób
 > [[#Z04 Zadanie 6 – styczna|Z04: zadania 6–7]]. Na koniec [[#Ściąga – najważniejsze wzory i zasady|ściąga]] i [[#Test gotowości|test gotowości]].

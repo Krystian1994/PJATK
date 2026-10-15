@@ -94,6 +94,18 @@ Tylko przejrzyj. Wracaj tu, gdy trafisz na nieznany znak.
 > [!tip] Nawias przy nieskończoności
 > Przy $\infty$ zawsze jest nawias okrągły: $[0, \infty)$. Nieskończoność to nie liczba, więc nie może „należeć” do przedziału.
 
+> [!question] ✏️ Sprawdź się – 0
+> a) Przeczytaj słowami: $\forall x \in \mathbb{R}:\ x^2 + 1 > 0$. Czy to prawda?
+> b) Które z liczb $2$, $3{,}5$, $5$ należą do przedziału $(2, 5]$?
+> c) Zapisz za pomocą przedziałów: „wszystkie liczby oprócz $3$” oraz „liczby większe lub równe $-1$”.
+> d) Prawda czy fałsz: $x > 3 \Rightarrow x > 1$? A $x > 1 \Rightarrow x > 3$?
+>
+> > [!success]- Rozwiązanie
+> > a) „Dla każdego $x$ należącego do liczb rzeczywistych $x^2 + 1$ jest większe od zera”. Prawda, bo $x^2 \ge 0$, więc $x^2 + 1 \ge 1 > 0$.
+> > b) $2$ **nie** (nawias okrągły, koniec nie należy), $3{,}5$ tak, $5$ tak (nawias kwadratowy).
+> > c) $\mathbb{R}\setminus\{3\} = (-\infty, 3) \cup (3, \infty)$ oraz $[-1, \infty)$ (przy $\infty$ zawsze nawias okrągły).
+> > d) Pierwsze: prawda (każda liczba większa od 3 jest większa od 1). Drugie: fałsz, np. $x = 2$: $2 > 1$, ale $2 > 3$ nie zachodzi.
+
 ---
 
 #### 1. Potęgi i funkcja wykładnicza
@@ -129,6 +141,18 @@ Dziedzina: $\mathbb{R}$ (każdy wykładnik wolno wstawić). Zbiór wartości: $(
 
 > [!tip] Liczba $e \approx 2{,}718$
 > $e^x$ to najważniejsza funkcja wykładnicza w analizie. Spotkasz ją w zadaniu 8f.
+
+> [!question] ✏️ Sprawdź się – 1
+> a) Oblicz: $16^{-1/2}$ oraz $32^{3/5}$.
+> b) Uprość: $\dfrac{2^{x+3}\cdot 2^{x}}{4}$.
+> c) Czy równanie $3^x = -9$ ma rozwiązanie?
+> d) Która funkcja rośnie, a która maleje: $5^x$, $\left(\frac13\right)^x$? Przez jaki punkt przechodzą obie?
+>
+> > [!success]- Rozwiązanie
+> > a) $16^{-1/2} = \dfrac{1}{16^{1/2}} = \dfrac{1}{\sqrt{16}} = \dfrac14$ (wzory 2 i 3). $\ 32^{3/5} = \left(\sqrt[5]{32}\right)^3 = 2^3 = 8$.
+> > b) Licznik: $2^{x+3}\cdot 2^x = 2^{2x+3}$ (wzór 6). Mianownik: $4 = 2^2$. Wynik: $2^{2x+3-2} = 2^{2x+1}$ (wzór 7).
+> > c) Nie. $3^x > 0$ zawsze, więc nigdy nie wyjdzie liczba ujemna.
+> > d) $5^x$ rośnie (podstawa $5 > 1$), $\left(\frac13\right)^x$ maleje (podstawa między $0$ a $1$). Obie przechodzą przez $(0, 1)$, bo $a^0 = 1$.
 
 ---
 
@@ -199,6 +223,18 @@ Dlaczego: $\log_a x$ to „potęga, do której podnosisz $a$, żeby dostać $x$�
 > $$\log_a x \;<\; x \;<\; a^x$$
 > Logarytm rośnie „najwolniej”, a wykładnicza „najszybciej”. Wzór z kartki z zadaniami ($a > 1$) jest uproszczeniem: dla wszystkich $x$ działa, gdy $a > e^{1/e} \approx 1{,}44$. To będzie ważne przy **granicach**.
 
+> [!question] ✏️ Sprawdź się – 2
+> a) Oblicz z definicji: $\log_3 81$, $\ \log_2 \frac{1}{32}$, $\ \log_{25} 5$.
+> b) Oblicz: $\log_6 4 + \log_6 9$.
+> c) Oblicz: $9^{\log_3 5}$.
+> d) Oblicz zmianą podstawy: $\log_8 4$.
+>
+> > [!success]- Rozwiązanie
+> > a) $\log_3 81 = 4$, bo $3^4 = 81$. $\ \log_2\frac{1}{32} = -5$, bo $2^{-5} = \frac{1}{32}$. $\ \log_{25} 5 = \frac12$, bo $25^{1/2} = \sqrt{25} = 5$.
+> > b) Suma logów = log iloczynu (wzór 1): $\log_6(4\cdot 9) = \log_6 36 = 2$, bo $6^2 = 36$.
+> > c) $9 = 3^2$, więc $9^{\log_3 5} = 3^{2\log_3 5} = 3^{\log_3 5^2} = 5^2 = 25$ (wzór 3, potem $a^{\log_a x} = x$).
+> > d) Obie liczby to potęgi dwójki, więc $b = 2$: $\log_8 4 = \dfrac{\log_2 4}{\log_2 8} = \dfrac23$. Sprawdzenie: $8^{2/3} = (\sqrt[3]{8})^2 = 2^2 = 4$ ✓
+
 > [!success] ➡️ Teraz zrób
 > [[#Zadanie 1 – wartości logarytmów i potęg|Zadanie 1]]. Potem wróć i czytaj rozdział 3.
 
@@ -231,17 +267,49 @@ $$\Delta = b^2 - 4ac, \qquad x_{1,2} = \frac{-b \pm \sqrt{\Delta}}{2a}$$
 > [!tip] Wierzchołek paraboli
 > $x_w = -\frac{b}{2a}$. Dla $a > 0$ to miejsce **najmniejszej** wartości. Przyda się w zad. 7e.
 
+> [!question] ✏️ Sprawdź się – 3.1
+> a) Rozwiąż: $x^2 - 2x - 15 = 0$.
+> b) Rozwiąż: $4x^2 - 4x + 1 = 0$.
+> c) Rozwiąż: $x^2 + x + 3 = 0$. Jaki znak ma wyrażenie $x^2 + x + 3$?
+> d) Znajdź najmniejszą wartość $f(x) = x^2 - 6x + 2$ i dla jakiego $x$ jest osiągana.
+>
+> > [!success]- Rozwiązanie
+> > a) $a = 1,\ b = -2,\ c = -15$. $\Delta = 4 + 60 = 64$, $\sqrt\Delta = 8$. $x_1 = \frac{2 + 8}{2} = 5$, $\ x_2 = \frac{2 - 8}{2} = -3$.
+> > b) $\Delta = 16 - 16 = 0$, jedno rozwiązanie: $x_0 = -\frac{b}{2a} = \frac{4}{8} = \frac12$.
+> > c) $\Delta = 1 - 12 = -11 < 0$, brak rozwiązań. Wyrażenie ma stały znak taki jak $a = 1$, czyli jest **zawsze dodatnie**.
+> > d) $a = 1 > 0$, więc w wierzchołku jest minimum: $x_w = -\frac{-6}{2} = 3$, $\ f(3) = 9 - 18 + 2 = -7$. Najmniejsza wartość to $-7$ dla $x = 3$.
+
 ##### 3.2 Iloczyn równy zero
 
 $$A \cdot B = 0 \Leftrightarrow A = 0 \lor B = 0$$
 
 Uwaga na czynniki, które **nigdy nie są zerem**: $2^x > 0$ zawsze (rozdz. 1), $x^2 + 10 > 0$ zawsze, wyrażenie kwadratowe z $\Delta < 0$ i $a > 0$ jest zawsze dodatnie. Takie czynniki można w równaniu pominąć.
 
+> [!question] ✏️ Sprawdź się – 3.2
+> a) Rozwiąż: $(x - 4)(2x + 1) = 0$.
+> b) Rozwiąż: $3^x(x^2 - 9) = 0$.
+> c) Rozwiąż: $x(x + 7)(x^2 + 1) = 0$.
+>
+> > [!success]- Rozwiązanie
+> > a) $x - 4 = 0$ lub $2x + 1 = 0$, czyli $x = 4$ lub $x = -\frac12$.
+> > b) $3^x > 0$ zawsze, więc ten czynnik pomijamy. $x^2 - 9 = 0 \Rightarrow x = 3$ lub $x = -3$.
+> > c) $x^2 + 1 > 0$ zawsze, pomijamy. Zostaje $x = 0$ lub $x + 7 = 0$, czyli $x = 0$ lub $x = -7$.
+
 ##### 3.3 Ułamek równy zero
 
 $$\frac{L}{M} = 0 \Leftrightarrow L = 0 \ \land\ M \ne 0$$
 
 Ułamek jest zerem, gdy **licznik** jest zerem. Mianownik nie może być zerem, bo przez zero się nie dzieli.
+
+> [!question] ✏️ Sprawdź się – 3.3
+> a) Rozwiąż: $\dfrac{x^2 - 25}{x + 5} = 0$.
+> b) Rozwiąż: $\dfrac{x - 3}{x^2 + 4} = 0$.
+> c) Rozwiąż: $\dfrac{x^2 - x}{x^2 - 1} = 0$.
+>
+> > [!success]- Rozwiązanie
+> > a) Mianownik: $x \ne -5$. Licznik: $x^2 = 25 \Rightarrow x = 5$ lub $x = -5$. Odpada $x = -5$ (zakazane). Wynik: $x = 5$.
+> > b) Mianownik $x^2 + 4 > 0$ zawsze, więc nie ma zakazanych liczb. Licznik: $x = 3$.
+> > c) Mianownik: $x^2 - 1 \ne 0 \Rightarrow x \ne 1$ i $x \ne -1$. Licznik: $x(x - 1) = 0 \Rightarrow x = 0$ lub $x = 1$. Odpada $x = 1$. Wynik: $x = 0$.
 
 > [!success] ➡️ Teraz zrób
 > [[#Zadanie 2 – równania|Zadanie 2]]. Potem wróć i czytaj rozdział 4.
@@ -275,6 +343,18 @@ Które funkcje znasz już jako rosnące:
 > [!example] $x^9 < 1$
 > $1 = 1^9$, a $x^9$ jest rosnąca, więc zdejmujemy potęgę bez zmiany znaku: $x < 1$.
 
+> [!question] ✏️ Sprawdź się – 4.1
+> a) Rozwiąż: $x^5 > 32$.
+> b) Rozwiąż: $\left(\frac12\right)^x < \frac14$.
+> c) Rozwiąż: $\sqrt{x} < 3$.
+> d) Ktoś z $x^2 > 4$ wyciągnął wniosek $x > 2$. Gdzie jest błąd i jaka jest poprawna odpowiedź?
+>
+> > [!success]- Rozwiązanie
+> > a) $32 = 2^5$, a $x^5$ jest rosnąca, więc zdejmujemy potęgę bez zmiany znaku: $x > 2$.
+> > b) $\frac14 = \left(\frac12\right)^2$. Funkcja $\left(\frac12\right)^x$ jest **malejąca**, więc znak się odwraca: $x > 2$.
+> > c) $3 = \sqrt9$, a $\sqrt{x}$ jest rosnąca: $x < 9$. Do tego pierwiastek wymaga $x \ge 0$. Wynik: $x \in [0, 9)$.
+> > d) $x^2$ **nie jest** monotoniczna na całej osi, więc nie wolno jej tak „zdjąć”. Np. $x = -3$: $9 > 4$, a $-3 > 2$ nie zachodzi. Poprawnie: $(x-2)(x+2) > 0 \Rightarrow x \in (-\infty, -2) \cup (2, \infty)$.
+
 ##### 4.2 Nierówności wielomianowe – metoda wężyka
 
 Przykład: $(x+1)(x^2 - 4) \le 0$
@@ -302,6 +382,18 @@ Odpowiedź: $x \in (-\infty, -2] \cup [-1, 2]$.
 
 Czynniki zawsze dodatnie ($2^x$, $x^2 + 10$) można pominąć, bo nie zmieniają znaku.
 
+> [!question] ✏️ Sprawdź się – 4.2
+> a) Rozwiąż: $(x + 3)(x - 1)(x - 5) < 0$.
+> b) Rozwiąż: $(x - 2)^2(x + 1) \ge 0$.
+> c) Rozwiąż: $x^3 - 4x \le 0$.
+> d) Rozwiąż: $-x^2 + 4x - 3 > 0$.
+>
+> > [!success]- Rozwiązanie
+> > a) Miejsca zerowe: $-3, 1, 5$. Start z prawej nad osią: $+$ na $(5, \infty)$, $-$ na $(1, 5)$, $+$ na $(-3, 1)$, $-$ na $(-\infty, -3)$. Bierzemy minusy: $x \in (-\infty, -3) \cup (1, 5)$.
+> > b) $x = 2$ podwójny (odbicie), $x = -1$ pojedynczy. Z prawej $+$, w $2$ odbicie, więc na $(-1, 2)$ też $+$, a na $(-\infty, -1)$ $-$. Z miejscami zerowymi: $x \in [-1, \infty)$. Sprawdź: $x = 0$ daje $4 \cdot 1 = 4 \ge 0$ ✓
+> > c) Wyłącz $x$: $x(x^2 - 4) = x(x - 2)(x + 2) \le 0$. Miejsca zerowe: $-2, 0, 2$. Znaki od prawej: $+, -, +, -$. Wynik: $x \in (-\infty, -2] \cup [0, 2]$.
+> > d) Pomnóż przez $-1$ i **odwróć znak**: $x^2 - 4x + 3 < 0$, czyli $(x - 1)(x - 3) < 0$. Parabola ramionami w górę jest ujemna między miejscami zerowymi: $x \in (1, 3)$. (Albo wężykiem: przy $x^2$ stoi $-1$, więc start z prawej **pod** osią.)
+
 ##### 4.3 Nierówności z ułamkiem
 
 $$\frac{L}{M} < 0 \Leftrightarrow L \cdot M < 0 \quad (\text{i } M \ne 0)$$
@@ -311,6 +403,16 @@ Ułamek i iloczyn mają ten sam znak (plus przez minus i plus razy minus dają m
 > [!warning] Nie mnóż nierówności przez mianownik!
 > Nie wiesz, czy mianownik jest dodatni, czy ujemny. Gdyby był ujemny, znak musiałby się odwrócić.
 
+> [!question] ✏️ Sprawdź się – 4.3
+> a) Rozwiąż: $\dfrac{x - 4}{x + 2} < 0$.
+> b) Rozwiąż: $\dfrac{2x - 6}{x + 1} \ge 0$.
+> c) Rozwiąż: $\dfrac{3}{x - 1} > 2$.
+>
+> > [!success]- Rozwiązanie
+> > a) Tak jak $(x - 4)(x + 2) < 0$, $x \ne -2$. Ujemne między miejscami zerowymi: $x \in (-2, 4)$.
+> > b) Tak jak $(2x - 6)(x + 1) \ge 0$, ale $x \ne -1$. Miejsca zerowe $-1$ i $3$, dodatnie na zewnątrz. $-1$ odpada (mianownik), $3$ zostaje (licznik $= 0$): $x \in (-\infty, -1) \cup [3, \infty)$.
+> > c) **Nie mnóż przez $x - 1$!** Przenieś $2$ na lewo: $\dfrac{3}{x-1} - 2 = \dfrac{3 - 2(x - 1)}{x - 1} = \dfrac{5 - 2x}{x - 1} > 0$. Tak jak $(5 - 2x)(x - 1) > 0$. Miejsca zerowe $1$ i $\frac52$, przy $x^2$ stoi $-2 < 0$, więc dodatnie **między** nimi: $x \in \left(1, \frac52\right)$. Sprawdź: $x = 2$ daje $3 > 2$ ✓
+
 ##### 4.4 Nierówności z logarytmem
 
 > [!example] $\log_5(5 - 3x) > 1$
@@ -318,6 +420,16 @@ Ułamek i iloczyn mają ten sam znak (plus przez minus i plus razy minus dają m
 > 2. **Prawą stronę zapisz jako log:** $1 = \log_5 5$.
 > 3. $\log_5(5-3x) > \log_5 5$. $\log_5$ jest rosnący (podstawa $5 > 1$), więc zdejmujemy go bez zmiany znaku: $5 - 3x > 5 \Leftrightarrow x < 0$.
 > 4. **Oba warunki naraz:** $x < 0$ i $x < \frac53$, więc $x \in (-\infty, 0)$.
+
+> [!question] ✏️ Sprawdź się – 4.4
+> a) Rozwiąż: $\log_2(x - 1) < 3$.
+> b) Rozwiąż: $\log_3(2x + 1) \ge 2$.
+> c) Rozwiąż: $\log_{\frac13}(x + 2) > -1$.
+>
+> > [!success]- Rozwiązanie
+> > a) Warunek: $x - 1 > 0 \Leftrightarrow x > 1$. $3 = \log_2 8$, $\log_2$ rosnący: $x - 1 < 8 \Leftrightarrow x < 9$. Razem: $x \in (1, 9)$.
+> > b) Warunek: $2x + 1 > 0 \Leftrightarrow x > -\frac12$. $2 = \log_3 9$, $\log_3$ rosnący: $2x + 1 \ge 9 \Leftrightarrow x \ge 4$. Razem: $x \in [4, \infty)$.
+> > c) Warunek: $x > -2$. $-1 = \log_{\frac13} 3$, bo $\left(\frac13\right)^{-1} = 3$. Podstawa $\frac13 < 1$, więc log jest **malejący** i znak się odwraca: $x + 2 < 3 \Leftrightarrow x < 1$. Razem: $x \in (-2, 1)$.
 
 > [!success] ➡️ Teraz zrób
 > [[#Zadanie 3 – nierówności|Zadanie 3]]. Potem wróć i czytaj rozdział 5.
@@ -337,6 +449,16 @@ $$\pi\ \text{rad} = 180^\circ \qquad\Rightarrow\qquad 1^\circ = \frac{\pi}{180}\
 
 > [!warning] Liczba bez $\pi$ to też radiany!
 > $\sin\frac12$ to sinus kąta $0{,}5$ rad $\approx 28{,}6^\circ$, a **nie** $\sin 30^\circ$. Ma to znaczenie w zadaniu 6a.
+
+> [!question] ✏️ Sprawdź się – 5.1
+> a) Zamień na radiany: $120^\circ$, $135^\circ$, $300^\circ$.
+> b) Zamień na stopnie: $\frac{\pi}{12}$, $\frac{7\pi}{6}$.
+> c) Ile mniej więcej stopni to kąt $2$ rad (bez $\pi$)?
+>
+> > [!success]- Rozwiązanie
+> > a) Mnożymy przez $\frac{\pi}{180}$: $120^\circ = \frac{120\pi}{180} = \frac{2\pi}{3}$, $\ 135^\circ = \frac{3\pi}{4}$, $\ 300^\circ = \frac{5\pi}{3}$.
+> > b) W miejsce $\pi$ wstaw $180^\circ$: $\frac{180^\circ}{12} = 15^\circ$, $\ \frac{7\cdot 180^\circ}{6} = 210^\circ$.
+> > c) $2 \cdot \frac{180^\circ}{\pi} \approx \frac{360^\circ}{3{,}14} \approx 114{,}6^\circ$. Liczba bez $\pi$ to też radiany!
 
 ##### 5.2 Czym są sin, cos, tg, ctg
 
@@ -420,6 +542,20 @@ Jak czytać:
 >
 > „$+2k\pi$” znaczy tylko: **ten sam kawałek powtórzony co pełny obrót** ($\approx 6{,}28$) w prawo i w lewo.
 
+> [!question] ✏️ Sprawdź się – 5.2
+> a) Podaj znaki $\sin$, $\cos$, $\operatorname{tg}$ dla kątów: $x = 2$, $\ x = 4$, $\ x = \frac{5\pi}{3}$.
+> b) Diabelski młyn: gdzie jest wagonik po przejechaniu $x = \pi$, a gdzie po $x = \frac{5\pi}{2}$? Podaj $\sin x$ i $\cos x$.
+> c) Wiadomo, że $\sin x = 0{,}6$ i $x$ leży w I ćwiartce. Oblicz $\cos x$ i $\operatorname{tg} x$.
+> d) Dla jakich $u \in [0, 2\pi]$ zachodzi $\sin u < 0$?
+>
+> > [!success]- Rozwiązanie
+> > a) $x = 2$: $\frac{\pi}{2} \approx 1{,}57 < 2 < \pi \approx 3{,}14$, II ćwiartka: $\sin +$, $\cos -$, $\operatorname{tg} -$.
+> > $x = 4$: $\pi < 4 < \frac{3\pi}{2} \approx 4{,}71$, III ćwiartka: $\sin -$, $\cos -$, $\operatorname{tg} +$.
+> > $x = \frac{5\pi}{3}$: między $\frac{3\pi}{2}$ a $2\pi$, IV ćwiartka: $\sin -$, $\cos +$, $\operatorname{tg} -$.
+> > b) $x = \pi$: pół obrotu, z lewej na wysokości osi: $\sin\pi = 0$, $\cos\pi = -1$. $\ x = \frac{5\pi}{2} = 2\pi + \frac{\pi}{2}$: pełny obrót i jeszcze ćwierć, czyli na samej górze: $\sin = 1$, $\cos = 0$.
+> > c) Z $\sin^2 x + \cos^2 x = 1$: $\cos^2 x = 1 - 0{,}36 = 0{,}64$, a w I ćwiartce $\cos > 0$, więc $\cos x = 0{,}8$. $\ \operatorname{tg} x = \frac{0{,}6}{0{,}8} = 0{,}75$.
+> > d) Wagonik jest pod osią w drugiej połowie obrotu: $u \in (\pi, 2\pi)$ (końce odpadają, bo tam $\sin = 0$).
+
 ##### 5.3 Tabela wartości
 
 | $x$ | $0$ | $\frac{\pi}{6}$ | $\frac{\pi}{4}$ | $\frac{\pi}{3}$ | $\frac{\pi}{2}$ |
@@ -432,6 +568,16 @@ Jak czytać:
 > $\sin$ w kolejnych kolumnach to $\frac{\sqrt0}{2}, \frac{\sqrt1}{2}, \frac{\sqrt2}{2}, \frac{\sqrt3}{2}, \frac{\sqrt4}{2}$. $\cos$ to ta sama lista **od tyłu**.
 
 Inne wartości do zapamiętania: $\sin\pi = 0$, $\cos\pi = -1$, $\sin\frac{3\pi}{2} = -1$, $\cos\frac{3\pi}{2} = 0$. Sinus jest **nieparzysty**: $\sin(-x) = -\sin x$, np. $\sin(-\frac{\pi}{6}) = -\frac12$.
+
+> [!question] ✏️ Sprawdź się – 5.3
+> a) Oblicz: $\sin\frac{\pi}{3} + \cos\frac{\pi}{6}$.
+> b) Oblicz: $\operatorname{tg}\frac{\pi}{6} \cdot \operatorname{tg}\frac{\pi}{3}$.
+> c) Oblicz: $\sin\left(-\frac{\pi}{4}\right)$ oraz $\cos\pi + \sin\frac{3\pi}{2}$.
+>
+> > [!success]- Rozwiązanie
+> > a) $\frac{\sqrt3}{2} + \frac{\sqrt3}{2} = \sqrt3$.
+> > b) $\frac{\sqrt3}{3}\cdot\sqrt3 = \frac{3}{3} = 1$.
+> > c) Sinus jest nieparzysty: $\sin\left(-\frac{\pi}{4}\right) = -\frac{\sqrt2}{2}$. $\ \cos\pi + \sin\frac{3\pi}{2} = -1 + (-1) = -2$.
 
 ##### 5.4 Własności czterech funkcji
 
@@ -470,11 +616,35 @@ Inne wartości do zapamiętania: $\sin\pi = 0$, $\cos\pi = -1$, $\sin\frac{3\pi}
 - Dziedzina $\operatorname{ctg}$: w mianowniku jest $\sin x$, który jest zerem dla $x = k\pi$.
 - **Okresowość:** wykres powtarza się co okres, np. $\sin(x + 2\pi) = \sin x$. Dlatego równania trygonometryczne mają **nieskończenie wiele** rozwiązań, stąd „$+2k\pi$” w odpowiedziach.
 
+> [!question] ✏️ Sprawdź się – 5.4
+> a) Czy istnieje $\operatorname{tg}\frac{3\pi}{2}$? A $\operatorname{ctg}\frac{3\pi}{2}$? Jeśli tak, oblicz.
+> b) Podaj miejsca zerowe $\cos x$ w przedziale $[0, 2\pi]$.
+> c) Korzystając z okresowości, oblicz: $\sin\frac{13\pi}{6}$ oraz $\operatorname{tg}\frac{5\pi}{4}$.
+> d) Czy równanie $\sin x = 1{,}2$ ma rozwiązanie? A $\operatorname{tg} x = 1{,}2$?
+>
+> > [!success]- Rozwiązanie
+> > a) $\frac{3\pi}{2} = \frac{\pi}{2} + 1\cdot\pi$, więc jest poza dziedziną tangensa: $\operatorname{tg}\frac{3\pi}{2}$ **nie istnieje** ($\cos\frac{3\pi}{2} = 0$). $\operatorname{ctg}$ wymaga tylko $x \ne k\pi$, więc istnieje: $\operatorname{ctg}\frac{3\pi}{2} = \frac{\cos\frac{3\pi}{2}}{\sin\frac{3\pi}{2}} = \frac{0}{-1} = 0$.
+> > b) Ze wzoru $\frac{\pi}{2} + k\pi$: dla $k = 0$ i $k = 1$ dostajemy $\frac{\pi}{2}$ i $\frac{3\pi}{2}$.
+> > c) $\frac{13\pi}{6} = \frac{\pi}{6} + 2\pi$, okres $\sin$ to $2\pi$: $\sin\frac{13\pi}{6} = \sin\frac{\pi}{6} = \frac12$. $\ \frac{5\pi}{4} = \frac{\pi}{4} + \pi$, okres $\operatorname{tg}$ to $\pi$: $\operatorname{tg}\frac{5\pi}{4} = \operatorname{tg}\frac{\pi}{4} = 1$.
+> > d) $\sin x = 1{,}2$: nie, zbiór wartości $\sin$ to $[-1, 1]$. $\ \operatorname{tg} x = 1{,}2$: tak, zbiór wartości $\operatorname{tg}$ to $\mathbb{R}$.
+
 ##### 5.5 Równanie sin x = a
 
 (Dla $-1 \le a \le 1$. Dla innych $a$ nie ma rozwiązań.) Na jednym okresie sinus przyjmuje każdą wartość z $(-1, 1)$ **dwa razy**. Jeśli $x_0$ jest jednym rozwiązaniem, to drugim jest $\pi - x_0$. Wszystkie rozwiązania:
 $$x = x_0 + 2k\pi \qquad\lor\qquad x = \pi - x_0 + 2k\pi$$
 Jak znaleźć $x_0$, gdy $a$ nie jest „ładną” liczbą z tabeli? Do tego służy $\arcsin$ z następnego rozdziału: $x_0 = \arcsin a$.
+
+> [!question] ✏️ Sprawdź się – 5.5
+> a) Rozwiąż: $\sin x = \frac{\sqrt2}{2}$.
+> b) Rozwiąż: $\sin x = -\frac12$.
+> c) Rozwiąż: $\sin x = 3$.
+> d) Zapisz wszystkie rozwiązania $\sin x = 0{,}3$ (liczba nie jest z tabeli).
+>
+> > [!success]- Rozwiązanie
+> > a) Z tabeli $x_0 = \frac{\pi}{4}$, drugie: $\pi - \frac{\pi}{4} = \frac{3\pi}{4}$. Wynik: $x = \frac{\pi}{4} + 2k\pi$ lub $x = \frac{3\pi}{4} + 2k\pi$, $k \in \mathbb{Z}$.
+> > b) Sinus jest nieparzysty, więc $x_0 = -\frac{\pi}{6}$. Drugie: $\pi - \left(-\frac{\pi}{6}\right) = \frac{7\pi}{6}$. Wynik: $x = -\frac{\pi}{6} + 2k\pi$ lub $x = \frac{7\pi}{6} + 2k\pi$, $k \in \mathbb{Z}$.
+> > c) Brak rozwiązań, bo $3 > 1$, a sinus nigdy nie wychodzi poza $[-1, 1]$.
+> > d) $x_0 = \arcsin 0{,}3$, więc $x = \arcsin 0{,}3 + 2k\pi$ lub $x = \pi - \arcsin 0{,}3 + 2k\pi$, $k \in \mathbb{Z}$.
 
 ---
 
@@ -519,6 +689,18 @@ Dziedzina $\arcsin$ i $\arccos$ to $[-1, 1]$, bo sinus i cosinus przyjmują tylk
 > [!example] Nierówność z arcusem (zastosowanie rozdz. 4.1)
 > $\operatorname{arctg}(2x) < \frac{\pi}{4}$. $\operatorname{arctg}$ jest rosnący, więc nakładamy na obie strony $\operatorname{tg}$ bez zmiany znaku: $2x < \operatorname{tg}\frac{\pi}{4} = 1$, czyli $x < \frac12$.
 
+> [!question] ✏️ Sprawdź się – 6
+> a) Oblicz: $\arccos\frac{\sqrt2}{2}$, $\ \arcsin\left(-\frac{\sqrt3}{2}\right)$, $\ \operatorname{arctg}\frac{\sqrt3}{3}$, $\ \arccos(-1)$.
+> b) Które wyrażenie istnieje: $\arcsin 1{,}5$, $\ \operatorname{arctg} 100$?
+> c) Oblicz: $\arcsin\left(\sin\frac{2\pi}{3}\right)$.
+> d) Rozwiąż nierówność: $\arcsin x > \frac{\pi}{6}$.
+>
+> > [!success]- Rozwiązanie
+> > a) $\frac{\pi}{4}$ (bo $\cos\frac{\pi}{4} = \frac{\sqrt2}{2}$ i $\frac{\pi}{4} \in [0, \pi]$), $\ -\frac{\pi}{3}$ (bo $\arcsin(-a) = -\arcsin a$), $\ \frac{\pi}{6}$ (bo $\operatorname{tg}\frac{\pi}{6} = \frac{\sqrt3}{3}$), $\ \pi$ (bo $\cos\pi = -1$ i $\pi \in [0, \pi]$).
+> > b) $\arcsin 1{,}5$ **nie istnieje** ($1{,}5 \notin [-1, 1]$). $\operatorname{arctg} 100$ istnieje, bo dziedzina $\operatorname{arctg}$ to $\mathbb{R}$ (wynik jest trochę mniejszy od $\frac{\pi}{2}$).
+> > c) Najpierw środek: $\sin\frac{2\pi}{3} = \frac{\sqrt3}{2}$. Potem $\arcsin\frac{\sqrt3}{2} = \frac{\pi}{3}$. **Nie** $\frac{2\pi}{3}$, bo ten kąt jest poza $[-\frac{\pi}{2}, \frac{\pi}{2}]$.
+> > d) Dziedzina: $x \in [-1, 1]$. $\frac{\pi}{6} = \arcsin\frac12$, a $\arcsin$ jest rosnący, więc $\arcsin x > \arcsin\frac12 \Leftrightarrow x > \frac12$. Razem z dziedziną: $x \in \left(\frac12, 1\right]$.
+
 > [!success] ➡️ Teraz zrób
 > [[#Zadanie 4 – wartości arcusów|Zadania 4, 5 i 6*]]. Potem wróć i czytaj rozdział 7.
 
@@ -561,6 +743,16 @@ Na wykresie:
 
 **Funkcje elementarne:** wszystko, co da się zbudować z funkcji poznanych w rozdziałach 1–6 (potęgi, wykładnicze, logarytmy, trygonometryczne, arcusy) za pomocą $+,\ -,\ \cdot,\ :$ i składania (rozdz. 9), np. $5^{\sqrt{\cos x + 3x^8}}$.
 
+> [!question] ✏️ Sprawdź się – 7
+> a) Czy okrąg $x^2 + y^2 = 4$ jest wykresem funkcji? Uzasadnij testem prostej pionowej.
+> b) Dla $f(x) = x^2 - 3x$ oblicz $f(-2)$ i $f(a + 1)$.
+> c) Podaj dziedzinę i zbiór wartości: $y = \sqrt{x - 2}$ oraz $y = x^2 + 3$.
+>
+> > [!success]- Rozwiązanie
+> > a) Nie. Prosta pionowa $x = 0$ przecina okrąg dwa razy: w $(0, 2)$ i $(0, -2)$. Jednemu $x$ odpowiadają dwie wartości.
+> > b) $f(-2) = (-2)^2 - 3\cdot(-2) = 4 + 6 = 10$. $\ f(a+1) = (a+1)^2 - 3(a+1) = a^2 + 2a + 1 - 3a - 3 = a^2 - a - 2$ (w miejsce **każdego** $x$ wstawiamy $(a+1)$ w nawiasie).
+> > c) $y = \sqrt{x-2}$: $x - 2 \ge 0$, więc $D = [2, \infty)$, $W = [0, \infty)$. $\ y = x^2 + 3$: $D = \mathbb{R}$, a $x^2 \ge 0$, więc $x^2 + 3 \ge 3$ i $W = [3, \infty)$.
+
 ---
 
 #### 8. Dziedzina naturalna – lista kontrolna
@@ -590,6 +782,19 @@ Na wykresie:
 
 > [!tip] Zbiór wartości
 > Zastanów się, jakie wartości przyjmuje „środek”, a potem co z nimi robi funkcja zewnętrzna. Przykład: $\sqrt{x}$ daje wszystko z $[0, \infty)$.
+
+> [!question] ✏️ Sprawdź się – 8
+> Wyznacz dziedzinę naturalną:
+> a) $f(x) = \dfrac{1}{x^2 - 9}$
+> b) $f(x) = \sqrt{6 - 2x} + \ln(x + 1)$
+> c) $f(x) = \arcsin(x - 2)$
+> d) $f(x) = \operatorname{tg}(2x)$
+>
+> > [!success]- Rozwiązanie
+> > a) $x^2 - 9 \ne 0 \Leftrightarrow x \ne 3$ i $x \ne -3$. $D = \mathbb{R}\setminus\{-3, 3\}$.
+> > b) Pierwiastek: $6 - 2x \ge 0 \Leftrightarrow x \le 3$. Logarytm: $x + 1 > 0 \Leftrightarrow x > -1$. Część wspólna: $D = (-1, 3]$.
+> > c) $-1 \le x - 2 \le 1$, dodaj $2$ do wszystkich stron: $1 \le x \le 3$. $D = [1, 3]$.
+> > d) $2x \ne \frac{\pi}{2} + k\pi$, podziel przez 2: $x \ne \frac{\pi}{4} + \frac{k\pi}{2}$, $k \in \mathbb{Z}$.
 
 > [!success] ➡️ Teraz zrób
 > [[#Zadanie 7 – dziedzina naturalna i zbiór wartości|Zadania 7 i 8]]. Potem wróć i czytaj rozdział 9.
@@ -627,6 +832,18 @@ Czytaj od środka: **najpierw** $g$, a jej wynik wkładasz do $f$.
 
 Najprościej: napisz gotowy wzór na złożenie i zastosuj listę kontrolną z rozdziału 8. Pamiętaj o warunkach z funkcji wewnętrznej, nawet jeśli „znikną” po uproszczeniu wzoru.
 
+> [!question] ✏️ Sprawdź się – 9
+> a) $f(x) = x^2 + 1$, $g(x) = 2x - 3$. Wyznacz $f(g(x))$ i $g(f(x))$.
+> b) Rozpisz od zewnątrz do środka: $\operatorname{tg}^2(e^x + 1)$.
+> c) $f(x) = \ln x$, $g(x) = 4 - x^2$. Wyznacz $f(g(x))$ i jego dziedzinę.
+> d) $f(x) = x^2$, $g(x) = \sqrt{x}$. Uprość $f(g(x))$ i podaj dziedzinę.
+>
+> > [!success]- Rozwiązanie
+> > a) $f(g(x)) = (2x - 3)^2 + 1 = 4x^2 - 12x + 9 + 1 = 4x^2 - 12x + 10$. $\ g(f(x)) = 2(x^2 + 1) - 3 = 2x^2 - 1$. Wyszły różne funkcje: kolejność ma znaczenie.
+> > b) Kalkulator na końcu podnosi do kwadratu: $t^2$, $\ t = \operatorname{tg} s$, $\ s = e^x + 1$.
+> > c) $f(g(x)) = \ln(4 - x^2)$. Warunek: $4 - x^2 > 0 \Leftrightarrow (2 - x)(2 + x) > 0 \Leftrightarrow x \in (-2, 2)$.
+> > d) $f(g(x)) = (\sqrt{x})^2 = x$, ale warunek z funkcji wewnętrznej zostaje: $x \ge 0$. To funkcja $x$ tylko na $D = [0, \infty)$.
+
 > [!success] ➡️ Teraz zrób
 > [[#Zadanie 9 – rozkład złożenia|Zadania 9 i 10]]. Potem wróć i czytaj rozdział 10.
 
@@ -658,6 +875,18 @@ Pary funkcji wzajemnie odwrotnych, które już znasz:
 | $\sin x$ na $[-\frac{\pi}{2}, \frac{\pi}{2}]$ | $\arcsin x$ |
 | $\cos x$ na $[0, \pi]$ | $\arccos x$ |
 | $\operatorname{tg} x$ na $(-\frac{\pi}{2}, \frac{\pi}{2})$ | $\operatorname{arctg} x$ |
+
+> [!question] ✏️ Sprawdź się – 10
+> a) Wyznacz $f^{-1}$ dla $f(x) = 3x + 6$ i sprawdź złożeniem.
+> b) Wyznacz $f^{-1}$ dla $f(x) = \log_2 x + 3$.
+> c) Czy $f(x) = x^2 + 1$ (na całym $\mathbb{R}$) ma funkcję odwrotną?
+> d) Wiadomo, że $f(4) = 7$. Ile wynosi $f^{-1}(7)$?
+>
+> > [!success]- Rozwiązanie
+> > a) $y = 3x + 6 \Rightarrow x = \frac{y - 6}{3} \Rightarrow f^{-1}(x) = \frac{x - 6}{3}$. Sprawdzenie: $f(f^{-1}(x)) = 3\cdot\frac{x-6}{3} + 6 = x$ ✓, $\ f^{-1}(f(x)) = \frac{3x + 6 - 6}{3} = x$ ✓
+> > b) $y = \log_2 x + 3 \Rightarrow \log_2 x = y - 3 \Rightarrow x = 2^{y-3}$. Zamiana nazw: $f^{-1}(x) = 2^{x-3}$.
+> > c) Nie, bo nie jest różnowartościowa: $f(1) = f(-1) = 2$.
+> > d) $f^{-1}$ cofa działanie $f$: skoro $f(4) = 7$, to $f^{-1}(7) = 4$.
 
 > [!success] ➡️ Teraz zrób
 > [[#Zadanie 11* – czy funkcje są wzajemnie odwrotne?|Zadanie 11*]]. Na koniec [[#Ściąga – najważniejsze wzory i zasady|ściąga]] i [[#Most do analizy – po co mi to?|test gotowości]].
