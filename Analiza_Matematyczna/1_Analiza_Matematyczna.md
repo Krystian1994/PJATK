@@ -66,8 +66,9 @@ Tylko przejrzyj. Wracaj tu, gdy trafisz na nieznany znak.
 
 | Symbol | Czytamy | Przykład |
 |---|---|---|
-| $a_n$ | „$a$ $n$-te”, czyli wyraz ciągu o numerze $n$ | $a_3$ to trzeci wyraz |
+| $a_n$ | „$a$ $n$-te”, czyli wyraz ciągu o numerze $n$. Numer $n$ to **liczba naturalna** ($n \in \mathbb{N}$: $1, 2, 3, \dots$), nigdy ułamek ani liczba ujemna. Czasem ciąg zaczyna się od $n = 0$ albo od większego $n$, gdy wzór nie działa dla małych (dla granicy to bez znaczenia) | $a_3$ to trzeci wyraz; $\ a_n = \frac{1}{n-3}$ ma sens od $n = 4$ |
 | $\lim\limits_{n\to\infty} a_n$ | „granica $a_n$, gdy $n$ dąży do nieskończoności” | $\lim\limits_{n\to\infty} \frac1n = 0$ |
+| $\lim a_n$ | **skrót** od $\lim\limits_{n\to\infty} a_n$. Przy ciągach $n$ zawsze dąży do $\infty$, więc można tego nie pisać. Przy funkcjach (W2) trzeba pisać, dokąd dąży $x$, np. $\lim\limits_{x\to 2}$. Na kolokwium dopisz $n\to\infty$ przynajmniej w pierwszej linijce | $\lim\frac{-3}{n^2} = \lim\limits_{n\to\infty}\frac{-3}{n^2} = 0$ |
 | $a_n \to g$ | „$a_n$ dąży do $g$” (to samo co $\lim a_n = g$) | $\frac1n \to 0$ |
 | $\infty$ | nieskończoność: **nie jest liczbą**, to skrót od „rośnie bez końca” | $n^2 \to \infty$ |
 | $n!$ | silnia: $1\cdot2\cdot3\cdot\ldots\cdot n$ | $4! = 24$, $\ 0! = 1$ |
@@ -430,6 +431,22 @@ Niech $c > 0$ będzie zwykłą liczbą.
 > [!question] ✏️ Sprawdź się – 3
 > Podaj typ w nawiasie i wynik: a) $\lim\dfrac{-3}{n^2}$ b) $\lim\left(5 - 2n^3\right)$ c) $\lim\left(\dfrac1n\right)^n$ d) $\lim\dfrac{1}{\sqrt[n]5 - \sqrt[n]7}$
 >
+> > [!info]- Co znaczy „typ” i „wynik”?
+> > - **Typ** = co wychodzi, gdy w głowie wstawisz bardzo duże $n$. Zapisujesz go w nawiasie kwadratowym. To notatka na boku, nie rachunek.
+> > - **Wynik** = wartość granicy, czyli liczba (albo $\pm\infty$), do której dąży ciąg.
+> >
+> > Na przykładzie a) $\lim\frac{-3}{n^2}$:
+> > 1. **Typ:** licznik to stała $-3$, mianownik $n^2 \to \infty$, więc $\left[\frac{-3}{\infty}\right]$.
+> > 2. **Wynik:** liczba podzielona przez coś ogromnego daje prawie zero ($\frac{-3}{1\,000\,000} = -0{,}000003$), więc $0$.
+> >
+> > Cały zapis: $\lim\frac{-3}{n^2}\left[\frac{-3}{\infty}\right] = 0$.
+> >
+> > **Po co typ?** Mówi, czy możesz od razu podać wynik:
+> > - **typ oznaczony**, np. $\left[\frac{\text{liczba}}{\infty}\right]$, $[5 - \infty]$, $\left[\frac{1}{0^-}\right]$: wynik od razu z reguł powyżej,
+> > - **typ nieoznaczony**, np. $\left[\frac{\infty}{\infty}\right]$, $[\infty - \infty]$: z samego typu nie wiadomo, ile wyjdzie, trzeba przekształcać (rozdziały 6–9).
+> >
+> > W tym zadaniu wszystkie typy są oznaczone.
+>
 > > [!success]- Rozwiązanie
 > > a) $\left[\frac{-3}{\infty}\right] = 0$
 > > b) $5 - 2n^3$: $[5 - \infty] = -\infty$
@@ -473,6 +490,21 @@ Tak jak w W0 funkcje elementarne budowało się z klocków, tak prawie każdą g
 > **Wniosek do trzech ciągów (rozdz. 8):** $\sqrt[n]{5} \to 1$, $\ \sqrt[n]{n^2} = \left(\sqrt[n]n\right)^2 \to 1$, $\ \sqrt[n]{\tfrac12} \to 1$. **Stałe i wielomiany pod $\sqrt[n]{\ }$ „znikają”** (dają 1).
 >
 > (Na wykładzie przy klocku 3 jest napisane „$a > 1$”, ale przykład $\sqrt[n]{1/3} \to 1$ pokazuje, że działa dla każdego $a > 0$. Tak też jest na kartce Z01.)
+
+> [!warning] ⚠️ Pułapka: $\sqrt[n]{\frac12} \to 1$, a nie $0$!
+> Nie myl klocka 3 z klockiem 2. Różnica jest w wykładniku:
+>
+> | | wzór | $n=2$ | $n=4$ | $n=8$ | $n=16$ | granica |
+> |---|---|---|---|---|---|---|
+> | **potęga** (klocek 2) | $\left(\frac12\right)^n$ | $0{,}25$ | $0{,}063$ | $0{,}004$ | $0{,}00002$ | $\to 0$ |
+> | **pierwiastek** (klocek 3) | $\sqrt[n]{\frac12} = \left(\frac12\right)^{1/n}$ | $0{,}71$ | $0{,}84$ | $0{,}92$ | $0{,}96$ | $\to 1$ |
+>
+> - **Potęga:** mnożysz $\frac12$ przez siebie coraz więcej razy. Każde mnożenie zmniejsza wynik o połowę, więc dąży do $0$.
+> - **Pierwiastek:** szukasz liczby, która pomnożona przez siebie $n$ razy da $\frac12$. Gdyby to było np. $0{,}5$, to $0{,}5^{16}$ byłoby prawie zerem, czyli za mało. Taka liczba musi więc leżeć tuż pod $1$, np. $0{,}96$.
+>
+> To samo działa z góry: $\sqrt[n]{16} = 4;\ 2;\ 1{,}41;\ 1{,}19;\ 1{,}09 \to 1$. Duże $a$ spada do $1$ z góry, małe $a$ rośnie do $1$ z dołu.
+>
+> **W skrócie:** wykładnik $n$ to „mnóż wiele razy” (ucieka do $0$ lub $\infty$), a wykładnik $\frac1n$ to „pierwiastek wysokiego stopnia”, który zawsze ciągnie wynik do $1$.
 
 > [!example] 🌍 Z życia: ciąg geometryczny $q^n$ jest wszędzie
 > **$\lvert q\rvert < 1$, czyli zanik do zera:**
@@ -518,14 +550,19 @@ Tak jak w W0 funkcje elementarne budowało się z klocków, tak prawie każdą g
 
 Jeśli $a_n \to a$ i $b_n \to b$, gdzie $a, b$ to **zwykłe liczby** (nie $\infty$), to:
 
-| # | Reguła | Słownie |
-|---|---|---|
-| 1 | $\lim (c \cdot a_n) = c\cdot a$ | stałą wyciągasz przed granicę |
-| 2 | $\lim (a_n \pm b_n) = a \pm b$ | granica sumy = suma granic |
-| 3 | $\lim (a_n \cdot b_n) = a \cdot b$ | granica iloczynu = iloczyn granic |
-| 4 | $\lim \frac{a_n}{b_n} = \frac{a}{b}$, o ile $b \ne 0$ | granica ilorazu = iloraz granic |
-| 5 | $\lim (a_n)^C = a^C$ | potęga o stałym wykładniku |
-| 6 | $\lim A^{a_n} = A^a$, dla $A > 0$ | stała podstawa |
+| # | Reguła | Słownie | Przykład |
+|---|---|---|---|
+| 1 | $\lim (c \cdot a_n) = c\cdot a$ | stałą wyciągasz przed granicę | $\lim 4\left(2 + \frac1n\right) = 4 \cdot 2 = 8$ |
+| 2 | $\lim (a_n \pm b_n) = a \pm b$ | granica sumy = suma granic | $\lim \left(\frac1n + \sqrt[n]{2}\right) = 0 + 1 = 1$ |
+| 3 | $\lim (a_n \cdot b_n) = a \cdot b$ | granica iloczynu = iloczyn granic | $\lim \sqrt[n]{5}\left(3 - \frac1n\right) = 1 \cdot 3 = 3$ |
+| 4 | $\lim \frac{a_n}{b_n} = \frac{a}{b}$, o ile $b \ne 0$ | granica ilorazu = iloraz granic | $\lim \dfrac{6 + \frac1n}{3 - \frac{1}{n^2}} = \dfrac{6}{3} = 2$ |
+| 5 | $\lim (a_n)^C = a^C$ | potęga o stałym wykładniku | $\lim \left(2 + \frac1n\right)^3 = 2^3 = 8$ |
+| 6 | $\lim A^{a_n} = A^a$, dla $A > 0$ | stała podstawa | $\lim 2^{3 + \frac1n} = 2^3 = 8$ |
+
+> [!tip] Jak czytać przykłady
+> Zawsze ten sam schemat: **policz granicę każdego kawałka osobno** (klockami z 4.1), a potem **złóż wynik** działaniem z reguły. Np. w regule 3: $\sqrt[n]{5} \to 1$ (klocek 3), $3 - \frac1n \to 3 - 0 = 3$ (klocek 1), więc iloczyn $\to 1 \cdot 3 = 3$.
+>
+> **Kiedy NIE wolno:** gdy któryś kawałek dąży do $\infty$ albo w regule 4 mianownik dąży do $0$. Wtedy reguły nie działają i wracasz do typów z rozdz. 3, np. $\lim \frac{n}{n^2}$ to nie „$\frac{\infty}{\infty}$, więc 1”, tylko typ nieoznaczony (rozdz. 6).
 
 > [!example] Przykłady z wykładu
 > - $\lim\left(1 - \frac1n\right) = 1 - 0 = 1$ (reguła 2)
@@ -660,9 +697,18 @@ Jak wyciągać: $7n = n^2 \cdot \frac{7}{n}$, $\ 5 = n^2 \cdot \frac{5}{n^2}$. D
 >
 > > [!success]- Rozwiązanie
 > > a) $\left[\frac{\infty}{\infty}\right]$, wyciągam $n^3$: $\dfrac{4 - \frac{1}{n^2} + \frac{2}{n^3}}{2 + \frac5n} \to \dfrac42 = 2$
-> > b) $\left[\frac{\infty}{\infty}\right]$, wyciągam $n^4$: $\dfrac{\frac{3}{n^2} + \frac{1}{n^4}}{1 - \frac{2}{n^3}} \to \dfrac{0}{1} = 0$
-> > c) $\left[\frac{-\infty}{\infty}\right]$, wyciągam $n^2$: $\dfrac{\frac{2}{n^2} - 5n}{1 + \frac{4}{n^2}} \to \left[\frac{-\infty}{1}\right] = -\infty$
-> > d) Stopnie $2$ i $2$. Z każdego nawiasu $n$: $\dfrac{\left(2 + \frac1n\right)\left(3 - \frac2n\right)}{\left(1 + \frac5n\right)^2} \to \dfrac{2\cdot3}{1} = 6$
+> > b) $\left[\frac{\infty}{\infty}\right]$, w liczniku wyciągam $n^2$, w mianowniku $n^4$: $\dfrac{n^2\left(3 + \frac{1}{n^2}\right)}{n^4\left(1 - \frac{2}{n^3}\right)} = \dfrac{1}{n^2}\cdot\dfrac{3 + \frac{1}{n^2}}{1 - \frac{2}{n^3}} \to 0 \cdot \dfrac{3}{1} = 0$
+> > c) $\left[\frac{-\infty}{\infty}\right]$, w liczniku wyciągam $n^3$, w mianowniku $n^2$: $\dfrac{n^3\left(\frac{2}{n^3} - 5\right)}{n^2\left(1 + \frac{4}{n^2}\right)} = n\cdot\dfrac{\frac{2}{n^3} - 5}{1 + \frac{4}{n^2}} \to \left[\infty \cdot \frac{-5}{1}\right] = -\infty$
+> >
+> > **Inna poprawna metoda (b, c):** podziel licznik i mianownik przez najwyższą potęgę **mianownika** (w b) $n^4$, w c) $n^2$). Wtedy mianownik dąży do zwykłej liczby, a licznik pokazuje wynik, np. w c) $\dfrac{\frac{2}{n^2} - 5n}{1 + \frac{4}{n^2}} \to \left[\frac{-\infty}{1}\right] = -\infty$. Wolno tak, bo dzielenie góry i dołu przez to samo nie zmienia ułamka. Przy równych stopniach (a, d) obie metody to to samo.
+> >
+> > d) Stopnie $2$ i $2$. **Nie wymnażaj**, tylko z każdego nawiasu wyciągnij $n$.
+> > - Mianownik (nawias do kwadratu): $n$ wyciągasz ze środka, a kwadrat obejmuje oba czynniki, bo $(a\cdot b)^2 = a^2\cdot b^2$:
+> > $$(n+5)^2 = \left[n\left(1 + \tfrac5n\right)\right]^2 = n^2\left(1 + \tfrac5n\right)^2$$
+> > - Licznik (dwa nawiasy): z każdego po $n$, razem $n\cdot n = n^2$:
+> > $$(2n+1)(3n-2) = n\left(2 + \tfrac1n\right)\cdot n\left(3 - \tfrac2n\right) = n^2\left(2 + \tfrac1n\right)\left(3 - \tfrac2n\right)$$
+> > - Na górze i na dole jest $n^2$, więc się skraca:
+> > $$\frac{n^2\left(2 + \frac1n\right)\left(3 - \frac2n\right)}{n^2\left(1 + \frac5n\right)^2} = \frac{\left(2 + \frac1n\right)\left(3 - \frac2n\right)}{\left(1 + \frac5n\right)^2} \to \frac{2\cdot3}{1^2} = 6$$
 
 ##### 6.2 Pierwiastki to też potęgi
 
