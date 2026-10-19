@@ -1,91 +1,126 @@
-//instrukcja iteracyjna,instrukcja zaniechania i kontynuacjio, typ wyliczneiowy 18.10.2026
 public class Main{
-	void main() {
+
+	void main(){
 		
-		IO.println("Hello");
-		// aplikacja jak zatrzyma się na pętli nieskończonej nien wykona dalszego kodu.
+		IO.println("Wykład 04");
+		
+		//IO.println("Hello");
+		//IO.println("Hello");
+		//IO.println("Hello");
+		//IO.println("Hello");
+		//IO.println("Hello");
+		
 		
 		int x = 0;
-	
-		while(x<5){ //pamiętaj o nawiasach klamrowych. Bez nawiasów wykona się tylko pierwszy wiersz w tym przypadku nr 11.
-			IO.println("Hello z pętli");
+		
+		while(x < 5){
+			IO.println("Hello");
 			x++;
-			//++x / x+=1/x=x+1
-		}
-		
-		//inkrementacja w warunku uważaj na wyniki:
-		
-		x = 0;
-		
-		while(x++ <5){
-			IO.println(x);
-			//x++; /++x / x+=1/x=x+1
+			//++x;
+			//x += 1;
+			//x = x+1;
 		}
 		
 		x = 0;
 		
-		while(++x <5){
+		while(x++ < 5){
 			IO.println(x);
-			//x++; /++x / x+=1/x=x+1
+			//x++;
 		}
 		
 		x = 0;
 		
-		while(++x <5);{  //średnik po nawiasach okrągłych instrukcja pusta. Wykonuje sie inkrementacja w nawiasach a io.println wykona się po pętli.
+		while(++x < 5){
 			IO.println(x);
-			//x++; /++x / x+=1/x=x+1
+			//x++;
 		}
 		
 		
-		//Pętla nieskończona
+		x = 0;
+		
+		while(++x < 5);
+		
+		{
+			IO.println(x);
+		}
+		
 		//short sh = 0;
+		
 		//while(true){
 		//	IO.println(sh++);
 		//}
-		// ctr+c zatrzymanie pętli nieskończonej w terminalu
 		
+		IO.println("=-=-=-= for -=-=-=-=");
 		
-		//pętla do while rzadko używana . Gdy chcemy żeby instrukcje wykonały się przynajmiej raz
-		
-		//Pętla for(deklaracja, warunek, wyrażenie)
-			
-		IO.println("===========FOR===========");
-		
-		for(int i=0; i < 5; i++){ 
-        //i istnieje tylko w pętli
+		for(int i = 10; i < 5; i++){
 			IO.println("Hello");
 		}
 		
-		//IO.println("Czy mamy i ?: "+i); //nie mamy
+		//IO.println(i);
+		//x = 0;
 		
-		x = 0; 
-		 
-		for(;x<5;x++){ // w for nie ma znaczenia czy robimy preinkrementacje czy postinkrementacje ++i / i++ w przeciwienstwie do while
-        //i istnieje tylko w pętli
-			IO.println(x);
+		//for(;;){
+		//	IO.println(x++);
+		//}
+		
+		for(int i = 0, j = 10; i < 5; i++, j *= 2){
+			IO.println("Hello");
+			IO.println(j);
 		}
 		
-		//for uzywamy gdy chcemy ileś razy coś wykonać
-		//while uzywamy gdy jednorazowo chcemy pojedynczo sprawdzic jakis warunek
 		
-		
-		for(;;)
-			IO.println();
-		
-		
-		//Pętle zagnieżdzone
-		
-		for(int i = 1; i <=10; i++ ){
-			//IO.println("i: " + i);
-			for(int j = 1;j <=10;j++){
-				IO.print(i*j);
-				IO.print('\t');
+		for(int i = 1; i <= 10; i++){
+			for(int j = 1; j <= 10; j++){
+				IO.print(i * j);
+				IO.print("\t");
 			}
 			IO.println();
 		}
 		
-		//instrukcje zaniechania i kontynuacji 
-		// z break; korzystamy tylko w switch
-		//kontynuacja continue; stos - dane ,sterta - instukcje. / 
+		for(int i = 0; i < 5; i++);
+		
+		
+		//x = 0;
+		//while(x < 10){
+		//	if(x == 5)
+		//		continue;
+		//	
+		//	IO.println(x);
+		//	x++;
+		//}
+		
+		enum DniTygodnia{
+			PONIEDZIALEK,
+			WTOREK,
+			SRODA,
+			CZWARTEK,
+			PIATEK,
+			SOBOTA,
+			NIEDZIELA
+		}
+		
+		DniTygodnia dzisiaj = DniTygodnia.NIEDZIELA;
+		
+		IO.println(dzisiaj);
+		
+		if(dzisiaj == DniTygodnia.SOBOTA || dzisiaj == DniTygodnia.NIEDZIELA){
+			IO.println("Weekend");
+		}
+		
+		String dzisiaj2 = "NiedzielA";
+		
+		IO.println(dzisiaj2);
+		
+		if(dzisiaj2 == "Sobota" || dzisiaj2 == "Niedziela"){
+			IO.println("Weekend");
+		}
+		
+		switch(dzisiaj){
+			case SOBOTA -> IO.println("weekend");
+			case NIEDZIELA -> IO.println("weekend");
+			default -> IO.println("midweek");
+		}
+		
 	}
+
 }

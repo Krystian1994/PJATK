@@ -14,6 +14,18 @@ tags:
 | Wykład | WIn I.1 - 1w | sobota 14:00–15:30 | B/1 Aula Główna |
 | Ćwiczenia | WIn I.1 - 25c | sobota 15:45–17:15 | B/130 |
 
+> [!tip] Nauka
+> Kurs od podstaw: [[Java 25 - kurs krok po kroku]]
+
+## Zadania wykładowe
+
+### W04 – pętle, break/continue, enum
+- [ ] Liczby parzyste z przedziału 1–50, na trzy sposoby: pętlą `while`, `do-while` i `for` → [[Java 25 - kurs krok po kroku#Krok 13 – Pętle|kurs: pętle]]
+- [ ] `enum` z poziomami trudności `LATWY`, `SREDNI`, `TRUDNY`; za pomocą `if` wypisz punkty startowe (100 / 50 / 10) → [[Java 25 - kurs krok po kroku#Krok 15 – Typ wyliczeniowy enum|kurs: enum]]
+- [ ] Suma liczb od 1 do N pętlą `while` → [[Java 25 - kurs krok po kroku#Krok 13 – Pętle|kurs: pętle]]
+
+Kod z wykładu: `04/Main.java`, notatki w kodzie: `04/Main1.java`.
+
 ## Wykłady
 
 Egzamin (pierw zaliczone ćwiczenia)

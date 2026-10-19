@@ -6,7 +6,7 @@ tags:
 ---
 # Zjazd 17–18 października – do zrobienia
 
-## [[AM - Analiza matematyczna|AM]]
+## [[0_Analiza_Matematyczna|AM]]
 - [x] Powtórzyć podstawy analizy matematycznej
 - [x] Przerobić zadania
 
