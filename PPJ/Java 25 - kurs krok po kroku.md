@@ -113,6 +113,12 @@ void main() {
 }
 ```
 
+> [!warning] Jak to uruchomić
+> - Plik **musi mieć rozszerzenie `.java`** (np. `Compact.java`), nie `.txt`.
+> - Uruchomienie jednym poleceniem: `java Compact.java` albo klasycznie `javac Compact.java` → `java Compact` (ukryta klasa dostaje nazwę od pliku).
+> - W wersji z klasą: `public class Main` musi leżeć w pliku `Main.java` – nazwa klasy publicznej = nazwa pliku.
+> - Krzaczki zamiast polskich znaków w konsoli Windows to tylko kodowanie terminala: wpisz `chcp 65001` przed uruchomieniem.
+
 > [!info] Klasa `IO` (Java 25, `java.lang.IO`)
 > | Metoda | Działanie |
 > |---|---|

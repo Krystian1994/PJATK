@@ -1,5 +1,6 @@
-public class Main{
+public class Kol{
 	void main(){
-		IO.println("Działa");
+		IO.println("działa");
+		
 	}
 }
