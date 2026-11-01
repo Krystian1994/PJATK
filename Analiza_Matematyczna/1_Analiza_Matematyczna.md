@@ -1393,7 +1393,7 @@ Teoria: [[#8. Twierdzenie o trzech ciągach (dwóch policjantów)|rozdział 8]]
 > - $\sqrt[n]{5^n} = 5 \ \le\ \sqrt[n]{4^n + 5^n}\ \le\ \sqrt[n]{2\cdot 5^n} = 5\sqrt[n]2 \to 5$, więc licznik $\to 5$
 > - $\sqrt[n]{7^n} = 7 \ \le\ \sqrt[n]{6^n + 7^n}\ \le\ \sqrt[n]{2\cdot 7^n} = 7\sqrt[n]2 \to 7$, więc mianownik $\to 7$
 >
-> Granica ilorazu to iloraz granic:
+> Granica ilorazu to iloraz granic ([[#4.2 Arytmetyka granic|4.2]], reguła 4 – można, bo mianownik $\to 7 \ne 0$):
 > **$= \dfrac57$**
 
 > [!success]- Rozwiązanie b) $\lim\sqrt[n]{5^{n+2} + 2^{3n-1} + 3^{n+2}}$

@@ -4,4 +4,9 @@ void main(){
     IO.println(0.1 + 0.2);   // 0.30000000000000004
 
 	IO.readln();
+	
+	int n = 42;
+	
+	IO.println(Integer.toBinaryString(n));
+	
 }
